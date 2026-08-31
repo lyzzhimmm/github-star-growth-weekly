@@ -25,50 +25,67 @@
   
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   
-  body {
+  html, body {
+    height: 100%;
+    overflow: hidden;
     background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
-    font-size: 14.5px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    padding-bottom: 80px;
   }
   
-  .wrap {
+  /* App Root Layout: Top is completely fixed, bottom table scroll independently */
+  .app-container {
+    height: 100vh;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 20px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Top Fixed Region */
+  .top-fixed-region {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
   }
   
   /* Masthead */
   header.masthead {
-    border-bottom: 3px double var(--ink);
-    padding: 44px 0 24px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 12px;
     margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
+  .masthead-main { flex: 1; }
   .kicker {
     font-family: var(--mono);
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--muted);
-    font-weight: 500;
+    font-weight: 600;
   }
   h1 {
     font-family: var(--serif);
     font-weight: 600;
-    font-size: clamp(32px, 5vw, 54px);
-    line-height: 1.05;
-    margin: 8px 0 6px;
+    font-size: clamp(26px, 3.2vw, 38px);
+    line-height: 1.1;
+    margin: 4px 0 2px;
     letter-spacing: -0.02em;
   }
   .sub {
     color: var(--muted);
-    max-width: 84ch;
-    font-size: 14px;
-    line-height: 1.65;
-    margin-top: 6px;
+    max-width: 80ch;
+    font-size: 12.5px;
+    line-height: 1.5;
   }
   
   /* Stats Cards */
@@ -77,42 +94,41 @@
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid var(--line);
     background: var(--surface);
-    margin: 24px 0 20px;
+    margin-bottom: 12px;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
   }
   .stat {
-    padding: 18px 24px;
+    padding: 10px 20px;
     border-right: 1px solid var(--line);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
   }
   .stat:last-child { border-right: none; }
   .stat .n {
     font-family: var(--serif);
-    font-size: clamp(28px, 4vw, 42px);
+    font-size: 28px;
     font-weight: 600;
     line-height: 1;
   }
   .stat .l {
     font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-top: 8px;
     font-weight: 500;
   }
   .stat.ai .n { color: var(--accent); }
   
-  /* Controls Header */
-  .controls {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    background: var(--paper);
-    padding: 14px 0 12px;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 12px;
+  /* Controls Region */
+  .controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
   }
   .ctl-row {
     display: flex;
@@ -120,15 +136,16 @@
     gap: 8px 12px;
     align-items: center;
   }
+  
   .pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
   }
   .pill {
     font-family: var(--sans);
-    font-size: 12.5px;
-    padding: 5px 12px;
+    font-size: 12px;
+    padding: 4px 10px;
     border: 1px solid var(--line);
     background: var(--surface);
     color: var(--ink);
@@ -150,24 +167,24 @@
   }
   .pill .c {
     font-family: var(--mono);
-    font-size: 11px;
-    opacity: 0.65;
-    margin-left: 5px;
+    font-size: 10.5px;
+    opacity: 0.7;
+    margin-left: 4px;
   }
   
   /* Toggle Switch */
   .toggle {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12.5px;
     user-select: none;
     font-weight: 500;
   }
   .switch {
-    width: 36px;
-    height: 20px;
+    width: 32px;
+    height: 18px;
     border-radius: 999px;
     background: var(--line);
     position: relative;
@@ -179,68 +196,72 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: var(--surface);
     transition: 0.2s;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   }
   .toggle.on .switch { background: var(--accent); }
-  .toggle.on .switch::after { left: 18px; }
+  .toggle.on .switch::after { left: 16px; }
   
-  /* Form Elements */
+  /* Form Inputs */
   .field {
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 13px;
+    gap: 5px;
+    font-size: 12.5px;
     color: var(--muted);
   }
   select, input[type=search], input[type=number] {
     font-family: var(--sans);
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 12.5px;
+    padding: 5px 8px;
     border: 1px solid var(--line);
     background: var(--surface);
     color: var(--ink);
-    border-radius: 6px;
+    border-radius: 5px;
     outline: none;
     transition: border-color 0.15s;
   }
   input[type=search] {
     min-width: 220px;
     flex: 1;
-    max-width: 360px;
+    max-width: 340px;
   }
-  input[type=number] { width: 100px; }
+  input[type=number] { width: 85px; }
   select:focus, input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px var(--accent-light);
   }
   .btn-dir {
     font-family: var(--mono);
-    font-size: 12px;
-    padding: 6px 10px;
+    font-size: 11.5px;
+    padding: 5px 8px;
     border: 1px solid var(--line);
     background: var(--surface);
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     color: var(--ink);
     transition: 0.15s;
   }
   .btn-dir:hover { border-color: var(--ink); }
-  .count {
+  
+  .meta-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: var(--mono);
-    font-size: 12px;
+    font-size: 11.5px;
     color: var(--muted);
-    margin: 6px 0 12px;
+    margin-bottom: 6px;
   }
   
-  /* Table Viewport */
-  .tbl-wrap {
-    max-height: calc(100vh - 160px);
-    min-height: 480px;
+  /* Scrollable Table Viewport (Fills Remaining Screen Height) */
+  .table-viewport {
+    flex: 1;
+    min-height: 0;
     overflow: auto;
     border: 1px solid var(--line);
     background: var(--surface);
@@ -252,12 +273,12 @@
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
-    min-width: 1080px;
+    min-width: 1100px;
     font-size: 13.5px;
     table-layout: fixed;
   }
   
-  /* Column Width Allocations */
+  /* Columns */
   col.col-rk { width: 56px; }
   col.col-repo { width: 250px; }
   col.col-track { width: 110px; }
@@ -267,6 +288,7 @@
   col.col-what { width: 230px; }
   col.col-use { width: auto; min-width: 240px; }
   
+  /* Table Header Stuck to Top of Viewport */
   thead th {
     position: sticky;
     top: 0;
@@ -277,7 +299,7 @@
     font-size: 11px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 12px 14px;
+    padding: 11px 14px;
     border-bottom: 2px solid var(--ink);
     white-space: nowrap;
     z-index: 10;
@@ -288,22 +310,15 @@
   thead th.th-num { text-align: right; }
   thead th.th-track { text-align: center; }
   thead th.th-created { text-align: center; }
-  
-  /* Final column breathing room */
-  thead th:last-child {
-    padding-right: 28px;
-  }
+  thead th:last-child { padding-right: 28px; }
   
   tbody td {
-    padding: 11px 14px;
+    padding: 10px 14px;
     border-bottom: 1px solid var(--line-subtle);
     vertical-align: top;
     line-height: 1.5;
   }
-  
-  tbody td:last-child {
-    padding-right: 28px;
-  }
+  tbody td:last-child { padding-right: 28px; }
   
   tbody tr:nth-child(even) { background: var(--surface-alt); }
   tbody tr:hover { background: var(--hover); }
@@ -331,8 +346,8 @@
   .td-track { text-align: center; }
   .badge {
     display: inline-block;
-    font-size: 11.5px;
-    padding: 2px 8px;
+    font-size: 11px;
+    padding: 2px 7px;
     border-radius: 4px;
     white-space: nowrap;
     font-weight: 500;
@@ -363,22 +378,6 @@
     word-break: break-word;
   }
   
-  /* Footer */
-  footer {
-    margin-top: 32px;
-    color: var(--muted);
-    font-size: 12.5px;
-    line-height: 1.7;
-    border-top: 1px solid var(--line);
-    padding-top: 18px;
-  }
-  footer code {
-    font-family: var(--mono);
-    background: #eae4d4;
-    padding: 1px 5px;
-    border-radius: 4px;
-    color: var(--ink);
-  }
   .empty {
     padding: 48px;
     text-align: center;
@@ -386,52 +385,78 @@
     font-family: var(--mono);
   }
   
+  /* Footer within scrollable table bottom */
+  .table-footer-note {
+    padding: 16px 20px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+    background: var(--surface-alt);
+    border-top: 1px solid var(--line);
+  }
+  .table-footer-note code {
+    font-family: var(--mono);
+    background: #eae4d4;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: var(--ink);
+  }
+  
   @media(max-width: 900px) {
-    .wrap { padding: 0 16px; }
+    .app-container { padding: 12px 16px; }
     .stats { grid-template-columns: 1fr; }
     .stat { border-right: none; border-bottom: 1px solid var(--line); }
     .stat:last-child { border-bottom: none; }
-    .tbl-wrap { max-height: calc(100vh - 220px); }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="masthead">
-    <div class="kicker">Weekly GitHub Star Growth · 开源星增周榜</div>
-    <h1>GitHub Star 增长周榜</h1>
-    <p class="sub">统计窗口 2026-08-31 ｜ 筛选「近三个月 star 净增长 ≥ 2000」且创建于近 36 个月内的公开仓库。
-    增长口径为「当前 star − 90 天前 star」；当前 star 与创建时间取自 GitHub 官方 API，90 天前 star 结合历史周榜数据与线性插值得出。</p>
-  </header>
 
-  <section class="stats">
-    <div class="stat"><div class="n">388</div><div class="l">总项目数</div></div>
-    <div class="stat ai"><div class="n">118</div><div class="l">AI Agent 赛道</div></div>
-    <div class="stat"><div class="n">30.4%</div><div class="l">AI Agent 占比</div></div>
-  </section>
+<div class="app-container">
+  <!-- Top Fixed Area: Masthead, Stats, Filters, Controls -->
+  <div class="top-fixed-region">
+    <header class="masthead">
+      <div class="masthead-main">
+        <div class="kicker">Weekly GitHub Star Growth · 开源星增周榜</div>
+        <h1>GitHub Star 增长周榜</h1>
+        <p class="sub">统计窗口 2026-08-31 ｜ 筛选近 90 天 Star 净增长 ≥ 2000 且创建于近 36 个月内的开源仓库。增长口径为「当前 star − 90 天前 star」。</p>
+      </div>
+    </header>
 
-  <div class="controls">
-    <div class="ctl-row">
-      <div class="pills" id="pills"></div>
+    <section class="stats">
+      <div class="stat"><div class="n">388</div><div class="l">总项目数</div></div>
+      <div class="stat ai"><div class="n">118</div><div class="l">AI Agent 赛道</div></div>
+      <div class="stat"><div class="n">30.4%</div><div class="l">AI Agent 占比</div></div>
+    </section>
+
+    <div class="controls-panel">
+      <div class="ctl-row">
+        <div class="pills" id="pills"></div>
+      </div>
+      <div class="ctl-row">
+        <label class="toggle" id="aiToggle"><span class="switch"></span><span>只看 AI Agent</span></label>
+        <span class="field">排序
+          <select id="sortField">
+            <option value="default">默认（AI Agent 优先 · 增长降序）</option>
+            <option value="growth">近三月增长</option>
+            <option value="stars">当前 star</option>
+            <option value="created">创建时间</option>
+          </select>
+          <button class="btn-dir" id="dirBtn">降序 ↓</button>
+        </span>
+        <span class="field">增长 ≥ <input type="number" id="thresh" min="0" placeholder="2000"></span>
+        <input type="search" id="search" placeholder="搜索 owner/repo 或中文说明…">
+      </div>
     </div>
-    <div class="ctl-row" style="margin-top:10px">
-      <label class="toggle" id="aiToggle"><span class="switch"></span><span>只看 AI Agent</span></label>
-      <span class="field">排序
-        <select id="sortField">
-          <option value="default">默认（AI Agent 优先 · 增长降序）</option>
-          <option value="growth">近三月增长</option>
-          <option value="stars">当前 star</option>
-          <option value="created">创建时间</option>
-        </select>
-        <button class="btn-dir" id="dirBtn">降序 ↓</button>
-      </span>
-      <span class="field">增长 ≥ <input type="number" id="thresh" min="0" placeholder="2000"></span>
-      <input type="search" id="search" placeholder="搜索 owner/repo 或中文说明…">
+
+    <div class="meta-bar">
+      <span id="count">显示 388 / 388 个项目</span>
+      <span>数据来源：GitHub API · 线性插值</span>
     </div>
   </div>
-  <div class="count" id="count"></div>
 
-  <div class="tbl-wrap">
+  <!-- Bottom Scrollable Table Viewport -->
+  <div class="table-viewport">
     <table>
       <colgroup>
         <col class="col-rk">
@@ -455,15 +480,11 @@
       </tr></thead>
       <tbody id="tbody"></tbody>
     </table>
-  </div>
 
-  <footer>
-    <p><strong>方法说明：</strong>「近三月增长」= 当前 star − 90 天前 star（窗口截至 2026-08-31，即 2026-06-02 至 2026-08-31 的净增）。
-    当前 star 与创建时间来自 GitHub 官方仓库页 / API（<code>api.github.com</code>）；
-    90 天前 star 结合历史周榜多点插值及新建仓库基准得出。
-    仅收录创建时间不早于 2023-08-31（近 36 个月）的仓库；无法可靠核实增长数据的项目已严格剔除。</p>
-    <p>生成日期 2026-08-31 ｜ 共 388 个仓库 ｜ 数据来源：GitHub API · 周榜数据中心。</p>
-  </footer>
+    <div class="table-footer-note">
+      <p><strong>方法说明：</strong>「近三月增长」= 当前 star − 90 天前 star（窗口截至 2026-08-31）。当前 star 与创建时间取自 GitHub 官方 API（<code>api.github.com</code>）；90 天前 star 结合历史周榜多点插值及新建仓库基准得出。仅收录创建时间不早于 2023-08-31 的仓库；无法可靠核实增长数据的项目已严格剔除。</p>
+    </div>
+  </div>
 </div>
 
 <script>
