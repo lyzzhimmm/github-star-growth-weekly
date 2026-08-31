@@ -12,8 +12,6 @@ from datetime import date, datetime, timedelta
 from weekly_common import (
     ARCHIVE_DIR,
     CFG,
-    CREATED_CUTOFF,
-    DATA_DIR,
     HISTORY_TOLERANCE_DAYS,
     MIN_GROWTH,
     ROOT,
@@ -46,6 +44,12 @@ def load_previous_repos() -> set[str]:
 
 
 def ossinsight_trending_candidates() -> tuple[set[str], dict[str, int]]:
+    """Collect every repo returned by OSSInsight's 3-month top lists.
+
+    We intentionally do not prefilter by OSSInsight's `stars` hint. The hint is
+    useful for diagnostics, but candidate discovery should stay broad so a
+    source-side undercount cannot silently remove a potentially valid repo.
+    """
     repos: set[str] = set()
     hints: dict[str, int] = {}
     languages = CFG.get("ossinsight_languages") or ["All"]
@@ -65,11 +69,8 @@ def ossinsight_trending_candidates() -> tuple[set[str], dict[str, int]]:
             name = normalize_repo_name(row)
             if not name:
                 continue
-            recent = int_value(row, ("stars", "stars_inc", "star_count", "stargazers"))
-            # Candidate discovery may be broader than the final threshold.
-            if recent is not None and recent < max(500, MIN_GROWTH // 2):
-                continue
             repos.add(name)
+            recent = int_value(row, ("stars", "stars_inc", "star_count", "stargazers"))
             if recent is not None:
                 hints[name] = max(hints.get(name, 0), recent)
         time.sleep(0.12)
