@@ -1,23 +1,55 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub Star Growth Weekly</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 80px auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #1f2328;
-    }
-  </style>
-</head>
-<body>
-  <h1>GitHub Star Growth Weekly</h1>
-  <p>GitHub 开源项目近三个月 Star 增长周榜。</p>
-  <p>网站初始化成功，后续榜单将自动更新。</p>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-08-31 · GitHub Star Growth Weekly</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1f2328;--muted:#667085;--line:#e5e7eb;--chip:#eef2ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1500px;margin:auto;padding:28px}h1{font-size:28px;margin:0 0 8px}.sub{color:var(--muted);margin-bottom:22px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.stat b{display:block;font-size:24px;margin-top:4px}
+.controls{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr auto;gap:10px;align-items:center;margin-bottom:14px}
+input,select{width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:10px 12px;background:#fff;font-size:14px}.switch{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:14px}
+.tablebox{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:auto;max-height:72vh}table{width:100%;border-collapse:separate;border-spacing:0;min-width:1250px;font-size:14px}
+th{position:sticky;top:0;background:#f9fafb;z-index:2;text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:12px;border-bottom:1px solid #f0f1f3;vertical-align:top}tbody tr:nth-child(even){background:#fafafa}tbody tr:hover{background:#f3f6ff}
+a{color:#3157c8;text-decoration:none;font-weight:600}.tag{display:inline-block;background:var(--chip);border-radius:999px;padding:4px 8px;font-size:12px}.num{font-variant-numeric:tabular-nums;font-weight:650}
+.foot{margin-top:16px;color:var(--muted);font-size:13px;line-height:1.7;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}.source-list{margin-top:8px;padding-left:20px}code{background:#f2f4f7;padding:2px 5px;border-radius:5px}
+@media(max-width:900px){.wrap{padding:16px}.stats{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}.controls .wide{grid-column:1/-1}}
+</style></head>
+<body><div class="wrap">
+<h1>GitHub 开源项目 · 近三月 Star 净增长周榜</h1>
+<div class="sub">生成日期：2026-08-31 · 严格核验版</div>
+<div class="stats"><div class="stat"><span>本期总项目数</span><b>8</b></div><div class="stat"><span>AI Agent 数量</span><b>4</b></div><div class="stat"><span>AI Agent 占比</span><b>50.0%</b></div></div>
+<div class="controls">
+<input id="q" class="wide" placeholder="搜索 owner/repo 或中文说明…">
+<select id="track"><option value="">全部赛道</option></select>
+<input id="minGrowth" type="number" min="0" placeholder="最小增长，如 3000">
+<select id="sort"><option value="default">默认：AI Agent 优先 · 增长 ↓</option><option value="growth-desc">近三月增长 ↓</option><option value="growth-asc">近三月增长 ↑</option><option value="stars-desc">当前 star ↓</option><option value="stars-asc">当前 star ↑</option><option value="date-desc">创建时间 ↓</option><option value="date-asc">创建时间 ↑</option></select>
+<label class="switch"><input id="aiOnly" type="checkbox"> 只看 AI Agent</label>
+</div>
+<div class="tablebox"><table><thead><tr><th>排名</th><th>项目</th><th>GitHub链接</th><th>赛道</th><th>近三月增长</th><th>当前star</th><th>创建时间</th><th>是什么</th><th>主要用途</th></tr></thead><tbody id="body"></tbody></table></div>
+<div class="foot"><b>核验口径：</b>本期仅纳入可严格闭环验证的项目。约 90 天窗口起点按 <code>2026-06-02</code> 处理；本表全部项目均创建于该日期之后，因此窗口起点 star 可确定为 0，故 <b>近三月增长 = 当前 star − 0</b>。当前 star 与创建时间均以 GitHub 官方仓库数据为准。对创建更早、但无法取得足够可靠的约 90 天前历史 star 快照的候选仓库，本期主动排除，不做估算。
+<ul class="source-list"><li><a href="https://api.github.com/repos/deepseek-ai/deepseek-harness" target="_blank" rel="noreferrer">deepseek-ai/deepseek-harness · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/andrewyng/openworker" target="_blank" rel="noreferrer">andrewyng/openworker · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/cloudflare/computer" target="_blank" rel="noreferrer">cloudflare/computer · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/CopilotKit/OpenBot" target="_blank" rel="noreferrer">CopilotKit/OpenBot · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/baidu/Unlimited-OCR" target="_blank" rel="noreferrer">baidu/Unlimited-OCR · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/XiaomiMiMo/MiMo-Code" target="_blank" rel="noreferrer">XiaomiMiMo/MiMo-Code · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/MoonshotAI/Kimi-K3" target="_blank" rel="noreferrer">MoonshotAI/Kimi-K3 · GitHub 官方 API</a></li>
+<li><a href="https://api.github.com/repos/MiniMax-AI/MiniMax-H3" target="_blank" rel="noreferrer">MiniMax-AI/MiniMax-H3 · GitHub 官方 API</a></li></ul></div>
+</div>
+<script>
+const data=[{"项目":"deepseek-ai/deepseek-harness","GitHub链接":"https://github.com/deepseek-ai/deepseek-harness","赛道":"AI Agent","近三月增长":204943,"当前star":204943,"创建时间":"2026-08-13","是什么":"DeepSeek 推出的插件化 AI Agent Harness，核心理念是“Everything is a Plugin”。","主要用途":"用于搭建、组合和扩展 Agent 能力与插件式工作流。","排名":1},{"项目":"andrewyng/openworker","GitHub链接":"https://github.com/andrewyng/openworker","赛道":"AI Agent","近三月增长":17068,"当前star":17068,"创建时间":"2026-07-20","是什么":"面向桌面工作的开源 AI coworker / worker 项目。","主要用途":"让本地 AI Agent 调用模型和工具，完成日常知识工作与自动化任务。","排名":2},{"项目":"cloudflare/computer","GitHub链接":"https://github.com/cloudflare/computer","赛道":"AI Agent","近三月增长":8843,"当前star":8843,"创建时间":"2026-06-05","是什么":"Cloudflare 提供给 AI Agent 使用的“电脑”运行环境。","主要用途":"让 Agent 获得可操作的计算机环境，以执行浏览器或桌面类任务。","排名":3},{"项目":"CopilotKit/OpenBot","GitHub链接":"https://github.com/CopilotKit/OpenBot","赛道":"AI Agent","近三月增长":3553,"当前star":3553,"创建时间":"2026-08-17","是什么":"为每个 AI coworker 提供独立浏览器、文件和工具环境的开源 Agent 项目。","主要用途":"用于构建可审计、可治理、能操作浏览器与文件的 AI coworker。","排名":4},{"项目":"baidu/Unlimited-OCR","GitHub链接":"https://github.com/baidu/Unlimited-OCR","赛道":"多模态","近三月增长":24793,"当前star":24793,"创建时间":"2026-06-18","是什么":"百度推出的长程文档与图像 OCR / 解析项目。","主要用途":"用于一次性长文档解析、OCR、视觉文本抽取及多模态文档理解。","排名":5},{"项目":"XiaomiMiMo/MiMo-Code","GitHub链接":"https://github.com/XiaomiMiMo/MiMo-Code","赛道":"Coding Agent","近三月增长":12908,"当前star":12908,"创建时间":"2026-06-10","是什么":"小米 MiMo 面向代码场景的模型与 Agent 协同项目。","主要用途":"用于代码生成、编程 Agent、CLI 编码工作流及模型与 Agent 协同研究。","排名":6},{"项目":"MoonshotAI/Kimi-K3","GitHub链接":"https://github.com/MoonshotAI/Kimi-K3","赛道":"模型/推理","近三月增长":8667,"当前star":8667,"创建时间":"2026-07-27","是什么":"Moonshot AI 发布的 Kimi K3 开放前沿智能模型项目。","主要用途":"用于通用大模型能力研究、推理与下游 AI 应用开发。","排名":7},{"项目":"MiniMax-AI/MiniMax-H3","GitHub链接":"https://github.com/MiniMax-AI/MiniMax-H3","赛道":"多模态","近三月增长":7511,"当前star":7511,"创建时间":"2026-07-30","是什么":"MiniMax 发布的多模态生成模型项目。","主要用途":"用于多模态内容理解与生成相关研究和应用开发。","排名":8}];
+const track=document.getElementById('track'),body=document.getElementById('body');
+[...new Set(data.map(x=>x['赛道']))].sort().forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;track.appendChild(o)});
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function render(){
+let a=[...data],q=document.getElementById('q').value.trim().toLowerCase(),min=Number(document.getElementById('minGrowth').value||0),t=track.value,ai=document.getElementById('aiOnly').checked;
+a=a.filter(x=>(!t||x['赛道']===t)&&(!ai||x['赛道']==='AI Agent')&&x['近三月增长']>=min&&(!q||[x['项目'],x['是什么'],x['主要用途']].join(' ').toLowerCase().includes(q)));
+const s=document.getElementById('sort').value;
+const cmp={'default':(a,b)=>((a['赛道']==='AI Agent'?0:1)-(b['赛道']==='AI Agent'?0:1))||(b['近三月增长']-a['近三月增长']),'growth-desc':(a,b)=>b['近三月增长']-a['近三月增长'],'growth-asc':(a,b)=>a['近三月增长']-b['近三月增长'],'stars-desc':(a,b)=>b['当前star']-a['当前star'],'stars-asc':(a,b)=>a['当前star']-b['当前star'],'date-desc':(a,b)=>b['创建时间'].localeCompare(a['创建时间']),'date-asc':(a,b)=>a['创建时间'].localeCompare(b['创建时间'])}[s];
+a.sort(cmp);
+body.innerHTML=a.map(x=>`<tr><td>${x['排名']}</td><td><a href="${esc(x['GitHub链接'])}" target="_blank" rel="noreferrer">${esc(x['项目'])}</a></td><td><a href="${esc(x['GitHub链接'])}" target="_blank" rel="noreferrer">GitHub</a></td><td><span class="tag">${esc(x['赛道'])}</span></td><td class="num" title="口径：近三月净增长；来源：GitHub 官方。仓库创建于 2026-06-02 后，窗口起点 star=0。">${x['近三月增长'].toLocaleString()}</td><td class="num">${x['当前star'].toLocaleString()}</td><td>${x['创建时间']}</td><td>${esc(x['是什么'])}</td><td>${esc(x['主要用途'])}</td></tr>`).join('')
+}
+['q','minGrowth','track','sort','aiOnly'].forEach(id=>document.getElementById(id).addEventListener('input',render));render();
+</script></body></html>
