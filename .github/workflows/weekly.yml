@@ -1,0 +1,62 @@
+name: Weekly GitHub Star Growth
+
+on:
+  schedule:
+    # GitHub Actions cron uses UTC. 00:30 UTC = 08:30 Asia/Shanghai.
+    - cron: "30 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-star-growth-weekly
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      TZ: Asia/Shanghai
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate weekly ranking
+        run: python scripts/generate_weekly.py
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_DATE="$(TZ=Asia/Shanghai date +%F)"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            index.html \
+            latest.csv \
+            "${RUN_DATE}-github-star-growth-weekly.html" \
+            "${RUN_DATE}-github-star-growth-weekly.csv" \
+            "archive/${RUN_DATE}.html" \
+            "archive/${RUN_DATE}.csv" \
+            data/
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git commit -m "site: publish ${RUN_DATE} weekly ranking"
+          git push origin HEAD:main
