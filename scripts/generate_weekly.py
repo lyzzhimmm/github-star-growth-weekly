@@ -32,7 +32,7 @@ def main() -> int:
     print(f"Run date: {RUN_DATE}")
     print(f"Window: {WINDOW_START}..{TODAY}; min growth: {MIN_GROWTH}; created >= {CREATED_CUTOFF}")
 
-    candidate_set, trend_hints = discover_candidates()
+    candidate_set, _trend_hints = discover_candidates()
     print(f"Candidates discovered: {len(candidate_set)}")
 
     details: dict[str, dict] = {}
@@ -72,12 +72,9 @@ def main() -> int:
             source = "GitHub baseline=0 (repository did not exist at window start)"
             source_date = WINDOW_START.isoformat()
         else:
-            # The OSSInsight 3-month trend count is only a discovery hint. If the
-            # hint is below the threshold, net growth cannot be above it.
-            hint = trend_hints.get(name)
-            if hint is not None and hint < MIN_GROWTH:
-                continue
-
+            # Older repositories must have discrete historical points. We do not
+            # use the OSSInsight trend hint as a hard filter because source-side
+            # undercounting should not silently remove a candidate before validation.
             try:
                 points = parse_oss_history(name)
             except Exception as exc:
