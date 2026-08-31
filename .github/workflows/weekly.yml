@@ -2,8 +2,9 @@ name: Weekly GitHub Star Growth
 
 on:
   schedule:
-    # GitHub Actions cron uses UTC. 00:30 UTC = 08:30 Asia/Shanghai.
-    - cron: "30 0 * * 1"
+    # GitHub Actions cron uses UTC. Sunday 23:30 UTC = Monday 07:30 Asia/Shanghai.
+    # The ChatGPT summary task runs at 09:00, leaving ~90 minutes for generation/deploy.
+    - cron: "30 23 * * 0"
   workflow_dispatch:
 
 permissions:
