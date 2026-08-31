@@ -921,6 +921,618 @@ html_content = f"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GitHub Star 增长周榜 · {RUN_DATE}</title>
 <style>
+  :root {{
+    --paper: #f6f3ec;
+    --surface: #ffffff;
+    --surface-alt: #faf8f3;
+    --hover: #f3efe6;
+    --ink: #1c1b18;
+    --muted: #6e6a63;
+    --line: #e3decb;
+    --line-subtle: #eee9dc;
+    --accent: #5e3a9b;
+    --accent-light: rgba(94, 58, 155, 0.08);
+    --pos: #2d6a4f;
+    --th-bg: #eae4d4;
+    --serif: "Iowan Old Style", "Apple Garamond", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }}
+  
+  *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  
+  html, body {{
+    height: 100%;
+    overflow: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }}
+  
+  /* App Root Layout: Top is completely fixed, bottom table scroll independently */
+  .app-container {{
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }}
+  
+  /* Top Fixed Region */
+  .top-fixed-region {{
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+  }}
+  
+  /* Masthead */
+  header.masthead {{
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }}
+  .masthead-main {{ flex: 1; }}
+  .kicker {{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }}
+  h1 {{
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(26px, 3.2vw, 38px);
+    line-height: 1.1;
+    margin: 4px 0 2px;
+    letter-spacing: -0.02em;
+  }}
+  .sub {{
+    color: var(--muted);
+    max-width: 80ch;
+    font-size: 12.5px;
+    line-height: 1.5;
+  }}
+  
+  /* Stats Cards */
+  .stats {{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    margin-bottom: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+  }}
+  .stat {{
+    padding: 10px 20px;
+    border-right: 1px solid var(--line);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }}
+  .stat:last-child {{ border-right: none; }}
+  .stat .n {{
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+  }}
+  .stat .l {{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }}
+  .stat.ai .n {{ color: var(--accent); }}
+  
+  /* Controls Region */
+  .controls-panel {{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }}
+  .ctl-row {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: center;
+  }}
+  
+  .pills {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }}
+  .pill {{
+    font-family: var(--sans);
+    font-size: 12px;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    user-select: none;
+  }}
+  .pill:hover {{
+    border-color: var(--ink);
+    background: var(--surface-alt);
+  }}
+  .pill.active {{
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+    font-weight: 500;
+  }}
+  .pill .c {{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    opacity: 0.7;
+    margin-left: 4px;
+  }}
+  
+  /* Toggle Switch */
+  .toggle {{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-size: 12.5px;
+    user-select: none;
+    font-weight: 500;
+  }}
+  .switch {{
+    width: 32px;
+    height: 18px;
+    border-radius: 999px;
+    background: var(--line);
+    position: relative;
+    transition: 0.2s;
+    flex: none;
+  }}
+  .switch::after {{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--surface);
+    transition: 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }}
+  .toggle.on .switch {{ background: var(--accent); }}
+  .toggle.on .switch::after {{ left: 16px; }}
+  
+  /* Form Inputs */
+  .field {{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }}
+  select, input[type=search], input[type=number] {{
+    font-family: var(--sans);
+    font-size: 12.5px;
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.15s;
+  }}
+  input[type=search] {{
+    min-width: 220px;
+    flex: 1;
+    max-width: 340px;
+  }}
+  input[type=number] {{ width: 85px; }}
+  select:focus, input:focus {{
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-light);
+  }}
+  .btn-dir {{
+    font-family: var(--mono);
+    font-size: 11.5px;
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--ink);
+    transition: 0.15s;
+  }}
+  .btn-dir:hover {{ border-color: var(--ink); }}
+  
+  .meta-bar {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }}
+  
+  /* Scrollable Table Viewport (Fills Remaining Screen Height) */
+  .table-viewport {{
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }}
+  
+  table {{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    min-width: 1100px;
+    font-size: 13.5px;
+    table-layout: fixed;
+  }}
+  
+  /* Columns */
+  col.col-rk {{ width: 56px; }}
+  col.col-repo {{ width: 250px; }}
+  col.col-track {{ width: 110px; }}
+  col.col-growth {{ width: 115px; }}
+  col.col-stars {{ width: 95px; }}
+  col.col-created {{ width: 105px; }}
+  col.col-what {{ width: 230px; }}
+  col.col-use {{ width: auto; min-width: 240px; }}
+  
+  /* Table Header Stuck to Top of Viewport */
+  thead th {{
+    position: sticky;
+    top: 0;
+    background: var(--th-bg);
+    color: var(--ink);
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 11px 14px;
+    border-bottom: 2px solid var(--ink);
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 1px 0 var(--line);
+  }}
+  
+  thead th.th-rk {{ text-align: right; }}
+  thead th.th-num {{ text-align: right; }}
+  thead th.th-track {{ text-align: center; }}
+  thead th.th-created {{ text-align: center; }}
+  thead th:last-child {{ padding-right: 28px; }}
+  
+  tbody td {{
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line-subtle);
+    vertical-align: top;
+    line-height: 1.5;
+  }}
+  tbody td:last-child {{ padding-right: 28px; }}
+  
+  tbody tr:nth-child(even) {{ background: var(--surface-alt); }}
+  tbody tr:hover {{ background: var(--hover); }}
+  
+  .rk {{
+    font-family: var(--mono);
+    color: var(--muted);
+    text-align: right;
+    font-weight: 500;
+  }}
+  .repo {{
+    font-family: var(--mono);
+    font-size: 13px;
+    word-break: break-all;
+  }}
+  .repo a {{
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    font-weight: 500;
+    transition: color 0.15s;
+  }}
+  .repo a:hover {{ color: var(--accent); }}
+  
+  .td-track {{ text-align: center; }}
+  .badge {{
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-weight: 500;
+  }}
+  .num {{
+    font-family: var(--mono);
+    text-align: right;
+    white-space: nowrap;
+  }}
+  .growth {{
+    color: var(--pos);
+    font-weight: 600;
+  }}
+  .created-cell {{
+    font-family: var(--mono);
+    text-align: center;
+    color: var(--muted);
+    font-size: 12.5px;
+  }}
+  .what {{
+    color: var(--ink);
+    font-weight: 500;
+    word-break: break-word;
+  }}
+  .use {{
+    color: var(--muted);
+    line-height: 1.5;
+    word-break: break-word;
+  }}
+  
+  .empty {{
+    padding: 48px;
+    text-align: center;
+    color: var(--muted);
+    font-family: var(--mono);
+  }}
+  
+  /* Footer within scrollable table bottom */
+  .table-footer-note {{
+    padding: 16px 20px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+    background: var(--surface-alt);
+    border-top: 1px solid var(--line);
+  }}
+  .table-footer-note code {{
+    font-family: var(--mono);
+    background: #eae4d4;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: var(--ink);
+  }}
+  
+  @media(max-width: 900px) {{
+    .app-container {{ padding: 12px 16px; }}
+    .stats {{ grid-template-columns: 1fr; }}
+    .stat {{ border-right: none; border-bottom: 1px solid var(--line); }}
+    .stat:last-child {{ border-bottom: none; }}
+  }}
+</style>
+</head>
+<body>
+
+<div class="app-container">
+  <!-- Top Fixed Area: Masthead, Stats, Filters, Controls -->
+  <div class="top-fixed-region">
+    <header class="masthead">
+      <div class="masthead-main">
+        <div class="kicker">Weekly GitHub Star Growth · 开源星增周榜</div>
+        <h1>GitHub Star 增长周榜</h1>
+        <p class="sub">统计窗口 {RUN_DATE} ｜ 筛选近 90 天 Star 净增长 ≥ 2000 且创建于近 36 个月内的开源仓库。增长口径为「当前 star − 90 天前 star」。</p>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><div class="n">{total_count}</div><div class="l">总项目数</div></div>
+      <div class="stat ai"><div class="n">{ai_agent_count}</div><div class="l">AI Agent 赛道</div></div>
+      <div class="stat"><div class="n">{ai_agent_pct}</div><div class="l">AI Agent 占比</div></div>
+    </section>
+
+    <div class="controls-panel">
+      <div class="ctl-row">
+        <div class="pills" id="pills"></div>
+      </div>
+      <div class="ctl-row">
+        <label class="toggle" id="aiToggle"><span class="switch"></span><span>只看 AI Agent</span></label>
+        <span class="field">排序
+          <select id="sortField">
+            <option value="default">默认（AI Agent 优先 · 增长降序）</option>
+            <option value="growth">近三月增长</option>
+            <option value="stars">当前 star</option>
+            <option value="created">创建时间</option>
+          </select>
+          <button class="btn-dir" id="dirBtn">降序 ↓</button>
+        </span>
+        <span class="field">增长 ≥ <input type="number" id="thresh" min="0" placeholder="2000"></span>
+        <input type="search" id="search" placeholder="搜索 owner/repo 或中文说明…">
+      </div>
+    </div>
+
+    <div class="meta-bar">
+      <span id="count">显示 {total_count} / {total_count} 个项目</span>
+      <span>数据来源：GitHub API · 线性插值</span>
+    </div>
+  </div>
+
+  <!-- Bottom Scrollable Table Viewport -->
+  <div class="table-viewport">
+    <table>
+      <colgroup>
+        <col class="col-rk">
+        <col class="col-repo">
+        <col class="col-track">
+        <col class="col-growth">
+        <col class="col-stars">
+        <col class="col-created">
+        <col class="col-what">
+        <col class="col-use">
+      </colgroup>
+      <thead><tr>
+        <th class="th-rk">排名</th>
+        <th>项目</th>
+        <th class="th-track">赛道</th>
+        <th class="th-num">近三月增长</th>
+        <th class="th-num">当前 star</th>
+        <th class="th-created">创建时间</th>
+        <th>是什么</th>
+        <th>主要用途</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <div class="table-footer-note">
+      <p><strong>方法说明：</strong>「近三月增长」= 当前 star − 90 天前 star（窗口截至 {RUN_DATE}）。当前 star 与创建时间取自 GitHub 官方 API（<code>api.github.com</code>）；90 天前 star 结合历史周榜多点插值及新建仓库基准得出。仅收录创建时间不早于 2023-08-31 的仓库；无法可靠核实增长数据的项目已严格剔除。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = {data_json};
+
+const TRACK_COLORS = {{
+  "AI Agent": "#5e3a9b",
+  "Coding Agent": "#2563eb",
+  "模型/推理": "#d97706",
+  "前端框架": "#db2777",
+  "数据库": "#059669",
+  "开发工具": "#4b5563",
+  "基础设施": "#78350f",
+  "音视频": "#ea580c",
+  "多模态": "#0284c7",
+  "机器人": "#475569"
+}};
+
+const state = {{ track:"全部", aiOnly:false, field:"default", dir:-1, thresh:0, q:"" }};
+
+function fmt(n){{ return n.toLocaleString("en-US"); }}
+function trackBadge(t){{
+  const c = TRACK_COLORS[t] || "#4b5563";
+  return `<span class="badge" style="background:${{c}}18;color:${{c}}">${{t}}</span>`;
+}}
+function passes(r){{
+  if(state.aiOnly && r.track!=="AI Agent") return false;
+  if(state.track!=="全部" && r.track!==state.track) return false;
+  if(r.growth < state.thresh) return false;
+  if(state.q){{
+    const hay = (r.repo+" "+r.what+" "+r.use).toLowerCase();
+    if(!hay.includes(state.q.toLowerCase())) return false;
+  }}
+  return true;
+}}
+function sortRows(rows){{
+  const f = state.field;
+  if(f==="default"){{
+    return rows.slice().sort((a,b)=>{{
+      const aiA = a.track==="AI Agent"?1:0, aiB = b.track==="AI Agent"?1:0;
+      if(aiA!==aiB) return aiB-aiA;
+      return b.growth - a.growth;
+    }});
+  }}
+  let key;
+  if(f==="growth") key=r=>r.growth;
+  else if(f==="stars") key=r=>r.stars;
+  else key=r=>r.created;
+  return rows.slice().sort((a,b)=> state.dir<0 ? (key(b)>key(a)?1:-1) : (key(a)>key(b)?1:-1));
+}}
+function render(){{
+  const rows = sortRows(DATA.filter(passes));
+  const tb = document.getElementById("tbody");
+  if(rows.length===0){{ tb.innerHTML = `<tr><td colspan="8" class="empty">没有符合条件的项目</td></tr>`; }}
+  else {{
+    tb.innerHTML = rows.map(r=>{{
+      return `<tr>
+        <td class="rk">${{r.rank}}</td>
+        <td class="repo"><a href="${{r.url}}" target="_blank" rel="noopener">${{r.repo}}</a></td>
+        <td class="td-track">${{trackBadge(r.track)}}</td>
+        <td class="num growth">+${{fmt(r.growth)}}</td>
+        <td class="num">${{fmt(r.stars)}}</td>
+        <td class="created-cell">${{r.created}}</td>
+        <td class="what">${{r.what}}</td>
+        <td class="use">${{r.use}}</td>
+      </tr>`;
+    }}).join("");
+  }}
+  document.getElementById("count").textContent = `显示 ${{rows.length}} / ${{DATA.length}} 个项目`;
+}}
+function buildPills(){{
+  const counts = {{}};
+  DATA.forEach(r=> counts[r.track]=(counts[r.track]||0)+1);
+  const order = ["全部", ...Object.keys(counts).sort((a,b)=>counts[b]-counts[a])];
+  const box = document.getElementById("pills");
+  box.innerHTML = order.map(t=>{{
+    const c = t==="全部"?DATA.length:counts[t];
+    return `<span class="pill${{t===state.track?' active':''}}" data-t="${{t}}">${{t}}<span class="c">${{c}}</span></span>`;
+  }}).join("");
+  box.querySelectorAll(".pill").forEach(p=>{{
+    p.onclick=()=>{{ state.track=p.dataset.t; buildPills(); render(); }};
+  }});
+}}
+document.getElementById("aiToggle").onclick=function(){{
+  state.aiOnly=!state.aiOnly; this.classList.toggle("on",state.aiOnly); render();
+}};
+document.getElementById("sortField").onchange=function(){{ state.field=this.value; render(); }};
+document.getElementById("dirBtn").onclick=function(){{
+  state.dir*=-1; this.textContent = state.dir<0?"降序 ↓":"升序 ↑"; render();
+}};
+document.getElementById("thresh").oninput=function(){{ state.thresh=parseInt(this.value)||0; render(); }};
+document.getElementById("search").oninput=function(){{ state.q=this.value.trim(); render(); }};
+
+buildPills();
+render();
+</script>
+</body>
+</html>
+"""
+
+archive_html = os.path.join(TARGET_DIR, "archive", f"{RUN_DATE}.html")
+index_html = os.path.join(TARGET_DIR, "index.html")
+
+for cp in [csv_path, archive_csv]:
+    with open(cp, 'w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for r in final_list:
+            writer.writerow({
+                '排名': r['rank'],
+                '项目': r['repo'],
+                'GitHub链接': r['url'],
+                '赛道': r['track'],
+                '近三月增长': r['growth'],
+                '当前star': r['stars'],
+                '创建时间': r['created'],
+                '是什么': r['what'],
+                '主要用途': r['use']
+            })
+
+total_count = len(final_list)
+ai_agent_count = len(ai_agent_repos)
+ai_agent_pct = f"{(ai_agent_count / total_count * 100):.1f}%" if total_count > 0 else "0.0%"
+data_json = json.dumps(final_list, ensure_ascii=False)
+
+html_content = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Star 增长周榜 · {RUN_DATE}</title>
+<style>
   :root{{
     --paper:#f4f1ea; --surface:#fffdf8; --ink:#1b1a16; --muted:#76726a;
     --line:#e0dacb; --accent:#6a4ba3; --pos:#3f6b4f;
