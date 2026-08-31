@@ -1,0 +1,26 @@
+﻿排名,项目,GitHub链接,赛道,近三月增长,当前star,创建时间,是什么,主要用途
+1,NousResearch/hermes-agent,https://github.com/NousResearch/hermes-agent,AI Agent,198341,224322,2025-07-22,会随用户一起成长的个性化 AI 智能体（agent）,长期记忆与知识积累，越用越懂你，承担日常助理与自动化任务
+2,affaan-m/ECC,https://github.com/affaan-m/ECC,AI Agent,196585,237068,2026-01-18,智能体运行时（agent harness）性能优化系统,为 Claude Code/Codex/Cursor 等编码智能体提供技能、记忆、安全与“先研究再写码”的优化框架
+3,msitarzewski/agency-agents,https://github.com/msitarzewski/agency-agents,AI Agent,119613,138193,2025-10-13,一键在本地部署的“AI 数字代理商”团队,内置多角色专家智能体（前端、项目经理、社区运营等），在终端里协同完成项目
+4,TauricResearch/TradingAgents,https://github.com/TauricResearch/TradingAgents,AI Agent,71963,95368,2024-12-28,多智能体 LLM 金融交易框架,用分析/风控/操盘等不同角色智能体模拟华尔街团队进行市场决策
+5,koala73/worldmonitor,https://github.com/koala73/worldmonitor,AI Agent,65870,78152,2026-01-08,实时全球态势情报仪表盘,AI 聚合新闻、监控地缘局势与关键基础设施，提供统一态势感知界面
+6,bytedance/deer-flow,https://github.com/bytedance/deer-flow,AI Agent,55882,78986,2025-05-07,开源长周期 SuperAgent 编排框架,用沙箱/记忆/工具/子智能体网关，自主完成从几分钟到数小时的研究、编码与创作任务
+7,bojieli/ai-agent-book,https://github.com/bojieli/ai-agent-book,AI Agent,29919,29919,2025-09-09,《深入理解 AI Agent：设计原理与工程实践》开源主仓库,提供全书正文、编译版 PDF 与按章配套代码，系统讲解智能体设计
+8,iOfficeAI/OfficeCLI,https://github.com/iOfficeAI/OfficeCLI,AI Agent,23633,24310,2026-03-15,为 AI 智能体打造的 Office 套件命令行,让智能体读取/编辑/自动化 Word、Excel、PPT，单文件、免装 Office
+9,Zackriya-Solutions/meetily,https://github.com/Zackriya-Solutions/meetily,AI Agent,20567,28007,2024-12-26,本地优先的 AI 会议助手,用本地 Whisper/Parakeet 实时转写、说话人分离与总结，100% 本地处理
+10,andrewyng/openworker,https://github.com/andrewyng/openworker,AI Agent,11989,11989,2026-07-20,吴恩达（Andrew Ng）开源的 AI 智能体/工作流项目,发布后迅速走红，定位为面向智能体协作的开源工作流框架
+11,mattpocock/skills,https://github.com/mattpocock/skills,开发工具,187723,199909,2026-02-03,面向真实工程师的 Claude Code 技能（skills）配置合集,提供 TypeScript/React/测试等工程最佳实践技能，规范 AI 编码助手行为
+12,DietrichGebert/ponytail,https://github.com/DietrichGebert/ponytail,开发工具,94073,94073,2026-06-12,教 AI 智能体像“最懒的资深工程师”思考的技能,倡导“最好的代码是没写的代码”，抑制 AI 过度设计与冗余实现
+13,Graphify-Labs/graphify,https://github.com/Graphify-Labs/graphify,开发工具,92994,101097,2026-04-03,把代码库转成可查询知识图谱的工具,本地 AST 解析代码/文档/SQL，为 Claude Code 等生成带解释的代码图谱，辅助理解大型项目
+14,github/spec-kit,https://github.com/github/spec-kit,Coding Agent,89336,125041,2025-08-21,规范驱动开发（Spec-Driven Development）工具包,先写规范再生成计划与代码，防止长任务中 AI 智能体偏离目标
+15,JuliusBrussee/caveman,https://github.com/JuliusBrussee/caveman,开发工具,85793,95282,2026-04-04,用“原始人”极简表达削减 token 的 Claude Code 技能,通过极简措辞降低约 65% token 消耗，节省 AI 编码成本
+16,thedotmack/claude-mem,https://github.com/thedotmack/claude-mem,开发工具,71200,89344,2025-08-31,跨会话持久化上下文的记忆工具,捕获并压缩智能体会话内容，向未来会话注入相关上下文，免重复交代背景
+17,Leonxlnx/taste-skill,https://github.com/Leonxlnx/taste-skill,开发工具,66847,70430,2026-02-19,给 AI 注入“好品味”的技能,阻止 AI 生成无聊、通用的模板化内容（anti-slop）
+18,rtk-ai/rtk,https://github.com/rtk-ai/rtk,开发工具,66430,74382,2026-01-22,介于命令行与模型之间的中间件（CLI 代理）,对常见开发命令削减 60–90% token 消耗，单文件 Rust 二进制、零依赖
+19,OpenCut-app/OpenCut,https://github.com/OpenCut-app/OpenCut,音视频,53914,80545,2025-06-22,开源的 CapCut（剪映）替代品,在浏览器/本地提供视频剪辑能力，去云端依赖、可自托管
+20,usestrix/strix,https://github.com/usestrix/strix,开发工具,46665,46665,2025-08-05,开源 AI 渗透测试工具,像黑客一样模拟攻击路径、生成 PoC 并给出修复建议，可集成 CI/CD
+21,diegosouzapw/OmniRoute,https://github.com/diegosouzapw/OmniRoute,Coding Agent,37080,37903,2026-02-13,免费 MIT 协议 AI 网关,单端点接入 290+ 供应商/500+ 模型，为编码智能体做配额感知的自动降级与压缩
+22,stablyai/orca,https://github.com/stablyai/orca,Coding Agent,35221,35783,2026-03-17,面向并行智能体编队的 ADE（智能体开发环境）,用自有订阅运行任意编码智能体，支持桌面/移动/VPS
+23,emilkowalski/skills,https://github.com/emilkowalski/skills,开发工具,23762,23991,2026-03-16,面向设计师与工程师的技能（skills）合集,提升 AI 生成界面的质量，规范设计与前端协作
+24,Nutlope/hallmark,https://github.com/Nutlope/hallmark,开发工具,20854,20854,2026-04-27,反 AI-slop 的设计技能,为 Claude Code/Cursor/Codex 提供设计品控，识别并避免套路化生成
+25,ayghri/i-have-adhd,https://github.com/ayghri/i-have-adhd,开发工具,15678,15691,2026-05-13,防止编码智能体“藏答案”的技能,输出 ADHD 友好的清晰结果，避免 AI 把关键答案埋在冗长内容里

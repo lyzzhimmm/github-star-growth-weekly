@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Star 增长周榜 · 2026-08-03</title>
+<style>
+:root{
+  --paper:#f4f1ea; --ink:#1b1a16; --muted:#6f6b60; --line:#e3ddd0; --card:#fffdf8;
+  --accent:#e8482b; --accent-soft:#fbe9e4; --tag:#2f2c25;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 22px 64px;}
+/* masthead */
+.masthead{border-bottom:3px solid var(--ink);padding-bottom:18px;margin-bottom:22px;}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 8px;}
+h1{font-size:clamp(30px,6vw,56px);line-height:.98;letter-spacing:-.03em;font-weight:800;margin:0 0 10px;}
+.sub{color:var(--muted);font-size:14px;margin:0;max-width:70ch;}
+.sub b{color:var(--ink);font-weight:600;}
+/* stat strip */
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 6px;}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;min-width:120px;box-shadow:0 1px 0 rgba(0,0,0,.03);}
+.stat .n{font-family:var(--mono);font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1;}
+.stat .n.accent{color:var(--accent);}
+.stat .l{font-size:12px;color:var(--muted);margin-top:6px;}
+/* toolbar */
+.toolbar{position:sticky;top:0;z-index:20;background:var(--paper);padding:14px 0 12px;border-bottom:1px solid var(--line);margin-bottom:0;}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.ctrl{display:flex;flex-direction:column;gap:4px;}
+.ctrl label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+select,input[type=text],input[type=number]{
+  font-family:var(--sans);font-size:14px;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:9px;padding:9px 11px;outline:none;min-width:120px;
+}
+input[type=text]{min-width:200px;flex:1;}
+select:focus,input:focus{border-color:var(--accent);}
+.toggle{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 13px;cursor:pointer;user-select:none;font-size:14px;font-weight:600;}
+.toggle input{accent-color:var(--accent);width:16px;height:16px;}
+.toggle.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);}
+.dirbtn{font-family:var(--mono);font-size:15px;font-weight:700;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 13px;cursor:pointer;min-width:46px;}
+.dirbtn:hover{border-color:var(--accent);}
+.countbar{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:10px 2px 0;}
+.countbar b{color:var(--ink);}
+/* table */
+.tablewrap{overflow-x:auto;margin-top:6px;border:1px solid var(--line);border-radius:14px;background:var(--card);}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:880px;}
+thead th{position:sticky;top:64px;background:#efe9dd;color:#3a362d;text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap;z-index:5;}
+tbody td{padding:13px 14px;border-bottom:1px solid #efe9dd;vertical-align:top;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:nth-child(even){background:#faf7f0;}
+.rank{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--muted);width:42px;}
+.repo a{color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px solid transparent;}
+.repo a:hover{color:var(--accent);border-bottom-color:var(--accent);}
+.repo .owner{color:var(--muted);font-weight:400;}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.growth{font-weight:700;color:var(--accent);}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap;border:1px solid var(--line);color:var(--tag);background:#f3efe6;}
+.tag.ai{background:var(--accent);color:#fff;border-color:var(--accent);}
+.rowai td:first-child{box-shadow:inset 3px 0 0 var(--accent);}
+.rowai{background:var(--accent-soft) !important;}
+.desc{color:#403c33;max-width:42ch;}
+.use{color:var(--muted);max-width:38ch;}
+.empty{padding:40px;text-align:center;color:var(--muted);font-family:var(--mono);}
+/* footer */
+.foot{margin-top:22px;font-size:12.5px;color:var(--muted);line-height:1.7;border-top:1px solid var(--line);padding-top:16px;}
+.foot code{font-family:var(--mono);background:#efe9dd;padding:1px 6px;border-radius:5px;color:var(--ink);}
+@media (max-width:720px){
+  .desc,.use{display:none;}
+  table{min-width:620px;}
+  .stat{flex:1;min-width:0;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">GitHub · Star 增长周榜</p>
+    <h1>近三月 Star 净增长榜</h1>
+    <p class="sub">统计口径：<b>近三个月（约 90 天）star 净增长 ≥ 2000</b>，且仅收录<b>近三年（36 个月内）创建</b>的公开仓库。生成日期 <b>2026-08-03</b>。</p>
+    <div class="stats">
+      <div class="stat"><div class="n" id="stTotal">25</div><div class="l">总项目数</div></div>
+      <div class="stat"><div class="n accent" id="stAi">10</div><div class="l">AI Agent 赛道</div></div>
+      <div class="stat"><div class="n" id="stRatio">40%</div><div class="l">AI Agent 占比</div></div>
+      <div class="stat"><div class="n" id="stGrowth">1,781,932</div><div class="l">净增长合计</div></div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="controls">
+      <div class="ctrl">
+        <label>赛道</label>
+        <select id="trackSel">
+          <option value="__ALL__">全部</option>
+                    <option value="AI Agent">AI Agent</option>
+          <option value="Coding Agent">Coding Agent</option>
+          <option value="开发工具">开发工具</option>
+          <option value="音视频">音视频</option>
+        </select>
+      </div>
+      <div class="ctrl">
+        <label>只看 AI Agent</label>
+        <label class="toggle" id="aiToggle"><input type="checkbox" id="aiChk">AI Agent 优先</label>
+      </div>
+      <div class="ctrl">
+        <label>排序</label>
+        <select id="sortSel">
+          <option value="default" selected>赛道分组（默认）</option>
+          <option value="growth">近三月增长</option>
+          <option value="stars">当前 star</option>
+          <option value="created">创建时间</option>
+        </select>
+      </div>
+      <div class="ctrl">
+        <label>方向</label>
+        <button class="dirbtn" id="dirBtn" title="切换升/降序">↓</button>
+      </div>
+      <div class="ctrl" style="flex:1;min-width:200px;">
+        <label>搜索（项目名 / 说明）</label>
+        <input type="text" id="search" placeholder="输入关键字，如 agent、视频、记忆…">
+      </div>
+      <div class="ctrl">
+        <label>增长阈值 ≥</label>
+        <input type="number" id="minGrowth" placeholder="2000" min="0" step="500">
+      </div>
+    </div>
+    <div class="countbar">当前显示 <b id="shown">25</b> / 25 个项目</div>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>排名</th><th>项目</th><th>赛道</th><th>近三月增长</th><th>当前 star</th><th>创建时间</th><th class="desc">是什么</th><th class="use">主要用途</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <p class="foot">
+    <b>数据口径与来源：</b>「当前 star」与「创建时间」取自 GitHub 官方 API（api.github.com，采集于 2026-08-03）；「近三月增长」= 当前 star − 约 90 天前的 star 数，其中 90 天前 star 数由 <code>ossinsight.io</code> 月度 star 历史在目标日期前后线性插值得到（月度粒度，误差通常在数百 star 内）。
+    已排除创建时间早于 36 个月的仓库；无法可靠核实增长数据的项目未列入。赛道标签取自固定集合：AI Agent / Coding Agent / 模型·推理 / 前端框架 / 数据库 / 开发工具 / 基础设施 / 音视频 / 多模态 / 机器人。
+  </p>
+</div>
+
+<script>
+const DATA = [{"repo": "NousResearch/hermes-agent", "track": "AI Agent", "growth": 198341, "stars": 224322, "created": "2025-07-22", "what": "会随用户一起成长的个性化 AI 智能体（agent）", "use": "长期记忆与知识积累，越用越懂你，承担日常助理与自动化任务", "link": "https://github.com/NousResearch/hermes-agent", "rank": 1}, {"repo": "affaan-m/ECC", "track": "AI Agent", "growth": 196585, "stars": 237068, "created": "2026-01-18", "what": "智能体运行时（agent harness）性能优化系统", "use": "为 Claude Code/Codex/Cursor 等编码智能体提供技能、记忆、安全与“先研究再写码”的优化框架", "link": "https://github.com/affaan-m/ECC", "rank": 2}, {"repo": "mattpocock/skills", "track": "开发工具", "growth": 187723, "stars": 199909, "created": "2026-02-03", "what": "面向真实工程师的 Claude Code 技能（skills）配置合集", "use": "提供 TypeScript/React/测试等工程最佳实践技能，规范 AI 编码助手行为", "link": "https://github.com/mattpocock/skills", "rank": 11}, {"repo": "msitarzewski/agency-agents", "track": "AI Agent", "growth": 119613, "stars": 138193, "created": "2025-10-13", "what": "一键在本地部署的“AI 数字代理商”团队", "use": "内置多角色专家智能体（前端、项目经理、社区运营等），在终端里协同完成项目", "link": "https://github.com/msitarzewski/agency-agents", "rank": 3}, {"repo": "DietrichGebert/ponytail", "track": "开发工具", "growth": 94073, "stars": 94073, "created": "2026-06-12", "what": "教 AI 智能体像“最懒的资深工程师”思考的技能", "use": "倡导“最好的代码是没写的代码”，抑制 AI 过度设计与冗余实现", "link": "https://github.com/DietrichGebert/ponytail", "rank": 12}, {"repo": "Graphify-Labs/graphify", "track": "开发工具", "growth": 92994, "stars": 101097, "created": "2026-04-03", "what": "把代码库转成可查询知识图谱的工具", "use": "本地 AST 解析代码/文档/SQL，为 Claude Code 等生成带解释的代码图谱，辅助理解大型项目", "link": "https://github.com/Graphify-Labs/graphify", "rank": 13}, {"repo": "github/spec-kit", "track": "Coding Agent", "growth": 89336, "stars": 125041, "created": "2025-08-21", "what": "规范驱动开发（Spec-Driven Development）工具包", "use": "先写规范再生成计划与代码，防止长任务中 AI 智能体偏离目标", "link": "https://github.com/github/spec-kit", "rank": 14}, {"repo": "JuliusBrussee/caveman", "track": "开发工具", "growth": 85793, "stars": 95282, "created": "2026-04-04", "what": "用“原始人”极简表达削减 token 的 Claude Code 技能", "use": "通过极简措辞降低约 65% token 消耗，节省 AI 编码成本", "link": "https://github.com/JuliusBrussee/caveman", "rank": 15}, {"repo": "TauricResearch/TradingAgents", "track": "AI Agent", "growth": 71963, "stars": 95368, "created": "2024-12-28", "what": "多智能体 LLM 金融交易框架", "use": "用分析/风控/操盘等不同角色智能体模拟华尔街团队进行市场决策", "link": "https://github.com/TauricResearch/TradingAgents", "rank": 4}, {"repo": "thedotmack/claude-mem", "track": "开发工具", "growth": 71200, "stars": 89344, "created": "2025-08-31", "what": "跨会话持久化上下文的记忆工具", "use": "捕获并压缩智能体会话内容，向未来会话注入相关上下文，免重复交代背景", "link": "https://github.com/thedotmack/claude-mem", "rank": 16}, {"repo": "Leonxlnx/taste-skill", "track": "开发工具", "growth": 66847, "stars": 70430, "created": "2026-02-19", "what": "给 AI 注入“好品味”的技能", "use": "阻止 AI 生成无聊、通用的模板化内容（anti-slop）", "link": "https://github.com/Leonxlnx/taste-skill", "rank": 17}, {"repo": "rtk-ai/rtk", "track": "开发工具", "growth": 66430, "stars": 74382, "created": "2026-01-22", "what": "介于命令行与模型之间的中间件（CLI 代理）", "use": "对常见开发命令削减 60–90% token 消耗，单文件 Rust 二进制、零依赖", "link": "https://github.com/rtk-ai/rtk", "rank": 18}, {"repo": "koala73/worldmonitor", "track": "AI Agent", "growth": 65870, "stars": 78152, "created": "2026-01-08", "what": "实时全球态势情报仪表盘", "use": "AI 聚合新闻、监控地缘局势与关键基础设施，提供统一态势感知界面", "link": "https://github.com/koala73/worldmonitor", "rank": 5}, {"repo": "bytedance/deer-flow", "track": "AI Agent", "growth": 55882, "stars": 78986, "created": "2025-05-07", "what": "开源长周期 SuperAgent 编排框架", "use": "用沙箱/记忆/工具/子智能体网关，自主完成从几分钟到数小时的研究、编码与创作任务", "link": "https://github.com/bytedance/deer-flow", "rank": 6}, {"repo": "OpenCut-app/OpenCut", "track": "音视频", "growth": 53914, "stars": 80545, "created": "2025-06-22", "what": "开源的 CapCut（剪映）替代品", "use": "在浏览器/本地提供视频剪辑能力，去云端依赖、可自托管", "link": "https://github.com/OpenCut-app/OpenCut", "rank": 19}, {"repo": "usestrix/strix", "track": "开发工具", "growth": 46665, "stars": 46665, "created": "2025-08-05", "what": "开源 AI 渗透测试工具", "use": "像黑客一样模拟攻击路径、生成 PoC 并给出修复建议，可集成 CI/CD", "link": "https://github.com/usestrix/strix", "rank": 20}, {"repo": "diegosouzapw/OmniRoute", "track": "Coding Agent", "growth": 37080, "stars": 37903, "created": "2026-02-13", "what": "免费 MIT 协议 AI 网关", "use": "单端点接入 290+ 供应商/500+ 模型，为编码智能体做配额感知的自动降级与压缩", "link": "https://github.com/diegosouzapw/OmniRoute", "rank": 21}, {"repo": "stablyai/orca", "track": "Coding Agent", "growth": 35221, "stars": 35783, "created": "2026-03-17", "what": "面向并行智能体编队的 ADE（智能体开发环境）", "use": "用自有订阅运行任意编码智能体，支持桌面/移动/VPS", "link": "https://github.com/stablyai/orca", "rank": 22}, {"repo": "bojieli/ai-agent-book", "track": "AI Agent", "growth": 29919, "stars": 29919, "created": "2025-09-09", "what": "《深入理解 AI Agent：设计原理与工程实践》开源主仓库", "use": "提供全书正文、编译版 PDF 与按章配套代码，系统讲解智能体设计", "link": "https://github.com/bojieli/ai-agent-book", "rank": 7}, {"repo": "emilkowalski/skills", "track": "开发工具", "growth": 23762, "stars": 23991, "created": "2026-03-16", "what": "面向设计师与工程师的技能（skills）合集", "use": "提升 AI 生成界面的质量，规范设计与前端协作", "link": "https://github.com/emilkowalski/skills", "rank": 23}, {"repo": "iOfficeAI/OfficeCLI", "track": "AI Agent", "growth": 23633, "stars": 24310, "created": "2026-03-15", "what": "为 AI 智能体打造的 Office 套件命令行", "use": "让智能体读取/编辑/自动化 Word、Excel、PPT，单文件、免装 Office", "link": "https://github.com/iOfficeAI/OfficeCLI", "rank": 8}, {"repo": "Nutlope/hallmark", "track": "开发工具", "growth": 20854, "stars": 20854, "created": "2026-04-27", "what": "反 AI-slop 的设计技能", "use": "为 Claude Code/Cursor/Codex 提供设计品控，识别并避免套路化生成", "link": "https://github.com/Nutlope/hallmark", "rank": 24}, {"repo": "Zackriya-Solutions/meetily", "track": "AI Agent", "growth": 20567, "stars": 28007, "created": "2024-12-26", "what": "本地优先的 AI 会议助手", "use": "用本地 Whisper/Parakeet 实时转写、说话人分离与总结，100% 本地处理", "link": "https://github.com/Zackriya-Solutions/meetily", "rank": 9}, {"repo": "ayghri/i-have-adhd", "track": "开发工具", "growth": 15678, "stars": 15691, "created": "2026-05-13", "what": "防止编码智能体“藏答案”的技能", "use": "输出 ADHD 友好的清晰结果，避免 AI 把关键答案埋在冗长内容里", "link": "https://github.com/ayghri/i-have-adhd", "rank": 25}, {"repo": "andrewyng/openworker", "track": "AI Agent", "growth": 11989, "stars": 11989, "created": "2026-07-20", "what": "吴恩达（Andrew Ng）开源的 AI 智能体/工作流项目", "use": "发布后迅速走红，定位为面向智能体协作的开源工作流框架", "link": "https://github.com/andrewyng/openworker", "rank": 10}];
+const state = { track:"__ALL__", aiOnly:false, sort:"default", dir:"desc", q:"", min:0 };
+
+const trackSel=document.getElementById("trackSel");
+const aiChk=document.getElementById("aiChk");
+const aiToggle=document.getElementById("aiToggle");
+const sortSel=document.getElementById("sortSel");
+const dirBtn=document.getElementById("dirBtn");
+const search=document.getElementById("search");
+const minGrowth=document.getElementById("minGrowth");
+const tbody=document.getElementById("tbody");
+const shown=document.getElementById("shown");
+
+function fmt(n){return n.toLocaleString("en-US");}
+
+function defaultCmp(a,b){
+  const aAI=a.track==="AI Agent", bAI=b.track==="AI Agent";
+  if(aAI!==bAI) return aAI?-1:1;
+  return b.growth-a.growth;
+}
+function sortData(rows){
+  const s=state.sort, dir=state.dir==="asc"?1:-1;
+  let r=rows.slice();
+  if(s==="default"){ r.sort(defaultCmp); }
+  else{
+    r.sort((a,b)=>{
+      let av,bv;
+      if(s==="growth"){av=a.growth;bv=b.growth;}
+      else if(s==="stars"){av=a.stars;bv=b.stars;}
+      else {av=a.created;bv=b.created;}
+      if(av<bv)return -1*dir; if(av>bv)return 1*dir; return 0;
+    });
+  }
+  return r;
+}
+function render(){
+  let rows=DATA.filter(d=>{
+    if(state.aiOnly && d.track!=="AI Agent") return false;
+    if(!state.aiOnly && state.track!=="__ALL__" && d.track!==state.track) return false;
+    if(state.q){
+      const q=state.q.toLowerCase();
+      const hay=(d.repo+" "+d.what+" "+d.use+" "+d.track).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    if(state.min && d.growth < state.min) return false;
+    return true;
+  });
+  rows=sortData(rows);
+  shown.textContent=rows.length;
+  if(!rows.length){ tbody.innerHTML='<tr><td colspan="8" class="empty">没有符合当前筛选条件的项目</td></tr>'; return; }
+  let html="";
+  rows.forEach((d,i)=>{
+    const ai=d.track==="AI Agent";
+    const [owner,name]=d.repo.split("/");
+    html+=`<tr class="${ai?'rowai':''}">`
+      +`<td class="rank">${i+1}</td>`
+      +`<td class="repo"><a href="${d.link}" target="_blank" rel="noopener"><span class="owner">${owner}/</span>${name}</a></td>`
+      +`<td><span class="tag ${ai?'ai':''}">${d.track}</span></td>`
+      +`<td class="num growth">+${fmt(d.growth)}</td>`
+      +`<td class="num">${fmt(d.stars)}</td>`
+      +`<td class="num">${d.created}</td>`
+      +`<td class="desc">${d.what}</td>`
+      +`<td class="use">${d.use}</td>`
+      +`</tr>`;
+  });
+  tbody.innerHTML=html;
+}
+trackSel.addEventListener("change",e=>{state.track=e.target.value;render();});
+aiChk.addEventListener("change",e=>{state.aiOnly=e.target.checked;aiToggle.classList.toggle("on",e.target.checked);trackSel.disabled=e.target.checked;render();});
+sortSel.addEventListener("change",e=>{state.sort=e.target.value;render();});
+dirBtn.addEventListener("click",()=>{state.dir=state.dir==="desc"?"asc":"desc";dirBtn.textContent=state.dir==="desc"?"↓":"↑";render();});
+search.addEventListener("input",e=>{state.q=e.target.value.trim();render();});
+minGrowth.addEventListener("input",e=>{state.min=parseInt(e.target.value)||0;render();});
+render();
+</script>
+</body>
+</html>

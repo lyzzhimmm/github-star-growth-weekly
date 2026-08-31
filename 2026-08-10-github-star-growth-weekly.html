@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Star 增长周榜 · 2026-08-10</title>
+<style>
+:root{
+  --paper:#f4f1ea; --surface:#fffdf8; --ink:#211f1c; --muted:#6f6a60;
+  --line:#e6e0d3; --accent:#c8452b; --accent-soft:#f3ddd3;
+  --t1:#c8452b;--t2:#2f6f6a;--t3:#3a6ea5;--t4:#8a6d3b;--t5:#7a4f9e;--t6:#b5651d;--t7:#4f8a5b;--t8:#a23b6a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+header.top{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:8px}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:Georgia,"Songti SC","SimSun",serif;font-size:clamp(30px,5vw,52px);
+  line-height:1.05;margin:6px 0 10px;font-weight:800;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:15px;max-width:760px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 18px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat .k{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.stat .v{font-size:clamp(24px,3.4vw,34px);font-weight:800;font-family:Georgia,serif;margin-top:4px}
+.stat .v small{font-size:14px;color:var(--muted);font-weight:600}
+.stat.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+.stat.accent .k{color:#f6d8cf}
+.dist{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:24px}
+.dist h3{margin:0 0 12px;font-size:13px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;font-weight:700}
+.bar-row{display:grid;grid-template-columns:88px 1fr 34px;align-items:center;gap:10px;margin:7px 0}
+.bar-label{font-size:13px;color:var(--ink)}
+.bar-track{height:9px;background:var(--paper);border-radius:6px;overflow:hidden}
+.bar-fill{display:block;height:100%;background:var(--accent);border-radius:6px}
+.bar-num{font-size:13px;font-weight:700;text-align:right}
+.controls{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.92);
+  backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;
+  padding:14px;margin-bottom:16px;display:flex;flex-direction:column;gap:12px}
+.ctl-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ctl-row label{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.04em;margin-right:2px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  padding:6px 12px;border-radius:999px;font-size:13px;cursor:pointer;transition:.15s;font-weight:600}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:600}
+.switch input{display:none}
+.switch .slot{width:40px;height:22px;background:var(--line);border-radius:999px;position:relative;transition:.2s}
+.switch .slot::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.switch input:checked + .slot{background:var(--accent)}
+.switch input:checked + .slot::after{transform:translateX(18px)}
+select,input[type=search],input[type=number]{
+  font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--line);
+  border-radius:9px;background:var(--surface);color:var(--ink)}
+input[type=search]{min-width:220px}
+input[type=number]{width:110px}
+.btn-dir{border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:7px 11px;cursor:pointer;font-weight:700;font-size:13px}
+.btn-dir:hover{border-color:var(--accent)}
+.count-note{font-size:13px;color:var(--muted);font-weight:600}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:920px;font-size:13.5px}
+thead th{position:sticky;top:142px;background:var(--ink);color:#fff;text-align:left;
+  padding:11px 12px;font-size:12px;letter-spacing:.03em;white-space:nowrap;z-index:5}
+tbody td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:#faf7f0}
+tbody tr:hover{background:var(--accent-soft)}
+.rank{font-weight:800;font-family:Georgia,serif;color:var(--muted);width:34px}
+.repo a{color:var(--accent);text-decoration:none;font-weight:700}
+.repo a:hover{text-decoration:underline}
+.repo .sub-repo{font-size:11px;color:var(--muted);font-weight:600}
+.badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11.5px;font-weight:700;color:#fff;white-space:nowrap}
+.num{font-variant-numeric:tabular-nums;font-weight:700}
+.growth{color:var(--accent);font-weight:800}
+.what{color:var(--ink)}
+.use{color:var(--muted);font-size:12.5px;max-width:260px}
+footer{margin-top:28px;color:var(--muted);font-size:12.5px;line-height:1.7;border-top:1px solid var(--line);padding-top:16px}
+footer b{color:var(--ink)}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}thead th{top:188px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Weekly GitHub Star Growth</div>
+  <h1>GitHub 开源项目 Star 增长周榜</h1>
+  <div class="sub">统计口径：近三个月（约 90 天）GitHub star <b>净增长 ≥ 2000</b>，且仅保留<b>近三年内创建</b>的公开仓库。
+  当前 star 与创建时间取自 GitHub 官方 API；净增长 = 当前 star − ossinsight.io 月度 star 历史在「今天−90 天」处的线性插值（月度粒度，近似）。</div>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="k">数据日期</div><div class="v">2026-08-10</div></div>
+  <div class="stat"><div class="k">入榜项目总数</div><div class="v">103</div></div>
+  <div class="stat accent"><div class="k">AI Agent 赛道</div><div class="v">40 <small>个</small></div></div>
+  <div class="stat"><div class="k">AI Agent 占比</div><div class="v">38.8<small>%</small></div></div>
+</div>
+
+<div class="dist">
+  <h3>赛道分布</h3>
+  <div class="bar-row"><span class="bar-label">AI Agent</span>
+    <span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span>
+    <span class="bar-num">40</span></div><div class="bar-row"><span class="bar-label">开发工具</span>
+    <span class="bar-track"><span class="bar-fill" style="width:62.5%"></span></span>
+    <span class="bar-num">25</span></div><div class="bar-row"><span class="bar-label">Coding Agent</span>
+    <span class="bar-track"><span class="bar-fill" style="width:35.0%"></span></span>
+    <span class="bar-num">14</span></div><div class="bar-row"><span class="bar-label">基础设施</span>
+    <span class="bar-track"><span class="bar-fill" style="width:15.0%"></span></span>
+    <span class="bar-num">6</span></div><div class="bar-row"><span class="bar-label">模型/推理</span>
+    <span class="bar-track"><span class="bar-fill" style="width:15.0%"></span></span>
+    <span class="bar-num">6</span></div><div class="bar-row"><span class="bar-label">音视频</span>
+    <span class="bar-track"><span class="bar-fill" style="width:12.5%"></span></span>
+    <span class="bar-num">5</span></div><div class="bar-row"><span class="bar-label">前端框架</span>
+    <span class="bar-track"><span class="bar-fill" style="width:10.0%"></span></span>
+    <span class="bar-num">4</span></div><div class="bar-row"><span class="bar-label">多模态</span>
+    <span class="bar-track"><span class="bar-fill" style="width:7.5%"></span></span>
+    <span class="bar-num">3</span></div>
+</div>
+
+<div class="controls">
+  <div class="ctl-row">
+    <label>赛道</label>
+    <div class="chips" id="trackChips"></div>
+  </div>
+  <div class="ctl-row">
+    <label class="switch"><input type="checkbox" id="aiOnly"><span class="slot"></span>只看 AI Agent</label>
+    <label>排序</label>
+    <select id="sortKey">
+      <option value="default">默认（AI Agent 优先）</option>
+      <option value="growth">近三月增长</option>
+      <option value="stars">当前 star</option>
+      <option value="created">创建时间</option>
+    </select>
+    <button class="btn-dir" id="sortDir">降序 ▼</button>
+    <span class="count-note" id="countNote"></span>
+  </div>
+  <div class="ctl-row">
+    <label>搜索</label>
+    <input type="search" id="search" placeholder="项目名 / 中文说明 / 赛道…（实时过滤）">
+    <label>增长阈值 ≥</label>
+    <input type="number" id="minGrowth" min="0" placeholder="2000">
+    <span style="font-size:12px;color:var(--muted)">（留空=不限）</span>
+  </div>
+</div>
+
+<div class="tablewrap">
+  <table>
+    <thead><tr>
+      <th>排名</th><th>项目</th><th>赛道</th><th>近三月增长</th>
+      <th>当前 star</th><th>创建时间</th><th>是什么</th><th>主要用途</th>
+    </tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<footer>
+  <p><b>方法说明：</b>候选池来自 GitHub 搜索（创建于近 36 个月内、star &gt; 3000 的热门仓库）并结合 2026 年趋势榜单交叉补充；
+  逐项经 GitHub API 核实当前 star 与创建时间、经 ossinsight.io 核实 star 历史以计算净增长。无法可靠核实增长的项目已剔除。</p>
+  <p>部分条目为 Agent 技能合集 / 学习资源 / 精选列表（已在「是什么」中注明），属 2026 年 Agent 生态现象，按最贴近的固定赛道归类。
+  增长为月度粒度近似，误差通常在数百 star 内。</p>
+  <p>生成于 2026-08-10 · 单文件离线可浏览（CSS/JS 内联）。</p>
+</footer>
+</div>
+
+<script>
+const ROWS = [{"full": "openclaw/openclaw", "link": "https://github.com/openclaw/openclaw", "track": "AI Agent", "growth": 280197, "stars": 385706, "created": "2025-11-24", "what": "个人 AI Agent 操作系统", "use": "跨平台执行邮件/文件/自动化等日常任务", "rank": 1}, {"full": "obra/superpowers", "link": "https://github.com/obra/superpowers", "track": "AI Agent", "growth": 226487, "stars": 269756, "created": "2025-10-09", "what": "Agent 化软件开发方法论与技能框架", "use": "用 Agent 方式组织与落地软件开发", "rank": 2}, {"full": "NousResearch/hermes-agent", "link": "https://github.com/NousResearch/hermes-agent", "track": "AI Agent", "growth": 201751, "stars": 227966, "created": "2025-07-22", "what": "可成长的通用 AI Agent", "use": "多场景自主任务执行与协作", "rank": 3}, {"full": "mattpocock/skills", "link": "https://github.com/mattpocock/skills", "track": "AI Agent", "growth": 198820, "stars": 211256, "created": "2026-02-03", "what": "面向工程师的 Agent 技能合集", "use": "为编程 Agent 提供工程最佳实践技能", "rank": 4}, {"full": "affaan-m/ECC", "link": "https://github.com/affaan-m/ECC", "track": "AI Agent", "growth": 198372, "stars": 239034, "created": "2026-01-18", "what": "Agent harness 性能优化系统", "use": "提升 Agent 编排效率与技能执行", "rank": 5}, {"full": "anthropics/skills", "link": "https://github.com/anthropics/skills", "track": "AI Agent", "growth": 128077, "stars": 167251, "created": "2025-09-22", "what": "Anthropic 官方 Agent Skills 仓库", "use": "为 Claude 等 Agent 提供可复用技能", "rank": 6}, {"full": "msitarzewski/agency-agents", "link": "https://github.com/msitarzewski/agency-agents", "track": "AI Agent", "growth": 122119, "stars": 140787, "created": "2025-10-13", "what": "一站式 AI 代理工作流工具", "use": "从前端到部署的代理任务编排", "rank": 7}, {"full": "DietrichGebert/ponytail", "link": "https://github.com/DietrichGebert/ponytail", "track": "AI Agent", "growth": 99396, "stars": 99396, "created": "2026-06-12", "what": "让 Agent 像资深工程师般省 token 的技能", "use": "减少 Agent 冗余输出", "rank": 8}, {"full": "nextlevelbuilder/ui-ux-pro-max-skill", "link": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill", "track": "AI Agent", "growth": 95157, "stars": 115034, "created": "2025-11-30", "what": "提供设计智能的 AI 技能", "use": "用 AI 生成产品级 UI/UX", "rank": 9}, {"full": "addyosmani/agent-skills", "link": "https://github.com/addyosmani/agent-skills", "track": "AI Agent", "growth": 78346, "stars": 85185, "created": "2026-02-15", "what": "面向 AI 编程 Agent 的生产级工程技能", "use": "提升 Agent 代码质量", "rank": 10}, {"full": "earendil-works/pi", "link": "https://github.com/earendil-works/pi", "track": "AI Agent", "growth": 74600, "stars": 86061, "created": "2025-08-09", "what": "统一 LLM API+Agent 循环+TUI 工具包", "use": "快速搭建 Agent 应用", "rank": 11}, {"full": "TauricResearch/TradingAgents", "link": "https://github.com/TauricResearch/TradingAgents", "track": "AI Agent", "growth": 73397, "stars": 96870, "created": "2024-12-28", "what": "多 Agent LLM 金融交易框架", "use": "自动化量化交易决策", "rank": 12}, {"full": "thedotmack/claude-mem", "link": "https://github.com/thedotmack/claude-mem", "track": "AI Agent", "growth": 72034, "stars": 90217, "created": "2025-08-31", "what": "跨会话持久化 Agent 记忆", "use": "让 Agent 记住历史上下文", "rank": 13}, {"full": "Leonxlnx/taste-skill", "link": "https://github.com/Leonxlnx/taste-skill", "track": "AI Agent", "growth": 70838, "stars": 74633, "created": "2026-02-19", "what": "给 AI 提供审美品味的技能", "use": "避免 AI 生成「土味」设计", "rank": 14}, {"full": "Panniantong/Agent-Reach", "link": "https://github.com/Panniantong/Agent-Reach", "track": "AI Agent", "growth": 65495, "stars": 69769, "created": "2026-02-24", "what": "让 Agent 读取全网内容的工具", "use": "给 Agent 联网阅读能力", "rank": 15}, {"full": "paperclipai/paperclip", "link": "https://github.com/paperclipai/paperclip", "track": "AI Agent", "growth": 64016, "stars": 76110, "created": "2026-03-02", "what": "企业管理 Agent 的开源应用", "use": "编排与监控工作流 Agent", "rank": 16}, {"full": "datawhalechina/hello-agents", "link": "https://github.com/datawhalechina/hello-agents", "track": "AI Agent", "growth": 58909, "stars": 71844, "created": "2025-09-07", "what": "《从零构建智能体》开源教程", "use": "系统学习 Agent 原理与实践", "rank": 17}, {"full": "666ghj/MiroFish", "link": "https://github.com/666ghj/MiroFish", "track": "AI Agent", "growth": 58699, "stars": 70807, "created": "2025-11-26", "what": "通用群体智能引擎", "use": "多 Agent 协作预测与决策", "rank": 18}, {"full": "bytedance/deer-flow", "link": "https://github.com/bytedance/deer-flow", "track": "AI Agent", "growth": 56477, "stars": 79615, "created": "2025-05-07", "what": "字节开源长程 SuperAgent 框架", "use": "研究/编码/创作自主任务", "rank": 19}, {"full": "santifer/career-ops", "link": "https://github.com/santifer/career-ops", "track": "AI Agent", "growth": 55287, "stars": 63319, "created": "2026-04-04", "what": "开源 AI 求职工具", "use": "扫描职位/评估匹配/自动投递", "rank": 20}, {"full": "ComposioHQ/awesome-claude-skills", "link": "https://github.com/ComposioHQ/awesome-claude-skills", "track": "AI Agent", "growth": 54244, "stars": 72153, "created": "2025-10-17", "what": "Claude 技能精选列表", "use": "找高质量 Agent 技能", "rank": 21}, {"full": "ruvnet/ruflo", "link": "https://github.com/ruvnet/ruflo", "track": "AI Agent", "growth": 53960, "stars": 67510, "created": "2025-06-02", "what": "Agent 元编排框架（多 Agent 集群）", "use": "部署多 Agent 协作", "rank": 22}, {"full": "mvanhorn/last30days-skill", "link": "https://github.com/mvanhorn/last30days-skill", "track": "AI Agent", "growth": 53160, "stars": 57766, "created": "2026-01-23", "what": "跨平台研究话题的 Agent 技能", "use": "汇总近 30 天社媒趋势", "rank": 23}, {"full": "ZhuLinsen/daily_stock_analysis", "link": "https://github.com/ZhuLinsen/daily_stock_analysis", "track": "AI Agent", "growth": 52467, "stars": 61262, "created": "2026-01-10", "what": "LLM 股票智能分析系统", "use": "行情/新闻/决策看板与推送", "rank": 24}, {"full": "google-gemini/gemini-cli", "link": "https://github.com/google-gemini/gemini-cli", "track": "AI Agent", "growth": 51688, "stars": 106433, "created": "2025-04-17", "what": "把 Gemini 接入终端的开源 Agent", "use": "命令行 AI 编程与任务", "rank": 25}, {"full": "gsd-build/get-shit-done", "link": "https://github.com/gsd-build/get-shit-done", "track": "AI Agent", "growth": 50776, "stars": 64726, "created": "2025-12-14", "what": "轻量元提示/上下文工程工具", "use": "快速搭建 Agent 工作流", "rank": 26}, {"full": "MemPalace/mempalace", "link": "https://github.com/MemPalace/mempalace", "track": "AI Agent", "growth": 49929, "stars": 58264, "created": "2026-04-05", "what": "开源 AI 记忆系统", "use": "给 Agent 长期记忆", "rank": 27}, {"full": "open-webui/open-webui", "link": "https://github.com/open-webui/open-webui", "track": "AI Agent", "growth": 42375, "stars": 148335, "created": "2023-10-06", "what": "自托管 AI 聊天界面", "use": "本地/私有化部署 LLM 对话", "rank": 28}, {"full": "browser-use/browser-use", "link": "https://github.com/browser-use/browser-use", "track": "AI Agent", "growth": 40639, "stars": 108498, "created": "2024-10-31", "what": "让 AI 操作浏览器的工具", "use": "网页自动化任务", "rank": 29}, {"full": "VoltAgent/awesome-openclaw-skills", "link": "https://github.com/VoltAgent/awesome-openclaw-skills", "track": "AI Agent", "growth": 39553, "stars": 51850, "created": "2026-01-25", "what": "OpenClaw 技能合集（5400+）", "use": "找 OpenClaw 技能", "rank": 30}, {"full": "bojieli/ai-agent-book", "link": "https://github.com/bojieli/ai-agent-book", "track": "AI Agent", "growth": 35167, "stars": 35250, "created": "2025-09-09", "what": "《深入理解 AI Agent》开源书", "use": "系统学习 Agent 设计与工程", "rank": 31}, {"full": "microsoft/ai-agents-for-beginners", "link": "https://github.com/microsoft/ai-agents-for-beginners", "track": "AI Agent", "growth": 34946, "stars": 71744, "created": "2024-11-28", "what": "18 课 AI Agent 入门教程", "use": "零基础学做 Agent", "rank": 32}, {"full": "aaif-goose/goose", "link": "https://github.com/aaif-goose/goose", "track": "AI Agent", "growth": 29661, "stars": 52610, "created": "2024-08-23", "what": "可扩展开源 AI Agent", "use": "超越代码建议的自主任务", "rank": 33}, {"full": "virattt/ai-hedge-fund", "link": "https://github.com/virattt/ai-hedge-fund", "track": "AI Agent", "growth": 23335, "stars": 62744, "created": "2024-11-29", "what": "AI 对冲基金团队（多 Agent）", "use": "模拟/辅助量化投资", "rank": 34}, {"full": "OpenHands/OpenHands", "link": "https://github.com/OpenHands/OpenHands", "track": "AI Agent", "growth": 22970, "stars": 83558, "created": "2024-03-13", "what": "AI 驱动的全自动软件开发平台", "use": "自主完成编码任务", "rank": 35}, {"full": "crewAIInc/crewAI", "link": "https://github.com/crewAIInc/crewAI", "track": "AI Agent", "growth": 19251, "stars": 56869, "created": "2023-10-27", "what": "角色扮演多 Agent 编排框架", "use": "快速搭建协作 Agent 团队", "rank": 36}, {"full": "virgiliojr94/book-to-skill", "link": "https://github.com/virgiliojr94/book-to-skill", "track": "AI Agent", "growth": 19248, "stars": 19470, "created": "2026-05-01", "what": "把技术书 PDF 转成 Agent 技能的工具", "use": "快速沉淀领域知识技能", "rank": 37}, {"full": "ayghri/i-have-adhd", "link": "https://github.com/ayghri/i-have-adhd", "track": "AI Agent", "growth": 18784, "stars": 18798, "created": "2026-05-13", "what": "防止 Agent 冗长铺垫的技能", "use": "让 Agent 直接给结论", "rank": 38}, {"full": "microsoft/autogen", "link": "https://github.com/microsoft/autogen", "track": "AI Agent", "growth": 12098, "stars": 60332, "created": "2023-08-18", "what": "用于 Agent AI 的编程框架", "use": "多 Agent 编排与对话", "rank": 39}, {"full": "FoundationAgents/OpenManus", "link": "https://github.com/FoundationAgents/OpenManus", "track": "AI Agent", "growth": 10992, "stars": 57913, "created": "2025-03-06", "what": "开源通用 Agent 平台（Manus 开源替代）", "use": "自主完成复杂任务", "rank": 40}, {"full": "ultraworkers/claw-code", "link": "https://github.com/ultraworkers/claw-code", "track": "Coding Agent", "growth": 169150, "stars": 195016, "created": "2026-03-31", "what": "由 Agent 管理的 Rust 代码项目", "use": "展示 Agent 驱动的开发流程", "rank": 41}, {"full": "anomalyco/opencode", "link": "https://github.com/anomalyco/opencode", "track": "Coding Agent", "growth": 140110, "stars": 195453, "created": "2025-04-30", "what": "开源命令行编程 Agent", "use": "在终端自动编写与修改代码", "rank": 42}, {"full": "garrytan/gstack", "link": "https://github.com/garrytan/gstack", "track": "Coding Agent", "growth": 110774, "stars": 127205, "created": "2026-03-11", "what": "Claude Code 开箱即用配置集（23 个工具）", "use": "快速搭建 Agent 开发环境", "rank": 43}, {"full": "farion1231/cc-switch", "link": "https://github.com/farion1231/cc-switch", "track": "Coding Agent", "growth": 109468, "stars": 125963, "created": "2025-08-04", "what": "Claude Code 跨平台桌面助手", "use": "统一管理多个 Claude Code 会话", "rank": 44}, {"full": "firecrawl/firecrawl", "link": "https://github.com/firecrawl/firecrawl", "track": "开发工具", "growth": 100111, "stars": 164235, "created": "2024-04-15", "what": "面向 LLM 的网页抓取/搜索 API", "use": "为 AI 提供干净的联网数据", "rank": 45}, {"full": "Graphify-Labs/graphify", "link": "https://github.com/Graphify-Labs/graphify", "track": "开发工具", "growth": 96402, "stars": 104639, "created": "2026-04-03", "what": "代码库知识图谱生成工具", "use": "理解大型代码库结构与依赖", "rank": 46}, {"full": "anthropics/claude-code", "link": "https://github.com/anthropics/claude-code", "track": "Coding Agent", "growth": 96295, "stars": 140842, "created": "2025-02-22", "what": "终端里的 Agent 化编程工具", "use": "自然语言驱动的代码编写与重构", "rank": 47}, {"full": "microsoft/markitdown", "link": "https://github.com/microsoft/markitdown", "track": "开发工具", "growth": 96184, "stars": 172649, "created": "2024-11-13", "what": "文件/办公文档转 Markdown 的 Python 工具", "use": "为 LLM/RAG 准备文档输入", "rank": 48}, {"full": "VoltAgent/awesome-design-md", "link": "https://github.com/VoltAgent/awesome-design-md", "track": "开发工具", "growth": 93075, "stars": 107464, "created": "2026-03-31", "what": "知名设计系统 DESIGN.md 合集", "use": "参考大厂设计规范", "rank": 49}, {"full": "github/spec-kit", "link": "https://github.com/github/spec-kit", "track": "Coding Agent", "growth": 90219, "stars": 125997, "created": "2025-08-21", "what": "规格驱动开发（SDD）工具包", "use": "用规格文档引导 AI 编程", "rank": 50}, {"full": "JuliusBrussee/caveman", "link": "https://github.com/JuliusBrussee/caveman", "track": "Coding Agent", "growth": 87519, "stars": 97082, "created": "2026-04-04", "what": "极简省 token 的 Claude Code 技能", "use": "用最少 token 完成编码", "rank": 51}, {"full": "DigitalPlatDev/FreeDomain", "link": "https://github.com/DigitalPlatDev/FreeDomain", "track": "基础设施", "growth": 83895, "stars": 192053, "created": "2024-05-30", "what": "免费域名分发平台", "use": "个人与项目免费获取域名", "rank": 52}, {"full": "nexu-io/open-design", "link": "https://github.com/nexu-io/open-design", "track": "前端框架", "growth": 78964, "stars": 84749, "created": "2026-04-28", "what": "本地优先的开源设计工具（Claude Design 替代）", "use": "本地用 AI 做界面设计", "rank": 53}, {"full": "karpathy/autoresearch", "link": "https://github.com/karpathy/autoresearch", "track": "模型/推理", "growth": 78073, "stars": 93523, "created": "2026-03-06", "what": "单 GPU 上跑科研的实验 Agent", "use": "自动化深度学习研究", "rank": 54}, {"full": "ruvnet/RuView", "link": "https://github.com/ruvnet/RuView", "track": "多模态", "growth": 74106, "stars": 89098, "created": "2025-06-07", "what": "用 WiFi 信号做实时空间感知的工具", "use": "无摄像头的环境监测", "rank": 55}, {"full": "Egonex-AI/Understand-Anything", "link": "https://github.com/Egonex-AI/Understand-Anything", "track": "开发工具", "growth": 73732, "stars": 78588, "created": "2026-03-15", "what": "把代码转成教学图谱的工具", "use": "理解陌生代码库", "rank": 56}, {"full": "koala73/worldmonitor", "link": "https://github.com/koala73/worldmonitor", "track": "多模态", "growth": 67899, "stars": 80217, "created": "2026-01-08", "what": "AI 驱动全球情报看板", "use": "实时聚合新闻与事件监控", "rank": 57}, {"full": "rtk-ai/rtk", "link": "https://github.com/rtk-ai/rtk", "track": "开发工具", "growth": 67353, "stars": 75375, "created": "2026-01-22", "what": "降低 LLM token 消耗的 CLI 代理", "use": "压缩上下文以降本提速", "rank": 58}, {"full": "Shubhamsaboo/awesome-llm-apps", "link": "https://github.com/Shubhamsaboo/awesome-llm-apps", "track": "开发工具", "growth": 66749, "stars": 131777, "created": "2024-04-29", "what": "100+ AI Agent/技能/RAG 应用精选列表", "use": "找开源 LLM 应用参考", "rank": 59}, {"full": "headroomlabs-ai/headroom", "link": "https://github.com/headroomlabs-ai/headroom", "track": "开发工具", "growth": 64708, "stars": 65659, "created": "2026-01-07", "what": "发送给 LLM 前压缩上下文的工具", "use": "降低 token 与延迟", "rank": 60}, {"full": "colbymchenry/codegraph", "link": "https://github.com/colbymchenry/codegraph", "track": "开发工具", "growth": 62616, "stars": 65585, "created": "2026-01-18", "what": "预索引代码知识图谱", "use": "代码检索与导航", "rank": 61}, {"full": "openai/codex", "link": "https://github.com/openai/codex", "track": "Coding Agent", "growth": 60360, "stars": 104970, "created": "2025-04-13", "what": "终端轻量编程 Agent", "use": "自动完成编码任务", "rank": 62}, {"full": "harry0703/MoneyPrinterTurbo", "link": "https://github.com/harry0703/MoneyPrinterTurbo", "track": "音视频", "growth": 59728, "stars": 102345, "created": "2024-03-11", "what": "AI 一键生成高清短视频工具", "use": "按主题批量产出短视频", "rank": 63}, {"full": "x1xhlol/system-prompts-and-models-of-ai-tools", "link": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools", "track": "开发工具", "growth": 59067, "stars": 142684, "created": "2025-03-05", "what": "主流 AI 编码工具系统提示词汇编", "use": "研究/复现各家 Agent 提示词", "rank": 64}, {"full": "D4Vinci/Scrapling", "link": "https://github.com/D4Vinci/Scrapling", "track": "开发工具", "growth": 58565, "stars": 73295, "created": "2024-10-13", "what": "自适应网页抓取框架", "use": "稳定爬取动态网页", "rank": 65}, {"full": "clash-verge-rev/clash-verge-rev", "link": "https://github.com/clash-verge-rev/clash-verge-rev", "track": "基础设施", "growth": 58048, "stars": 136716, "created": "2023-11-21", "what": "基于 Tauri 的代理 GUI 客户端", "use": "流量分流与科学上网", "rank": 66}, {"full": "shareAI-lab/learn-claude-code", "link": "https://github.com/shareAI-lab/learn-claude-code", "track": "Coding Agent", "growth": 56817, "stars": 73669, "created": "2025-06-29", "what": "极简 Claude Code 式 Agent harness 教程", "use": "学习搭建编码 Agent", "rank": 67}, {"full": "OpenCut-app/OpenCut", "link": "https://github.com/OpenCut-app/OpenCut", "track": "音视频", "growth": 55227, "stars": 81926, "created": "2025-06-22", "what": "开源视频剪辑工具（剪映替代）", "use": "视频剪辑与特效", "rank": 68}, {"full": "shanraisshan/claude-code-best-practice", "link": "https://github.com/shanraisshan/claude-code-best-practice", "track": "Coding Agent", "growth": 54151, "stars": 64224, "created": "2025-10-31", "what": "Claude Code 最佳实践指南", "use": "从 vibe coding 到 Agent 工程", "rank": 69}, {"full": "pbakaus/impeccable", "link": "https://github.com/pbakaus/impeccable", "track": "前端框架", "growth": 52559, "stars": 57433, "created": "2025-11-16", "what": "让 AI 生成更高质感界面的设计体系", "use": "提升 AI 产出 UI 设计水准", "rank": 70}, {"full": "Fission-AI/OpenSpec", "link": "https://github.com/Fission-AI/OpenSpec", "track": "Coding Agent", "growth": 51471, "stars": 64376, "created": "2025-08-05", "what": "面向 AI 编程助手的规格驱动开发工具", "use": "用规格文档管控代码生成", "rank": 71}, {"full": "code-yeongyu/oh-my-openagent", "link": "https://github.com/code-yeongyu/oh-my-openagent", "track": "Coding Agent", "growth": 50582, "stars": 67571, "created": "2025-12-03", "what": "极致省 token 的编程 Agent", "use": "低成本自动化编码", "rank": 72}, {"full": "tw93/Mole", "link": "https://github.com/tw93/Mole", "track": "开发工具", "growth": 45051, "stars": 62818, "created": "2025-09-23", "what": "Mac 清理与优化工具", "use": "系统维护与监控", "rank": 73}, {"full": "asgeirtj/system_prompts_leaks", "link": "https://github.com/asgeirtj/system_prompts_leaks", "track": "开发工具", "growth": 43770, "stars": 62633, "created": "2025-05-03", "what": "Anthropic 等系统提示词泄露合集", "use": "研究前沿模型提示词", "rank": 74}, {"full": "diegosouzapw/OmniRoute", "link": "https://github.com/diegosouzapw/OmniRoute", "track": "开发工具", "growth": 43489, "stars": 44323, "created": "2026-02-13", "what": "统一 AI 模型网关", "use": "一个端点接入 290+ 模型", "rank": 75}, {"full": "karpathy/nanochat", "link": "https://github.com/karpathy/nanochat", "track": "模型/推理", "growth": 43486, "stars": 57079, "created": "2025-10-13", "what": "单 GPU 可训练运行的极简 ChatGPT", "use": "学习/实验 LLM 训练", "rank": 76}, {"full": "sansan0/TrendRadar", "link": "https://github.com/sansan0/TrendRadar", "track": "多模态", "growth": 40330, "stars": 61302, "created": "2025-04-28", "what": "AI 舆情与趋势监控工具", "use": "多平台热点追踪", "rank": 77}, {"full": "microsoft/VibeVoice", "link": "https://github.com/microsoft/VibeVoice", "track": "音视频", "growth": 38295, "stars": 52282, "created": "2025-08-25", "what": "开源前沿语音生成模型", "use": "高质量语音合成", "rank": 78}, {"full": "hesreallyhim/awesome-claude-code", "link": "https://github.com/hesreallyhim/awesome-claude-code", "track": "Coding Agent", "growth": 36563, "stars": 52005, "created": "2025-04-19", "what": "Claude Code 资源精选列表", "use": "找编码 Agent 工具与技巧", "rank": 79}, {"full": "daytonaio/daytona", "link": "https://github.com/daytonaio/daytona", "track": "基础设施", "growth": 34536, "stars": 72027, "created": "2024-02-06", "what": "运行 AI Agent 的安全弹性基础设施", "use": "云端沙箱执行 Agent", "rank": 80}, {"full": "opendatalab/MinerU", "link": "https://github.com/opendatalab/MinerU", "track": "开发工具", "growth": 33794, "stars": 77216, "created": "2024-02-29", "what": "文档（PDF/Office）转结构化数据工具", "use": "为 RAG/训练准备语料", "rank": 81}, {"full": "upstash/context7", "link": "https://github.com/upstash/context7", "track": "开发工具", "growth": 32243, "stars": 60503, "created": "2025-03-26", "what": "为 LLM 提供最新代码文档的服务", "use": "减少 Agent 幻觉", "rank": 82}, {"full": "punkpeye/awesome-mcp-servers", "link": "https://github.com/punkpeye/awesome-mcp-servers", "track": "开发工具", "growth": 29202, "stars": 92015, "created": "2024-11-30", "what": "MCP 服务器精选列表", "use": "找 Agent 工具接入", "rank": 83}, {"full": "Zie619/n8n-workflows", "link": "https://github.com/Zie619/n8n-workflows", "track": "开发工具", "growth": 29078, "stars": 56011, "created": "2025-05-14", "what": "n8n 工作流合集", "use": "参考自动化流程模板", "rank": 84}, {"full": "modelcontextprotocol/servers", "link": "https://github.com/modelcontextprotocol/servers", "track": "开发工具", "growth": 28839, "stars": 89381, "created": "2024-11-19", "what": "Model Context Protocol 官方服务器合集", "use": "给 Agent 接入外部工具/数据", "rank": 85}, {"full": "unclecode/crawl4ai", "link": "https://github.com/unclecode/crawl4ai", "track": "开发工具", "growth": 27647, "stars": 77577, "created": "2024-05-09", "what": "对 LLM 友好的开源网页爬虫", "use": "抓取网页供 RAG/训练", "rank": 86}, {"full": "infiniflow/ragflow", "link": "https://github.com/infiniflow/ragflow", "track": "开发工具", "growth": 25688, "stars": 87134, "created": "2023-12-12", "what": "深度文档理解的开源 RAG 引擎", "use": "企业级检索增强生成", "rank": 87}, {"full": "block/buzz", "link": "https://github.com/block/buzz", "track": "基础设施", "growth": 25670, "stars": 25684, "created": "2026-03-06", "what": "去中心化群体通信平台", "use": "加密/匿名协作通信", "rank": 88}, {"full": "unslothai/unsloth", "link": "https://github.com/unslothai/unsloth", "track": "模型/推理", "growth": 25130, "stars": 69774, "created": "2023-11-29", "what": "本地训练/微调 LLM 与扩散模型的工具", "use": "低成本微调", "rank": 89}, {"full": "jingyaogong/minimind", "link": "https://github.com/jingyaogong/minimind", "track": "模型/推理", "growth": 25037, "stars": 54499, "created": "2024-07-27", "what": "教学用极简 LLM 训练项目", "use": "学习大模型训练原理", "rank": 90}, {"full": "docling-project/docling", "link": "https://github.com/docling-project/docling", "track": "开发工具", "growth": 24820, "stars": 64483, "created": "2024-07-09", "what": "文档解析与转换工具", "use": "为生成式 AI 准备文档", "rank": 91}, {"full": "astral-sh/uv", "link": "https://github.com/astral-sh/uv", "track": "开发工具", "growth": 24196, "stars": 88546, "created": "2023-10-02", "what": "极速 Python 包与项目管理器", "use": "替代 pip/venv/poetry", "rank": 92}, {"full": "hacksider/Deep-Live-Cam", "link": "https://github.com/hacksider/Deep-Live-Cam", "track": "音视频", "growth": 23204, "stars": 95838, "created": "2023-09-24", "what": "实时换脸与一键视频深度伪造工具", "use": "直播/视频换脸", "rank": 93}, {"full": "permissionlesstech/bitchat", "link": "https://github.com/permissionlesstech/bitchat", "track": "基础设施", "growth": 20803, "stars": 34889, "created": "2025-07-04", "what": "蓝牙 Mesh 去中心化聊天", "use": "无网环境近距离通信", "rank": 94}, {"full": "alibaba/open-code-review", "link": "https://github.com/alibaba/open-code-review", "track": "Coding Agent", "growth": 19665, "stars": 19830, "created": "2026-05-18", "what": "阿里开源 AI 代码审查工具", "use": "自动化 PR 评审", "rank": 95}, {"full": "LadybirdBrowser/ladybird", "link": "https://github.com/LadybirdBrowser/ladybird", "track": "前端框架", "growth": 15944, "stars": 65116, "created": "2024-05-30", "what": "真正独立的全新网页浏览器", "use": "开源自主浏览器引擎", "rank": 96}, {"full": "ByteByteGoHq/system-design-101", "link": "https://github.com/ByteByteGoHq/system-design-101", "track": "开发工具", "growth": 13450, "stars": 86823, "created": "2023-09-18", "what": "用图解讲清复杂系统的开源书", "use": "学习分布式系统设计", "rank": 97}, {"full": "dockur/windows", "link": "https://github.com/dockur/windows", "track": "基础设施", "growth": 11331, "stars": 52802, "created": "2024-01-14", "what": "在 Docker 里运行 Windows", "use": "容器化 Windows 环境", "rank": 98}, {"full": "RVC-Boss/GPT-SoVITS", "link": "https://github.com/RVC-Boss/GPT-SoVITS", "track": "音视频", "growth": 11264, "stars": 60629, "created": "2024-01-14", "what": "少样本语音克隆/TTS 模型", "use": "1 分钟语音训练高质量 TTS", "rank": 99}, {"full": "deepseek-ai/DeepSeek-V3", "link": "https://github.com/deepseek-ai/DeepSeek-V3", "track": "模型/推理", "growth": 8142, "stars": 104148, "created": "2024-12-26", "what": "DeepSeek 开源 MoE 大模型", "use": "通用 LLM 推理与微调", "rank": 100}, {"full": "deepseek-ai/DeepSeek-R1", "link": "https://github.com/deepseek-ai/DeepSeek-R1", "track": "模型/推理", "growth": 5761, "stars": 91981, "created": "2025-01-20", "what": "DeepSeek 开源推理大模型", "use": "复杂推理任务", "rank": 101}, {"full": "abi/screenshot-to-code", "link": "https://github.com/abi/screenshot-to-code", "track": "前端框架", "growth": 5092, "stars": 73925, "created": "2023-11-14", "what": "截图转代码工具", "use": "设计稿转 HTML/Tailwind/React", "rank": 102}, {"full": "maybe-finance/maybe", "link": "https://github.com/maybe-finance/maybe", "track": "开发工具", "growth": 4749, "stars": 54340, "created": "2024-01-01", "what": "个人理财应用", "use": "管理个人财务", "rank": 103}];
+const TRACK_COLORS = {"AI Agent": "--t1", "Coding Agent": "--t2", "前端框架": "--t3", "基础设施": "--t4", "多模态": "--t5", "开发工具": "--t6", "模型/推理": "--t7", "音视频": "--t8"};
+const TRACKS = ["全部", "AI Agent", "开发工具", "Coding Agent", "基础设施", "模型/推理", "音视频", "前端框架", "多模态"];
+
+let state = {track:"全部", aiOnly:false, sortKey:"default", sortDir:-1, q:"", minG:0};
+
+const tbody = document.getElementById("tbody");
+const countNote = document.getElementById("countNote");
+
+// build track chips
+const chips = document.getElementById("trackChips");
+TRACKS.forEach(t=>{
+  const b=document.createElement("button");
+  b.className="chip"+(t==="全部"?" on":"");
+  b.textContent=t==="全部"?("全部 ("+ROWS.length+")"):t;
+  b.onclick=()=>{state.track=t;
+    document.querySelectorAll("#trackChips .chip").forEach(c=>c.classList.remove("on"));
+    b.classList.add("on"); render();};
+  chips.appendChild(b);
+});
+
+document.getElementById("aiOnly").onchange=e=>{state.aiOnly=e.target.checked; render();};
+document.getElementById("sortKey").onchange=e=>{state.sortKey=e.target.value; render();};
+document.getElementById("sortDir").onclick=()=>{state.sortDir*=-1;
+  document.getElementById("sortDir").textContent=state.sortDir===-1?"降序 ▼":"升序 ▲"; render();};
+document.getElementById("search").oninput=e=>{state.q=e.target.value.trim().toLowerCase(); render();};
+document.getElementById("minGrowth").oninput=e=>{state.minG=parseInt(e.target.value)||0; render();};
+
+function colorVar(t){return TRACK_COLORS[t]||"--t1";}
+
+function render(){
+  let list = ROWS.filter(r=>{
+    if(state.track!=="全部" && r.track!==state.track) return false;
+    if(state.aiOnly && r.track!=="AI Agent") return false;
+    if(state.minG && r.growth < state.minG) return false;
+    if(state.q){
+      const hay=(r.full+" "+r.track+" "+r.what+" "+r.use).toLowerCase();
+      if(!hay.includes(state.q)) return false;
+    }
+    return true;
+  });
+  const sk=state.sortKey;
+  if(sk==="default"){
+    list.sort((a,b)=>{ if(a.track==="AI Agent" && b.track!=="AI Agent")return -1;
+      if(b.track==="AI Agent" && a.track!=="AI Agent")return 1;
+      return b.growth-a.growth; });
+  } else if(sk==="growth"){ list.sort((a,b)=>(a.growth-b.growth)*state.sortDir); }
+  else if(sk==="stars"){ list.sort((a,b)=>(a.stars-b.stars)*state.sortDir); }
+  else if(sk==="created"){ list.sort((a,b)=>(a.created<b.created?-1:1)*state.sortDir); }
+
+  countNote.textContent = "显示 "+list.length+" / "+ROWS.length+" 个";
+  if(!list.length){ tbody.innerHTML='<tr><td colspan="8" class="empty">没有符合条件的项目</td></tr>'; return; }
+  tbody.innerHTML = list.map(r=>{
+    const [o,repo]=r.full.split("/");
+    return `<tr>
+      <td class="rank">${r.rank}</td>
+      <td class="repo"><a href="${r.link}" target="_blank" rel="noopener">${repo}</a>
+        <div class="sub-repo">${o}</div></td>
+      <td><span class="badge" style="background:var(${colorVar(r.track)})">${r.track}</span></td>
+      <td class="num growth">+${r.growth.toLocaleString()}</td>
+      <td class="num">${r.stars.toLocaleString()}</td>
+      <td class="num">${r.created}</td>
+      <td class="what">${r.what}</td>
+      <td class="use">${r.use}</td>
+    </tr>`;
+  }).join("");
+}
+render();
+</script>
+</body>
+</html>
