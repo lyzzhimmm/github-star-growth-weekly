@@ -1,9 +1,0 @@
-排名,项目,GitHub链接,赛道,近三月增长,当前star,创建时间,是什么,主要用途
-1,deepseek-ai/deepseek-harness,https://github.com/deepseek-ai/deepseek-harness,AI Agent,204943,204943,2026-08-13,DeepSeek 推出的插件化 AI Agent Harness，核心理念是“Everything is a Plugin”。,用于搭建、组合和扩展 Agent 能力与插件式工作流。
-2,andrewyng/openworker,https://github.com/andrewyng/openworker,AI Agent,17068,17068,2026-07-20,面向桌面工作的开源 AI coworker / worker 项目。,让本地 AI Agent 调用模型和工具，完成日常知识工作与自动化任务。
-3,cloudflare/computer,https://github.com/cloudflare/computer,AI Agent,8843,8843,2026-06-05,Cloudflare 提供给 AI Agent 使用的“电脑”运行环境。,让 Agent 获得可操作的计算机环境，以执行浏览器或桌面类任务。
-4,CopilotKit/OpenBot,https://github.com/CopilotKit/OpenBot,AI Agent,3553,3553,2026-08-17,为每个 AI coworker 提供独立浏览器、文件和工具环境的开源 Agent 项目。,用于构建可审计、可治理、能操作浏览器与文件的 AI coworker。
-5,baidu/Unlimited-OCR,https://github.com/baidu/Unlimited-OCR,多模态,24793,24793,2026-06-18,百度推出的长程文档与图像 OCR / 解析项目。,用于一次性长文档解析、OCR、视觉文本抽取及多模态文档理解。
-6,XiaomiMiMo/MiMo-Code,https://github.com/XiaomiMiMo/MiMo-Code,Coding Agent,12908,12908,2026-06-10,小米 MiMo 面向代码场景的模型与 Agent 协同项目。,用于代码生成、编程 Agent、CLI 编码工作流及模型与 Agent 协同研究。
-7,MoonshotAI/Kimi-K3,https://github.com/MoonshotAI/Kimi-K3,模型/推理,8667,8667,2026-07-27,Moonshot AI 发布的 Kimi K3 开放前沿智能模型项目。,用于通用大模型能力研究、推理与下游 AI 应用开发。
-8,MiniMax-AI/MiniMax-H3,https://github.com/MiniMax-AI/MiniMax-H3,多模态,7511,7511,2026-07-30,MiniMax 发布的多模态生成模型项目。,用于多模态内容理解与生成相关研究和应用开发。
