@@ -1,0 +1,25 @@
+{
+  "min_growth": 3000,
+  "window_days": 90,
+  "created_within_months": 36,
+  "history_tolerance_days": 3,
+  "timezone": "Asia/Shanghai",
+  "ossinsight_languages": [
+    "All",
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Go",
+    "Rust",
+    "Java",
+    "C++",
+    "C",
+    "Swift",
+    "Shell",
+    "HTML",
+    "CSS",
+    "Dart",
+    "Kotlin",
+    "PHP"
+  ]
+}
