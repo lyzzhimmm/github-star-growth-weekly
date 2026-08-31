@@ -83,307 +83,183 @@
 82,EverMind-AI/Raven,https://github.com/EverMind-AI/Raven,AI Agent,3149,3699,2026-05-21,记忆优先的自进化 Agent 运行框架,基于长期记忆与自主学习持续优化任务执行
 83,SenteLabsAI/OpenExecutive,https://github.com/SenteLabsAI/OpenExecutive,AI Agent,3062,3062,2026-06-11,开源 AI 智能体与工作流项目,AI-powered virtual executive team — a single coherent executive persona backe...
 84,AminBlg/SimpleEnglish,https://github.com/AminBlg/SimpleEnglish,AI Agent,3010,3010,2026-07-21,开源 AI 智能体与工作流项目,Agent skill: make LLMs write docs in ASD-STE100 Simplified Technical
-85,butterbase-ai/butterbase,https://github.com/butterbase-ai/butterbase,AI Agent,2932,3355,2026-05-20,开源 AI 智能体与工作流项目,"Open-source backend-as-a-service. Postgres, auth, storage, functions, AI gate..."
-86,Hisn00w/ASu-skills,https://github.com/Hisn00w/ASu-skills,AI Agent,2916,2916,2026-08-12,开源 AI 智能体与工作流项目,简历包装
-87,microsoft/AI-Engineering-Coach,https://github.com/microsoft/AI-Engineering-Coach,AI Agent,2878,3742,2026-05-06,开源 AI 智能体与工作流项目,better agentic engineering
-88,GordenSun/GordenPPTSkill,https://github.com/GordenSun/GordenPPTSkill,AI Agent,2817,3005,2026-05-27,开源 AI 智能体与工作流项目,AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-...
-89,wang2122/sprix-sage-router,https://github.com/wang2122/sprix-sage-router,AI Agent,2791,2791,2026-08-18,开源 AI 智能体与工作流项目,Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent...
-90,QwenLM/Qwen-MM-Plugins,https://github.com/QwenLM/Qwen-MM-Plugins,AI Agent,2786,2786,2026-07-29,开源 AI 智能体与工作流项目,Make any agent harness multimodal-native.
-91,thananon/9arm-skills,https://github.com/thananon/9arm-skills,AI Agent,2759,3157,2026-05-20,开源 AI 智能体与工作流项目,自动化执行多步骤业务与研究任务
-92,visa/visa-vulnerability-agentic-harness,https://github.com/visa/visa-vulnerability-agentic-harness,AI Agent,2660,2660,2026-06-05,开源 AI 智能体与工作流项目,Visa Vulnerability Agentic Harness
-93,lopopolo/harness-engineering,https://github.com/lopopolo/harness-engineering,AI Agent,2646,2646,2026-07-18,开源 AI 智能体与工作流项目,"🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harnes..."
-94,geeklee/srt-whiteboard-animation,https://github.com/geeklee/srt-whiteboard-animation,AI Agent,2631,2631,2026-07-27,开源 AI 智能体与工作流项目,将 SRT 字幕做成暖米黄纸张底的流式笔迹白板手绘动画 skill：mask 分区遮罩编排 + stream 连续笔迹（ink→color）。
-95,Jakubantalik/thinking-orbs,https://github.com/Jakubantalik/thinking-orbs,AI Agent,2629,2629,2026-07-21,开源 AI 智能体与工作流项目,"Dotted thought-orb loading indicators for AI & agent UIs, 9 tuned types, two ..."
-96,simonlin1212/TradingAgents-astock,https://github.com/simonlin1212/TradingAgents-astock,AI Agent,2612,3117,2026-05-13,A股多 Agent 投研决策框架,适配A股龙虎榜与游资规则的多分析师辩论决策系统
-97,OpenNSWM-Lab/FAROS,https://github.com/OpenNSWM-Lab/FAROS,AI Agent,2508,3030,2026-05-13,蓝图驱动的自动化科研 Agent 系统,端到端编排学术文献调研与实验设计
-98,open-gitagent/opengap,https://github.com/open-gitagent/opengap,AI Agent,2468,2921,2026-02-24,Git 原生跨框架 Agent 协议标准,以 Git 仓库和版本化方式规范与分发 AI 智能体
-99,buchidonggua/dg-ai-notes,https://github.com/buchidonggua/dg-ai-notes,AI Agent,2420,2420,2026-07-05,开源 AI 智能体与工作流项目,自动化执行多步骤业务与研究任务
-100,ljagiello/ctf-skills,https://github.com/ljagiello/ctf-skills,AI Agent,2387,3142,2026-02-01,CTF 网络安全攻防 Agent 技能集,辅助智能体自主完成 Web 渗透与二进制漏洞利用挑战
-101,shepherd-agents/shepherd,https://github.com/shepherd-agents/shepherd,AI Agent,2381,2381,2026-06-24,开源 AI 智能体与工作流项目,"A runtime substrate that turns an agent's execution into a reversible, Git-li..."
-102,rpamis/comet,https://github.com/rpamis/comet,AI Agent,2374,2875,2026-05-14,开源 AI 智能体与工作流项目,Comet: agent skill harness for turning ideas into evaluated workflows
-103,foryourhealth111-pixel/Vibe-Skills,https://github.com/foryourhealth111-pixel/Vibe-Skills,AI Agent,2358,3097,2026-02-22,通用智能路由 Agent 技能框架,根据用户意图自动分发并组合最佳 Agent 技能
-104,YTwsy/OpenSurge-for-Mac,https://github.com/YTwsy/OpenSurge-for-Mac,AI Agent,2298,2298,2026-06-29,开源 AI 智能体与工作流项目,Surge-style whole-home gateway and control plane for macOS with IPv4/IPv6 sup...
-105,google-deepmind/science-skills,https://github.com/google-deepmind/science-skills,AI Agent,2295,2805,2026-05-13,开源 AI 智能体与工作流项目,GDM Science Skills to speed up agentic scientific workflows with better groun...
-106,quantskills/quantskills,https://github.com/quantskills/quantskills,AI Agent,2220,2220,2026-06-25,开源 AI 智能体与工作流项目,QuantSkills组织的全景导航 ——Panoramic navigator for the QuantSkills organization
-107,VRSEN/OpenSwarm,https://github.com/VRSEN/OpenSwarm,AI Agent,2185,2856,2026-04-12,全领域自主 Agent 编排工具,将类 Claude Code 交互体验扩展到编码之外的全场景
-108,Helvesec/rmux,https://github.com/Helvesec/rmux,AI Agent,2173,2607,2026-05-15,开源 AI 智能体与工作流项目,Universal Rust multiplexer with a typed SDK — drive any CLI or TUI app from c...
-109,collabs-inc/collab-public,https://github.com/collabs-inc/collab-public,AI Agent,2160,2933,2026-03-15,多智能体协作创作平台,在统一空间内与多个 AI 智能体协同设计与内容生产
-110,flutter/agent-plugins,https://github.com/flutter/agent-plugins,AI Agent,2155,2892,2026-02-25,Flutter 官方 Agent 插件合集,为移动端与跨平台应用接入 AI 智能体能力
-111,FreedomIntelligence/OpenClaw-Medical-Skills,https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills,AI Agent,2147,2977,2026-03-08,医疗健康领域 OpenClaw 技能库,为 AI 助手提供医学知识问答与临床辅助技能
-112,off-grid-ai/OGAM,https://github.com/off-grid-ai/OGAM,AI Agent,2129,3028,2026-01-29,开源大语言模型项目,The Swiss Army Knife of Offline AI. Chat
-113,open-webui/open-terminal,https://github.com/open-webui/open-terminal,AI Agent,2111,3044,2026-02-10,通过 cURL 调用的虚拟云终端,为 Agent 提供无需配置的即用型云端执行环境
-114,ShawnPana/phone-harness,https://github.com/ShawnPana/phone-harness,AI Agent,2102,2102,2026-08-07,开源 AI 智能体与工作流项目,let your agent control your phone
-115,openocta/openocta,https://github.com/openocta/openocta,AI Agent,2055,3040,2026-02-26,国产信创桌面级 AI 智能体,面向办公、文档处理与 IT 运维的安全桌面助手
-116,HiThink-Tech/Financial-API,https://github.com/HiThink-Tech/Financial-API,AI Agent,2043,2043,2026-06-09,开源 AI 智能体与工作流项目,同花顺官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，适用于 AI Agent、量化研究和应用开发，支持 API、M...
-117,Kritt-ai/open-kritt,https://github.com/Kritt-ai/open-kritt,AI Agent,2033,2033,2026-07-20,开源 AI 智能体与工作流项目,"Open-source, self-hosted AI vulnerability research tool that orchestrates age..."
-118,qingchencloud/clawpanel,https://github.com/qingchencloud/clawpanel,AI Agent,2027,2935,2026-02-26,OpenClaw & Hermes 多引擎管理面板,可视化监控、配置与调度多款开源 AI Agent
-119,ultraworkers/claw-code,https://github.com/ultraworkers/claw-code,Coding Agent,142965,195168,2026-03-31,Rust 编写的 Agent 自主研发项目,展示由 AI 智能体全流程主导的现代软件工程实践
-120,anomalyco/opencode,https://github.com/anomalyco/opencode,Coding Agent,125040,202669,2025-04-30,开源命令行自主编程 Agent,在终端内自主理解项目架构并高效编写修改代码
-121,garrytan/gstack,https://github.com/garrytan/gstack,Coding Agent,96601,130507,2026-03-11,Claude Code 开箱即用工程配置集,集成 23 个生产级开发工具与最佳工程预设
-122,farion1231/cc-switch,https://github.com/farion1231/cc-switch,Coding Agent,96363,130299,2025-08-04,Claude Code 跨平台多会话管理助手,桌面端一键切换与集中监控多个 AI 编码会话
-123,firecrawl/firecrawl,https://github.com/firecrawl/firecrawl,开发工具,94163,174562,2024-04-15,面向 LLM 的专业网页抓取与搜索 API,将任意复杂网页转换为结构化干净 Markdown 供 AI 读取
-124,Graphify-Labs/graphify,https://github.com/Graphify-Labs/graphify,开发工具,89038,112771,2026-04-03,代码库知识图谱自动生成工具,深度解析代码依赖与模块拓扑，辅助 Agent 快速理解项目
-125,microsoft/markitdown,https://github.com/microsoft/markitdown,开发工具,85437,177268,2024-11-13,多格式文档转 Markdown 工具,将 Office、PDF 等各类文件转为高质量 Markdown
-126,anthropics/claude-code,https://github.com/anthropics/claude-code,Coding Agent,83809,143504,2025-02-22,Anthropic 官方终端编程 Agent,通过自然语言在终端执行多文件编辑、测试与 Git 工作流
-127,VoltAgent/awesome-design-md,https://github.com/VoltAgent/awesome-design-md,开发工具,82716,111843,2026-03-31,大厂与前沿开源项目 DESIGN.md 合集,提供成熟的设计规范与视觉原则供 AI 学习参考
-128,github/spec-kit,https://github.com/github/spec-kit,Coding Agent,81977,132407,2025-08-21,规格驱动开发（SDD）工具包,用规范的架构规格书指导 AI 编码，减少返工与幻觉
-129,JuliusBrussee/caveman,https://github.com/JuliusBrussee/caveman,Coding Agent,78455,101923,2026-04-04,极简省 Token 的 Claude Code 技能,精炼直白高密度交流，显著压缩上下文与 Token 消耗
-130,DigitalPlatDev/FreeDomain,https://github.com/DigitalPlatDev/FreeDomain,基础设施,75200,196733,2024-05-30,面向开发者的免费域名分发平台,为开源项目与个人开发者提供免费子域名与解析服务
-131,nexu-io/open-design,https://github.com/nexu-io/open-design,前端框架,74311,92917,2026-04-28,本地优先开源 AI 设计工具,在本地利用 AI 快速完成 UI 设计、原型绘制与代码导出
-132,karpathy/autoresearch,https://github.com/karpathy/autoresearch,模型/推理,67276,94969,2026-03-06,Karpathy 开源单卡自主科研 Agent,在单张 GPU 上自动执行深度学习实验迭代与假设验证
-133,harry0703/MoneyPrinterTurbo,https://github.com/harry0703/MoneyPrinterTurbo,音视频,66490,118904,2024-03-11,全自动高清短视频批量生成工具,输入文案一键合成配音、字幕、画面与背景音乐
-134,openai/codex,https://github.com/openai/codex,Coding Agent,65996,120244,2025-04-13,OpenAI 终端轻量编程 Agent,命令行内快速生成、补全与重构代码
-135,ruvnet/RuView,https://github.com/ruvnet/RuView,多模态,65373,92143,2025-06-07,基于 WiFi 信号的空间感知工具,利用无线信号实现无需摄像头的室内人体存在与姿态监测
-136,Egonex-AI/Understand-Anything,https://github.com/Egonex-AI/Understand-Anything,开发工具,64517,81134,2026-03-15,代码库交互式教学图谱生成器,将复杂代码逻辑转换为直观可视化的教学架构图
-137,koala73/worldmonitor,https://github.com/koala73/worldmonitor,多模态,61854,85106,2026-01-08,全球地缘与突发事件 AI 情报看板,实时多源聚合新闻事件与宏观数据走势监控
-138,Shubhamsaboo/awesome-llm-apps,https://github.com/Shubhamsaboo/awesome-llm-apps,开发工具,59732,135342,2024-04-29,精选 100+ 前沿 AI 应用与 Agent 实例,涵盖 RAG、多 Agent、语音与视觉的生产级实战案例
-139,rtk-ai/rtk,https://github.com/rtk-ai/rtk,开发工具,59284,77987,2026-01-22,LLM 上下文 Token 压缩代理 CLI,在请求前智能剪枝与压缩上下文，降低推理成本与延迟
-140,headroomlabs-ai/headroom,https://github.com/headroomlabs-ai/headroom,开发工具,56683,68139,2026-01-07,上下文窗口智能压缩与蒸馏工具,在保留核心关键语义的前提下大幅缩减 Prompt 长度
-141,colbymchenry/codegraph,https://github.com/colbymchenry/codegraph,开发工具,55739,68761,2026-01-18,预索引代码知识图谱引擎,毫秒级语义检索函数调用链路与跨文件依赖关系
-142,D4Vinci/Scrapling,https://github.com/D4Vinci/Scrapling,开发工具,53320,77429,2024-10-13,自适应防封禁智能网页爬虫框架,具备反爬对抗与智能清洗能力的下一代采集工具
-143,clash-verge-rev/clash-verge-rev,https://github.com/clash-verge-rev/clash-verge-rev,基础设施,53256,141233,2023-11-21,基于 Tauri 的现代化网络代理客户端,跨平台流量智能分流与节点订阅管理
-144,OpenCut-app/OpenCut,https://github.com/OpenCut-app/OpenCut,音视频,52398,88052,2025-06-22,开源跨平台桌面视频剪辑软件,轻量利落的剪映替代品，支持多轨道剪辑与特效处理
-145,usestrix/strix,https://github.com/usestrix/strix,开发工具,52316,59575,2025-08-05,开源 AI 渗透测试工具,像黑客一样模拟攻击路径、生成 PoC 并给出修复建议，可集成 CI/CD
-146,stablyai/orca,https://github.com/stablyai/orca,Coding Agent,51710,57751,2026-03-17,面向并行智能体编队的 ADE（智能体开发环境）,用自有订阅运行任意编码智能体，支持桌面/移动/VPS
-147,pbakaus/impeccable,https://github.com/pbakaus/impeccable,前端框架,50706,64170,2025-11-16,打造高质感界面的 AI 设计系统技能,注入精致留白、克制排版与严谨色彩体系，杜绝 AI 粗糙感
-148,diegosouzapw/OmniRoute,https://github.com/diegosouzapw/OmniRoute,开发工具,50486,58852,2026-02-13,高可用多模型统一路由网关,单 API 端点无缝接入与负载均衡 290+ 主流大模型
-149,x1xhlol/system-prompts-and-models-of-ai-tools,https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools,开发工具,50398,143253,2025-03-05,主流 AI 编程工具系统 Prompt 大全,收录 Cursor、Claude Code 等前沿工具的完整系统提示词
-150,shareAI-lab/learn-claude-code,https://github.com/shareAI-lab/learn-claude-code,Coding Agent,49881,75712,2025-06-29,极简 Agent Harness 实现教程,拆解 Claude Code 核心机制，带你从零手写 Agent 循环
-151,shanraisshan/claude-code-best-practice,https://github.com/shanraisshan/claude-code-best-practice,Coding Agent,46824,65409,2025-10-31,Claude Code 高阶工程实践指南,从 Vibe Coding 进阶到严谨规范的 Agent 协同开发体系
-152,Fission-AI/OpenSpec,https://github.com/Fission-AI/OpenSpec,Coding Agent,45699,66750,2025-08-05,AI 编程规格驱动开发辅助工具,通过先写 Spec 再生成代码的工程范式提升交付准确率
-153,code-yeongyu/oh-my-openagent,https://github.com/code-yeongyu/oh-my-openagent,Coding Agent,43597,68538,2025-12-03,极致省 Token 的开源轻量编程 Agent,采用极简上下文管理在低成本下实现稳定自主编程
-154,tw93/Mole,https://github.com/tw93/Mole,开发工具,40535,65474,2025-09-23,Mac 极速深度系统清理与维护工具,一键清理深度缓存、开发残留与孤儿进程，释放磁盘空间
-155,asgeirtj/system_prompts_leaks,https://github.com/asgeirtj/system_prompts_leaks,开发工具,38099,63864,2025-05-03,前沿大模型系统提示词权威合集,深度解析各家主流商业 AI 助手的 Prompt 设计技巧
-156,karpathy/nanochat,https://github.com/karpathy/nanochat,模型/推理,37289,57677,2025-10-13,单卡可训的极简 ChatGPT 教学项目,Karpathy 打造，用最透彻的代码理解大语言模型训练
-157,sansan0/TrendRadar,https://github.com/sansan0/TrendRadar,多模态,34667,61955,2025-04-28,多平台热点与舆情趋势监控雷达,自动化聚合全网社交媒体与资讯平台的实时热门榜单
-158,microsoft/VibeVoice,https://github.com/microsoft/VibeVoice,音视频,33398,53436,2025-08-25,微软开源前沿表现力语音生成模型,高保真克隆音色并生成极具自然情绪起伏的语音
-159,hesreallyhim/awesome-claude-code,https://github.com/hesreallyhim/awesome-claude-code,Coding Agent,32047,53261,2025-04-19,Claude Code 精选技能与扩展合集,汇集社区最优质的 Agent 提示词、工作流与提效插件
-160,opendatalab/MinerU,https://github.com/opendatalab/MinerU,开发工具,30039,78836,2024-02-29,高质量复杂 PDF 文档结构化提取工具,精准识别公式、表格与版面排版，转换为高质量 Markdown
-161,emilkowalski/skills,https://github.com/emilkowalski/skills,开发工具,29930,33855,2026-03-16,面向设计师与工程师的技能（skills）合集,提升 AI 生成界面的质量，规范设计与前端协作
-162,daytonaio/daytona,https://github.com/daytonaio/daytona,基础设施,29007,71870,2024-02-06,面向 AI Agent 的安全沙箱基础设施,秒级拉起隔离受控的云端开发与执行环境
-163,upstash/context7,https://github.com/upstash/context7,开发工具,28093,61434,2025-03-26,专为 LLM 设计的最新开发文档检索服务,为 AI 编程实时提供最新框架文档，根除知识滞后幻觉
-164,block/buzz,https://github.com/block/buzz,基础设施,27252,31583,2026-03-06,去中心化安全群体通信协议平台,提供端到端加密与高度抗审查的分布式协作通信
-165,zhaoxuya520/reverse-skill,https://github.com/zhaoxuya520/reverse-skill,开发工具,26520,32413,2026-05-13,逆向工程与渗透测试 Agent 技能,辅助安全研究与代码逆向分析
-166,JustVugg/colibri,https://github.com/JustVugg/colibri,模型/推理,26496,26496,2026-07-01,本地极速运行 MoE 大模型推理引擎,在普通消费级硬件上流畅流式运行前沿 MoE 模型
-167,unslothai/unsloth,https://github.com/unslothai/unsloth,模型/推理,26298,75306,2023-11-29,超高速单卡 LLM 微调与量化框架,大幅降低显存消耗并将模型微调速度提升数倍
-168,xai-org/grok-build,https://github.com/xai-org/grok-build,Coding Agent,26270,26270,2026-07-14,xAI 交互式终端编程 Agent 工具,支持全屏终端与鼠标交互的代码生成与重构利器
-169,unclecode/crawl4ai,https://github.com/unclecode/crawl4ai,开发工具,26061,80433,2024-05-09,专为大模型打造的极速开源网页爬虫,提取纯净网页正文与元数据，无缝对接 RAG 检索管线
-170,punkpeye/awesome-mcp-servers,https://github.com/punkpeye/awesome-mcp-servers,开发工具,26057,93493,2024-11-30,精选 Model Context Protocol 服务器清单,为 AI Agent 扩展文件、数据库、API 等连接能力
-171,modelcontextprotocol/servers,https://github.com/modelcontextprotocol/servers,开发工具,24910,89984,2024-11-19,Anthropic 官方 MCP 服务器标准实现库,包含 Git、Postgres、文件系统等标准 MCP 扩展实现
-172,Zie619/n8n-workflows,https://github.com/Zie619/n8n-workflows,开发工具,24880,56350,2025-05-14,开源 n8n 自动化工作流精选模板库,覆盖 AI 自动化、数据同步与业务集成的即用型模板
-173,baidu/Unlimited-OCR,https://github.com/baidu/Unlimited-OCR,开发工具,24824,24824,2026-06-18,百度超长文档无限长 OCR 解析工具,高精度识别海量复杂排版文字与多语言文档
-174,Nutlope/hallmark,https://github.com/Nutlope/hallmark,开发工具,24335,27579,2026-04-27,反 AI-slop 的设计技能,为 Claude Code/Cursor/Codex 提供设计品控，识别并避免套路化生成
-175,infiniflow/ragflow,https://github.com/infiniflow/ragflow,开发工具,24025,89708,2023-12-12,基于深度文档理解的开源 RAG 引擎,从复杂排版与异构文档中实现精准语义检索与问答
-176,BigPizzaV3/CodexPlusPlus,https://github.com/BigPizzaV3/CodexPlusPlus,Coding Agent,23033,29943,2026-05-06,Codex 增强辅助工具,拓展与优化 Codex 桌面编码工作流
-177,anywhere-labs/dsh-desktop,https://github.com/anywhere-labs/dsh-desktop,开发工具,22252,22252,2026-08-13,DeepSeek Harness 桌面客户端,图形化管理与运行 DSH 插件及工作流
-178,jingyaogong/minimind,https://github.com/jingyaogong/minimind,模型/推理,22242,55648,2024-07-27,从零手写轻量级 GPT 大模型教程,仅需百元显卡即可跑通从预训练到微调的全流程
-179,docling-project/docling,https://github.com/docling-project/docling,开发工具,22183,65777,2024-07-09,IBM 开源全能文档解析与转换引擎,快速将复杂的学术论文、报表转换为 AI 友好结构
-180,astral-sh/uv,https://github.com/astral-sh/uv,开发工具,21108,89267,2023-10-02,Rust 编写的超极速 Python 包管理工具,比传统 pip/poetry 快 10~100 倍的现代化依赖管理利器
-181,hacksider/Deep-Live-Cam,https://github.com/hacksider/Deep-Live-Cam,音视频,19938,96210,2023-09-24,实时摄像头与视频面部替换工具,单张照片实现低延迟实时人脸替换与视频合成
-182,guillaumemeyer/watermarks-remover,https://github.com/guillaumemeyer/watermarks-remover,多模态,19550,19550,2026-08-11,多平台 AI 生成内容智能去水印工具,高精度识别并无损消除各类商业 AI 的防伪水印与标记
-183,firecrawl/anydoc,https://github.com/firecrawl/anydoc,开发工具,19506,19506,2026-08-03,通用办公文档转干净 Markdown 工具,一键将 DOCX、PPTX、EPUB 等转为 LLM 友好的 Markdown
-184,permissionlesstech/bitchat,https://github.com/permissionlesstech/bitchat,基础设施,18658,36066,2025-07-04,基于蓝牙 Mesh 的离线去中心化即时通信,无网络无信号环境下的点对点抗审查加密聊天
-185,alibaba/open-code-review,https://github.com/alibaba/open-code-review,Coding Agent,18268,21693,2026-05-18,阿里开源 AI 代码自动审查系统,在 PR 与 Commit 环节自动进行静态分析与架构合规评审
-186,antirez/ds4,https://github.com/antirez/ds4,模型/推理,16874,21936,2026-05-06,Redis 作者开发的 DeepSeek 4 本地推理引擎,在 Metal/CUDA/CPU 上极速本地推理
-187,AprilNEA/OpenLogi,https://github.com/AprilNEA/OpenLogi,开发工具,16649,17973,2026-05-24,罗技外设跨平台轻量开源驱动替代,Rust 编写的低资源消耗按键宏与平滑滚轮映射工具
-188,langchain-ai/openwiki,https://github.com/langchain-ai/openwiki,Coding Agent,15887,15887,2026-06-22,基于 Agent 的代码库自动化文档维护 CLI,持续分析代码变更并自动更新项目架构 Wiki
-189,PrimeIntellect-ai/prime-agent,https://github.com/PrimeIntellect-ai/prime-agent,Coding Agent,15122,19323,2026-05-08,基于强化学习自进化的编程 Agent,自主完成长周期复杂软件工程任务
-190,img2threejs/img2threejs,https://github.com/img2threejs/img2threejs,多模态,14629,14629,2026-07-15,2D 图像一键转 Three.js 3D 场景工具,将平面概念设计稿快速重构为交互式 WebGL 3D 页面
-191,Fei-Away/Codex-Dream-Skin,https://github.com/Fei-Away/Codex-Dream-Skin,Coding Agent,14227,14227,2026-07-15,Codex 终端美化与沉浸式主题皮肤,提供定制化配色与视觉布局，大幅提升终端开发愉悦感
-192,LadybirdBrowser/ladybird,https://github.com/LadybirdBrowser/ladybird,前端框架,14169,65919,2024-05-30,全新独立自研内核开源网页浏览器,不依赖 Blink 或 WebKit 的纯开源跨平台浏览器
-193,bilawalsidhu/gods-eye-view,https://github.com/bilawalsidhu/gods-eye-view,多模态,14046,14046,2026-06-22,浏览器端 3D 卫星数字孪生地球,交互式探索全球高精度地理空间数据
-194,vorssaintapp/vorssaint-utils,https://github.com/vorssaintapp/vorssaint-utils,开发工具,13967,13967,2026-06-12,开源 macOS 状态栏增强工具箱,系统监控与常用效率快捷工具
-195,awesome-dsh-plugin/awesome-dsh-plugin,https://github.com/awesome-dsh-plugin/awesome-dsh-plugin,开发工具,13781,13781,2026-08-13,DeepSeek Harness 官方与精选插件合集,覆盖搜索、编码、数据分析等多领域的 DSH 扩展生态
-196,XiaomiMiMo/MiMo-Code,https://github.com/XiaomiMiMo/MiMo-Code,Coding Agent,12908,12908,2026-06-10,小米自进化多模态编程 Agent 框架,模型能力与 Agent 架构协同进化的现代编程引擎
-197,lidge-jun/opencodex,https://github.com/lidge-jun/opencodex,Coding Agent,12656,12656,2026-06-18,通用 LLM 代理接入 Codex/Claude 协议网关,让任意开源模型无缝兼容 Codex 与 Claude Code 命令行
-198,ByteByteGoHq/system-design-101,https://github.com/ByteByteGoHq/system-design-101,开发工具,12206,87741,2023-09-18,图解分布式大型系统架构精选指南,用生动直观的架构图讲透高并发与分布式核心原理
-199,zhishile/codex-auth-helper,https://github.com/zhishile/codex-auth-helper,Coding Agent,10765,10765,2026-06-02,Codex 跨设备会话与登录状态导出工具,一键提取已授权会话生成配置文件，简化多机同步流程
-200,cobusgreyling/loop-engineering,https://github.com/cobusgreyling/loop-engineering,Coding Agent,10757,10757,2026-06-09,面向 Agentic 工作流的循环工程指南,系统阐述以闭环反馈驱动 Agent 持续改进的工程方法
-201,XxHuberrr/Mineradio,https://github.com/XxHuberrr/Mineradio,音视频,10383,10383,2026-06-02,沉浸式歌词视觉与粒子舞台音乐播放器,结合电影级运镜与粒子特效的跨平台现代化播放器
-202,openai/codex-security,https://github.com/openai/codex-security,Coding Agent,10288,10288,2026-07-13,OpenAI 自动化安全漏洞扫描与修复 CLI,自主发现代码中的安全弱点并验证自动生成的修复补丁
-203,FlashML-org/FreeToken,https://github.com/FlashML-org/FreeToken,模型/推理,10276,10276,2026-07-20,轻量级本地大模型服务引擎,单机运行数据中心级模型推理与吞吐
-204,RVC-Boss/GPT-SoVITS,https://github.com/RVC-Boss/GPT-SoVITS,音视频,10193,61367,2024-01-14,少样本高保真语音克隆与 TTS 系统,仅需 5 秒语音样本即可实现跨语种零样本音色克隆
-205,makerspet/oomwoo,https://github.com/makerspet/oomwoo,机器人,9933,9933,2026-06-10,完全开源自托管扫地机器人系统,提供全套硬件图纸、固件与 SLAM 室内自主建图导航方案
-206,dockur/windows,https://github.com/dockur/windows,基础设施,9842,53093,2024-01-14,在 Docker 容器中直接运行 Windows,在 Linux 服务器中轻量化容器化运行全功能 Windows 系统
-207,Yu9191/wloc,https://github.com/Yu9191/wloc,开发工具,9835,9835,2026-06-24,Apple 设备网络定位修改与模拟工具,免越狱一键修改与恢复 iOS/macOS 虚拟定位坐标
-208,helloianneo/ian-xiaohei-illustrations,https://github.com/helloianneo/ian-xiaohei-illustrations,多模态,9207,10688,2026-05-27,小黑怪诞手绘插画生成 Agent 技能,为技术文章与设计配图生成极具辨识度的手绘插画
-209,pathwaycom/arc-task-gen,https://github.com/pathwaycom/arc-task-gen,模型/推理,9075,9075,2026-08-04,ARC-AGI 任务自动生成与评测工具,评估前沿模型通用推理与泛化能力
-210,shadcn/improve,https://github.com/shadcn/improve,Coding Agent,9034,9034,2026-06-10,强弱模型分工协作的代码审计重构工具,由高智力模型做架构审计规划，弱模型负责具体代码落地
-211,oso95/scroll-world,https://github.com/oso95/scroll-world,前端框架,8829,8829,2026-07-06,滚动驱动 3D 品牌展示落地页生成器,将平面品牌故事转化为可跟随滚动的沉浸式 3D 空间
-212,MoonshotAI/Kimi-K3,https://github.com/MoonshotAI/Kimi-K3,模型/推理,8669,8669,2026-07-27,月之暗面 Kimi K3 前沿开源大模型,具备超长上下文理解与深度复杂逻辑推理能力
-213,StarTrail-org/PixelRAG,https://github.com/StarTrail-org/PixelRAG,多模态,8320,9806,2026-05-29,原生像素级视觉检索增强生成引擎,无需繁琐 OCR 直接对图像与排版进行端到端视觉语义检索
-214,open-gsd/gsd-core,https://github.com/open-gsd/gsd-core,Coding Agent,7635,8931,2026-05-22,Git-Ship-Done 敏捷交付流水线核心库,将 AI 编程从代码生成到测试发布全链路串联
-215,simonlin1212/a-stock-data,https://github.com/simonlin1212/a-stock-data,数据库,7541,9384,2026-05-11,A股全栈开源量化数据工具包,为 AI 投研与量化交易提供零鉴权数据源
-216,MiniMax-AI/MiniMax-H3,https://github.com/MiniMax-AI/MiniMax-H3,模型/推理,7535,7535,2026-07-30,MiniMax 混合推理架构开源大模型,在大规模多轮对话与逻辑推理中展现极高连贯性
-217,astrid-runtime/book,https://github.com/astrid-runtime/book,基础设施,7466,7466,2026-06-06,Astrid 安全操作系统内核与架构规范,详细阐述现代微内核、IPC 机制与安全边界的权威规范
-218,astrid-runtime/handbook,https://github.com/astrid-runtime/handbook,开发工具,7407,7407,2026-06-06,Astrid 贡献者与开发者协作手册,为大型开源系统工程提供清晰规范的提交流程指导
-219,EpicGames/lore,https://github.com/EpicGames/lore,开发工具,7211,8518,2026-05-21,Epic 开源面向大仓与游戏资产的版本控制,专为巨型工程、3D 资产与海量二进制文件优化的现代 VCS
-220,deepseek-ai/DeepSeek-V3,https://github.com/deepseek-ai/DeepSeek-V3,模型/推理,7140,104440,2024-12-26,DeepSeek 开源 671B MoE 旗舰大模型,极具性价比的前沿开源通用大语言模型
-221,laoma2053/awesome-zhuiju-free,https://github.com/laoma2053/awesome-zhuiju-free,开发工具,7075,7075,2026-06-05,精选免费高质量影视与动漫资源索引,人工维护的高速网盘、字幕组与在线观影权威清单
-222,MDX-Tom/gpt-5.6-instruct,https://github.com/MDX-Tom/gpt-5.6-instruct,Coding Agent,7071,7071,2026-07-11,针对前沿模型的安全边界与提示词测试集,全面评估新一代大语言模型在极限工况下的遵循能力
-223,deepseek-ai/DeepSpec,https://github.com/deepseek-ai/DeepSpec,模型/推理,7057,7057,2026-06-26,深度投机解码加速训练与评测代码库,开源高效投机解码算法，成倍提升 LLM 推理吞吐
-224,chuspeeism/dashi-ppt-skill,https://github.com/chuspeeism/dashi-ppt-skill,前端框架,7017,7017,2026-06-10,浏览器可在线编辑的 PPT 幻灯片生成技能,让 AI 输出排版专业、支持二次拖拽编辑的演示文稿
-225,yjh051108/dsh-routing-suite,https://github.com/yjh051108/dsh-routing-suite,开发工具,6982,6982,2026-08-14,DeepSeek Harness 路由与注入套件,统一管理与分发 DSH 插件流量
-226,nexu-io/html-anything,https://github.com/nexu-io/html-anything,前端框架,6891,8575,2026-05-11,Agent 驱动的原生 HTML 可视化编辑器,让本地 AI 智能体实时编写与预览网页
-227,FareedKhan-dev/kimi-k3-in-c,https://github.com/FareedKhan-dev/kimi-k3-in-c,模型/推理,6869,6869,2026-08-01,纯 C 语言无依赖运行 Kimi K3 推理引擎,在普通 PC 上单机以低内存占用推理超大规模参数模型
-228,abi/screenshot-to-code,https://github.com/abi/screenshot-to-code,前端框架,6864,76512,2023-11-14,截图与设计稿一键转前端代码工具,将 UI 截图快速重构为清晰干净的 Tailwind/React 组件
-229,Vincentwei1021/video-shotcraft,https://github.com/Vincentwei1021/video-shotcraft,音视频,6831,6831,2026-07-19,电影级运镜与分镜视频生成 Agent 技能,为 AI 编程助手赋予专业影视分镜与视频运镜规划能力
-230,LiamGvchi/gc-minimal-zine-poster,https://github.com/LiamGvchi/gc-minimal-zine-poster,多模态,6781,6781,2026-07-12,安静极简社论风格海报生成技能,输出具备克制留白与高级排版美感的现代 Zine 海报
-231,bashalarmistalt/decimen-optical-transfer,https://github.com/bashalarmistalt/decimen-optical-transfer,开发工具,6612,6612,2026-07-30,高带宽屏幕-摄像头光学无网数据传输工具,通过动态高密度视觉条码在物理隔离设备间快速传文件
-232,zhu1090093659/dsh-web,https://github.com/zhu1090093659/dsh-web,开发工具,6544,6544,2026-08-12,DeepSeek Harness 网页插件聚合生态,在线探索、配置与运行 DSH 插件
-233,drumih/turbo-fieldfare,https://github.com/drumih/turbo-fieldfare,模型/推理,6515,6515,2026-07-17,Apple Silicon 极致优化的轻量推理引擎,在 2GB 内存的普通 Mac 上流畅运行 Gemma 4 等模型
-234,petergyang/no-ai-slop,https://github.com/petergyang/no-ai-slop,开发工具,6507,6507,2026-07-07,消除 AI 废话与工业模板味的写作技能,识别并剔除 20+ 种典型 AI 机械套话，重塑真实人类文风
-235,arvids-unavailable/openGym,https://github.com/arvids-unavailable/openGym,基础设施,6339,6339,2026-08-03,开源云原生与系统基础设施,https://github.com/DuarteSantos8/openGym
-236,anthropics/defending-code-reference-harness,https://github.com/anthropics/defending-code-reference-harness,Coding Agent,6268,7390,2026-05-22,自动化软件安全防御与补丁修复 Harness,自动化进行威胁建模、代码静态扫描与漏洞修复闭环
-237,teamchong/pxpipe,https://github.com/teamchong/pxpipe,Coding Agent,6198,7306,2026-05-20,基于图像渲染的超长上下文压缩利器,将长文本排版渲染为图像输入，成倍节省 Token 消耗
-238,MoonshotAI/kimi-code,https://github.com/MoonshotAI/kimi-code,Coding Agent,6108,7170,2026-05-22,月之暗面 Kimi Code 终端编程工具,面向中文开发者优化的智能命令行编码辅助助手
-239,opengeos/GeoLibre,https://github.com/opengeos/GeoLibre,数据库,5970,6938,2026-05-27,云原生开源地理空间数据分析平台,提供交互式地图渲染、遥感影像分析与空间数据可视化
-240,zhongerxin/Cowart,https://github.com/zhongerxin/Cowart,开发工具,5745,5745,2026-06-18,跨平台多格式美术与素材智能整理工具,为插画师与设计师提供一键打标、归档与素材索引
-241,op7418/guizang-social-card-skill,https://github.com/op7418/guizang-social-card-skill,多模态,5734,6725,2026-05-27,社交媒体高美感图文排版生成技能,一键生成小红书/即刻风格的精美图文轮播与卡片封面
-242,baairon/torlink,https://github.com/baairon/torlink,开发工具,5485,5485,2026-06-25,极简现代化轻量 BT 磁力搜索与下载客户端,开箱即用，界面现代流畅的本地资源获取工具
-243,oomol-lab/open-connector,https://github.com/oomol-lab/open-connector,基础设施,5444,5444,2026-06-29,连接 1000+ SaaS 服务的开源鉴权网关,为 AI 智能体提供统一、合规的第三方平台 API 授权与调用
-244,zgwl/chinese-buy-us-stock-guide,https://github.com/zgwl/chinese-buy-us-stock-guide,开发工具,5428,6408,2026-05-30,华人美股与海外投资全流程实战指南,涵盖账户开立、外汇合规、标的研究与期权风控体系
-245,diffusionstudio/lottie,https://github.com/diffusionstudio/lottie,前端框架,5360,5360,2026-06-04,Agent 驱动的生产级 Lottie 动画生成库,让 Claude Code 等智能体直接输出流畅的矢量动效代码
-246,trailhq/Graft,https://github.com/trailhq/Graft,Coding Agent,5186,5186,2026-07-03,主流编程 Agent 本地上下文加速引擎,为 Claude Code/Codex 等注入代码图谱
-247,ZzzLc0405/photo-abstract-editorial,https://github.com/ZzzLc0405/photo-abstract-editorial,多模态,5139,5139,2026-08-04,抽象社论摄影质感配图生成技能,为深度文章生成具备高审美与艺术质感的抽象视觉配图
-248,internet-court/internet-court-skill,https://github.com/internet-court/internet-court-skill,Coding Agent,5112,5112,2026-06-16,开源 AI 编程辅助工具,"The trust layer for agent-to-agent commerce — natural-language mandates, ERC-..."
-249,LaoFeng-mouse/flyingmouse-format,https://github.com/LaoFeng-mouse/flyingmouse-format,开发工具,5060,5060,2026-08-06,Windows 免安装本地多媒体与文件格式转换器,内置 FFmpeg，无需联网即可极速批量转换音视频格式
-250,WenyuChiou/awesome-agentic-ai-zh,https://github.com/WenyuChiou/awesome-agentic-ai-zh,Coding Agent,4947,6541,2026-05-04,开源 AI 编程辅助工具,A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM ba...
-251,deepseek-ai/DeepSeek-R1,https://github.com/deepseek-ai/DeepSeek-R1,模型/推理,4913,92038,2025-01-20,DeepSeek 开源强化学习推理大模型,开创开源推理模型新标杆，数学与代码能力卓越
-252,MengTo/threeui,https://github.com/MengTo/threeui,前端框架,4707,4707,2026-08-21,开源前端 UI 与交互设计项目,Open-source ThreeUI Community catalog with live interactive components and co...
-253,vercel-labs/scriptc,https://github.com/vercel-labs/scriptc,开发工具,4696,4696,2026-07-22,TypeScript 直接编译为原生机器码编译器,大幅提升脚本执行性能并支持脱离 Node 环境独立运行
-254,jakubkrehel/skills,https://github.com/jakubkrehel/skills,前端框架,4643,4643,2026-07-10,打造卓越用户界面的 Agent 设计技能库,指导智能体构建符合人机工效学的现代化交互界面
-255,s1dashu/ip-as-logo-skill,https://github.com/s1dashu/ip-as-logo-skill,Coding Agent,4636,4636,2026-08-18,开源 AI 编程辅助工具,"A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic..."
-256,Zeejay0/gathered-scenes-zine-skill,https://github.com/Zeejay0/gathered-scenes-zine-skill,多模态,4624,4624,2026-08-01,场景采风排版与复古 Zine 杂志生成技能,将散落图片与文字排版为极具独立杂志美感的视觉篇章
-257,nyblnet/bento,https://github.com/nyblnet/bento,开发工具,4613,4613,2026-07-17,装在一个文件里的极简轻量离线办公套件,无需安装，单 HTML 文件实现文字、表格与演示编辑
-258,huangruiteng/loopx,https://github.com/huangruiteng/loopx,Coding Agent,4579,5328,2026-05-31,面向长周期任务的持久化 Agent 控制面,提供任务状态持久化、异常恢复与多阶段执行治理
-259,xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer,https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer,开发工具,4451,4451,2026-07-30,前沿部署工程师（FDE）体系化实战指南,拆解 AI 时代技术交付与业务增长落地的核心技能矩阵
-260,DavidHDev/canvas-ui,https://github.com/DavidHDev/canvas-ui,前端框架,4392,4392,2026-07-16,创意 Canvas 动效与 WebGL 交互组件库,为 React 与现代网页注入高表现力的视觉流体交互
-261,Waishnav/devspace,https://github.com/Waishnav/devspace,Coding Agent,4324,4324,2026-06-14,在网页端模拟运行 Claude Code 与 Codex 环境,让普通网页会话体验终端 Agent 的上下文感知与编码能力
-262,bikini/exploitarium,https://github.com/bikini/exploitarium,开发工具,4251,4251,2026-06-23,开源漏洞验证代码与 PoC 精选知识库,聚合公开漏洞复现代码，辅助安全团队进行防御验证
-263,perplexityai/bumblebee,https://github.com/perplexityai/bumblebee,开发工具,4215,4982,2026-05-20,轻量级只读本地依赖与扩展安全扫描器,快速排查本地工程与扩展包中的潜在安全隐患与后门
-264,slvDev/esp32-ai,https://github.com/slvDev/esp32-ai,机器人,4213,4213,2026-07-23,ESP32 嵌入式离线语音与微型 AI 方案,在低成本单片机上实现离线语音唤醒与边缘智能控制
-265,Jia-Ethan/codex-keysmith,https://github.com/Jia-Ethan/codex-keysmith,Coding Agent,4190,4190,2026-06-28,Codex 指令与 Prompt 版本化部署工具,支持指令热预览、权限控制与多环境平滑发布
-266,HEJustinSun/my-girlfriend-jingtian-latex,https://github.com/HEJustinSun/my-girlfriend-jingtian-latex,开发工具,4166,4166,2026-08-27,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
-267,nubjs/nub,https://github.com/nubjs/nub,开发工具,4165,4165,2026-06-03,全能极速现代化 Node.js 基础开发工具箱,整合常用工具函数与异步流程，大幅简化后端开发
-268,withmarbleapp/os-taxonomy,https://github.com/withmarbleapp/os-taxonomy,开发工具,4151,4151,2026-07-08,操作系统与应用生态结构化分类知识库,为系统开发者提供清晰的跨平台架构与功能分类参考
-269,BuilderIO/skills,https://github.com/BuilderIO/skills,Coding Agent,4132,4132,2026-06-10,Builder.io 官方出品编程 Agent 技能集,为 AI 编码助手注入组件化最佳实践与全栈架构规范
-270,maybe-finance/maybe,https://github.com/maybe-finance/maybe,开发工具,3983,54313,2024-01-01,现代极简开源个人财务与资产看板,完全自托管、隐私安全的个人净资产与现金流管理平台
-271,digimata/quill,https://github.com/digimata/quill,音视频,3882,3882,2026-07-24,macOS 极简原生录音与实时 AI 转录工具,纯净无干扰的高保真语音录制与离线转文字应用
-272,arvin341az-glitch/RVG,https://github.com/arvin341az-glitch/RVG,前端框架,3872,3872,2026-06-12,开源前端 UI 与交互设计项目,"Multi-protocol proxy management panel built with Python & FastAPI, deployable..."
-273,nexu-io/html-video,https://github.com/nexu-io/html-video,音视频,3809,4484,2026-05-27,在本地用 HTML/CSS 声明式渲染视频,让前端工程师与 AI Agent 像写网页一样编程生成视频
-274,inkeep/open-knowledge,https://github.com/inkeep/open-knowledge,开发工具,3778,3778,2026-06-03,AI 原生现代化 Markdown 知识库与 IDE,深度集成 LLM 辅助整理、关联与检索个人与团队文档
-275,mekos2772/ios-location-spoofer,https://github.com/mekos2772/ios-location-spoofer,开发工具,3742,3742,2026-06-30,免越狱 iOS 独立虚拟定位修改工具,简单直观设置并模拟各类运动轨迹与地理坐标
-276,microsoft/skill-recorder,https://github.com/microsoft/skill-recorder,Coding Agent,3705,3705,2026-07-29,开源 AI 编程辅助工具,Desktop app that records your on-screen work session and uses the GitHub Copi...
-277,JimLiu/baoyu-design,https://github.com/JimLiu/baoyu-design,前端框架,3653,3653,2026-06-07,在本地离线运行 Claude Design 技能,将前沿 UI/UX 设计能力无缝接入本地开发环境
-278,pollen-robotics/microduck,https://github.com/pollen-robotics/microduck,机器人,3649,3649,2026-07-29,开源机器人与嵌入式硬件项目,A Tiny biped duck robot 🦆
-279,CopilotKit/OpenBot,https://github.com/CopilotKit/OpenBot,Coding Agent,3566,3566,2026-08-17,开源 AI 编程辅助工具,"Open-source AI coworkers that each get a computer of their own: a browser, fi..."
-280,bryanthaboi/gen1recomp,https://github.com/bryanthaboi/gen1recomp,开发工具,3465,3465,2026-07-18,开源开发者效率与辅助工具,Gen1Recomp - A native Lua / LÖVE2D recreation of Gen 1 Poke
-281,b-nnett/grok-bot-0.18-reconstructed,https://github.com/b-nnett/grok-bot-0.18-reconstructed,基础设施,3458,3458,2026-08-23,开源云原生与系统基础设施,Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 fo...
-282,UditAkhourii/adhd,https://github.com/UditAkhourii/adhd,Coding Agent,3440,4003,2026-05-25,思维树剪枝防冗余 Agent 编程技能,通过动态树搜索与早期剪枝避免智能体陷入死循环
-283,isjiamu/gzh-design-skill,https://github.com/isjiamu/gzh-design-skill,Coding Agent,3421,3421,2026-07-01,开源 AI 编程辅助工具,把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent ski...
-284,xuchonglang/investing-for-beginners,https://github.com/xuchonglang/investing-for-beginners,开发工具,3378,3378,2026-07-03,小隐寺投资百科官方公开索引,系统梳理美股、期权与宏观投资的基础知识框架
-285,zarazhangrui/beautiful-html-templates,https://github.com/zarazhangrui/beautiful-html-templates,Coding Agent,3371,4420,2026-05-05,开源 AI 编程辅助工具,A library of HTML slide templates designed so any coding agent can pick the r...
-286,tamnd/kage,https://github.com/tamnd/kage,开发工具,3348,3348,2026-06-14,网页离线镜像与快照深度归档工具,完整保留网页交互与样式，生成便于永久保存的离线副本
-287,mshumer/Claude-of-Duty,https://github.com/mshumer/Claude-of-Duty,前端框架,3334,3334,2026-07-25,开源前端 UI 与交互设计项目,"A Call of Duty-quality FPS in Three.js, built from a single prompt."
-288,yetone/cumora,https://github.com/yetone/cumora,Coding Agent,3324,3324,2026-08-17,开源 AI 编程辅助工具,Where agent teams gather. Cross-platform team chat where AI agents are first-...
-289,Hypostasis-Cat/HypoMux,https://github.com/Hypostasis-Cat/HypoMux,前端框架,3296,3296,2026-06-11,开源前端 UI 与交互设计项目,CN Windows 多网卡带宽叠加工具。无需复杂配置，一键聚合多网卡（有线、Wi-Fi网卡、手机热点等），实现物理级多线下载与叠加网速。 EN Wind...
-290,bozhouDev/codex-orange-book,https://github.com/bozhouDev/codex-orange-book,Coding Agent,3291,3291,2026-06-23,Codex 从入门到实战全链路开源橙皮书,详尽讲解 Codex 安装配置、技巧与企业级落地案例
-291,cpaczek/skylight,https://github.com/cpaczek/skylight,前端框架,3228,3228,2026-06-02,开源前端 UI 与交互设计项目,"Project the aircraft passing overhead onto your ceiling in real time, from an..."
-292,spinabot/brigade,https://github.com/spinabot/brigade,Coding Agent,3212,3212,2026-06-19,开源 AI 编程辅助工具,"Brigade — Your personal intelligence, built enterprise-grade"
-293,FoundZiGu/GuJumpgate,https://github.com/FoundZiGu/GuJumpgate,开发工具,3121,3923,2026-05-19,多云与混合节点流量智能中继工具,低延迟调度与跨网络环境的穿透中继方案
-294,Gloridust/WechatOnCloud,https://github.com/Gloridust/WechatOnCloud,开发工具,3119,3684,2026-05-29,云端部署与微信消息自动同步桥接服务,在云端安全托管与转发多端即时通讯消息
-295,Forward-Future/loopy,https://github.com/Forward-Future/loopy,Coding Agent,3079,3079,2026-06-12,开源 AI 编程辅助工具,"A library of practical AI-agent loops and an installable skill for finding, a..."
-296,fuxicodex/Fuxi,https://github.com/fuxicodex/Fuxi,Coding Agent,3046,3046,2026-08-04,开源 AI 编程辅助工具,"FuXi is a fast, self-contained AI coding agent that lives in your terminal — ..."
-297,TestSprite/testsprite-cli,https://github.com/TestSprite/testsprite-cli,开发工具,3038,3038,2026-06-11,开源开发者效率与辅助工具,Official TestSprite CLI — AI-powered automated testing from your terminal
-298,Tiger3807861189/J-Space-Cognition-Suite-V3.7,https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.7,Coding Agent,3009,3009,2026-07-22,开源 AI 编程辅助工具,J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills based on Anthr...
-299,thebuggeddev/anatomy,https://github.com/thebuggeddev/anatomy,前端框架,2998,2998,2026-08-02,开源前端 UI 与交互设计项目,An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
-300,duolahypercho/codex-router,https://github.com/duolahypercho/codex-router,Coding Agent,2990,2990,2026-07-19,开源 AI 编程辅助工具,"External-model router for Codex with guided Kimi OAuth/API, DeepSeek, safe mi..."
-301,crafter-station/petdex,https://github.com/crafter-station/petdex,Coding Agent,2980,4006,2026-05-02,开源 AI 编程辅助工具,"A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, H..."
-302,elementalsouls/Claude-BugHunter,https://github.com/elementalsouls/Claude-BugHunter,Coding Agent,2980,3907,2026-05-05,开源 AI 编程辅助工具,A Claude Code skill bundle for bug hunting and external red-team work - 82 sk...
-303,muxuuu/serenity-skill,https://github.com/muxuuu/serenity-skill,Coding Agent,2971,3928,2026-05-04,开源 AI 编程辅助工具,Serenity-inspired Agent Skill for supply-chain bottleneck stock research
-304,openTrinity/mycontext,https://github.com/openTrinity/mycontext,开发工具,2970,2970,2026-08-03,开源开发者效率与辅助工具,MyContext is a local-first desktop app for everyday communication and knowled...
-305,cordiverse/paper,https://github.com/cordiverse/paper,基础设施,2928,2928,2026-08-13,开源云原生与系统基础设施,A Programming Paradigm for Spatiotemporal Composability
-306,yynxxxxx/Codex-X,https://github.com/yynxxxxx/Codex-X,Coding Agent,2905,2905,2026-07-04,开源 AI 编程辅助工具,OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML...
-307,dsh-market/dsh-market,https://github.com/dsh-market/dsh-market,开发工具,2876,2876,2026-08-14,开源开发者效率与辅助工具,"The plugin market inside DeepSeek Harness — browse, search, one-click install..."
-308,imsai-sh/zhuzhiliao,https://github.com/imsai-sh/zhuzhiliao,开发工具,2872,2872,2026-08-01,开源开发者效率与辅助工具,竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
-309,code-yeongyu/lazycodex,https://github.com/code-yeongyu/lazycodex,Coding Agent,2851,3355,2026-05-25,面向复杂大仓的 Agent 记忆管理框架,通过项目持久记忆让编码智能体精准导航庞大代码库
-310,miuuyy/codex-chatgpt-web,https://github.com/miuuyy/codex-chatgpt-web,Coding Agent,2851,2851,2026-07-26,开源 AI 编程辅助工具,Use ChatGPT Web (including Pro) as a native model in the Codex app — with con...
-311,Leonxlnx/unlazy,https://github.com/Leonxlnx/unlazy,Coding Agent,2844,2844,2026-08-09,开源 AI 编程辅助工具,"Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits ..."
-312,chuspeeism/dashi-taskboard,https://github.com/chuspeeism/dashi-taskboard,Coding Agent,2812,2812,2026-07-24,开源 AI 编程辅助工具,现代化可灵活嵌入的任务面板，支持 Codex、DeepSeek Harness
-313,zerx-lab/FluxDown,https://github.com/zerx-lab/FluxDown,开发工具,2780,2780,2026-07-03,开源开发者效率与辅助工具,Rust 驱动的多协议下载管理器，支持 HTTP/FTP/BitTorrent 磁力链接及 HLS/DASH 流媒体，智能多线程加速与浏览器无缝集成。精美...
-314,plannotator/effective-html,https://github.com/plannotator/effective-html,Coding Agent,2777,2777,2026-06-09,开源 AI 编程辅助工具,"Agent skills for useful HTML artifacts, wireframes, interactive prototypes, p..."
-315,kunchenguid/lavish-axi,https://github.com/kunchenguid/lavish-axi,前端框架,2773,3231,2026-05-11,现代富文本与纯净 HTML 可视化编辑器,将排版与代码无缝融合的现代化内容创作工具
-316,zLanqing/codex-claude-academic-skills,https://github.com/zLanqing/codex-claude-academic-skills,Coding Agent,2770,3355,2026-05-14,开源 AI 编程辅助工具,本仓库包含三个面向学术科研人员的Skills，覆盖从文献阅读、论文写作到科学计算的完整研究工作流。office-academic-skill 负责论文阅读...
-317,strukto-ai/mirage,https://github.com/strukto-ai/mirage,Coding Agent,2760,3588,2026-05-06,开源 AI 编程辅助工具,The World's First Unified Virtual Filesystem For AI Agents
-318,ccch1mneyyy/dsh-TUI,https://github.com/ccch1mneyyy/dsh-TUI,Coding Agent,2733,2733,2026-08-13,开源 AI 编程辅助工具,DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回滚/上下文进度+TPS。npm 一键...
-319,MisoLabsAI/MisoTTS,https://github.com/MisoLabsAI/MisoTTS,音视频,2726,3226,2026-05-20,80 亿参数高表现力情感语音合成模型,输出具备丰富人类情感起伏与细腻语调的自然语音
-320,Krishnagangwal/CS-Fundamentals,https://github.com/Krishnagangwal/CS-Fundamentals,数据库,2722,2722,2026-06-28,开源数据管理与存储系统,"Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL..."
-321,b-nnett/goose,https://github.com/b-nnett/goose,基础设施,2718,2718,2026-06-02,开源云原生与系统基础设施,Goose Swift proof-of-concept README
-322,MIgHTy-alIeN/ai-trader-bot,https://github.com/MIgHTy-alIeN/ai-trader-bot,数据库,2692,2692,2026-07-17,开源数据管理与存储系统,An arbitrage bot is a smart contract connected to an external automation scri...
-323,shengjidaguai-china/goutoujunshi,https://github.com/shengjidaguai-china/goutoujunshi,Coding Agent,2687,2687,2026-07-20,开源 AI 编程辅助工具,一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。
-324,Alpha-Dojo/DojoAgents,https://github.com/Alpha-Dojo/DojoAgents,Coding Agent,2660,3015,2026-05-21,开源 AI 编程辅助工具,DojoAgents: Full-Market AI Copilot for Personal Investment
-325,AlephAITech/WorkBuddyGuide,https://github.com/AlephAITech/WorkBuddyGuide,Coding Agent,2650,2650,2026-07-10,开源 AI 编程辅助工具,"A practical, open-source guide to mastering WorkBuddy through real-world work..."
-326,NVIDIA/skills,https://github.com/NVIDIA/skills,Coding Agent,2637,3151,2026-02-25,NVIDIA 官方出品 GPU 与 CUDA 编程技能集,为 AI 编码助手注入高性能算子优化与 CUDA 调试知识
-327,vercel-labs/fx,https://github.com/vercel-labs/fx,Coding Agent,2622,2622,2026-08-11,开源 AI 编程辅助工具,Unix like coding agent
-328,org2AI/ORG2,https://github.com/org2AI/ORG2,Coding Agent,2619,2648,2026-06-01,开源 AI 编程辅助工具,System of record for how agents build software: Built-in rust harness & 20+ C...
-329,peetzweg/opendisplay,https://github.com/peetzweg/opendisplay,基础设施,2608,2608,2026-06-10,开源云原生与系统基础设施,"Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a tru..."
-330,google-research/tabfm,https://github.com/google-research/tabfm,模型/推理,2567,2567,2026-06-16,开源大模型与本地推理工具,TabFM (Tabular Foundation Model) is a pretrained tabular foundation model dev...
-331,huggingface/tau,https://github.com/huggingface/tau,Coding Agent,2558,2558,2026-06-11,开源 AI 编程辅助工具,A Python port of Pi’s minimalist coding agent.
-332,Younesfdj/gitfut,https://github.com/Younesfdj/gitfut,音视频,2554,2554,2026-06-24,开源音视频处理与多媒体工具,"Your GitHub stats, turned into a World-Cup-style player card"
-333,seakee/CPA-Manager-Plus,https://github.com/seakee/CPA-Manager-Plus,Coding Agent,2541,2993,2026-05-17,开源 AI 编程辅助工具,A self-hosted CPA / CLIProxyAPI management panel and AI gateway observability...
-334,sw33tLie/macshot,https://github.com/sw33tLie/macshot,开发工具,2524,3189,2026-03-11,功能全面的 macOS 原生截图与录屏神器,支持即时批注、智能 OCR 提取与滚动长截图
-335,antirez/h3.c,https://github.com/antirez/h3.c,模型/推理,2511,2511,2026-08-09,开源大模型与本地推理工具,MiniMax H3 inference engine for Mac computers
-336,jakubkrehel/make-interfaces-feel-better,https://github.com/jakubkrehel/make-interfaces-feel-better,前端框架,2501,3056,2026-03-13,界面微交互与触觉反馈调优技能,优化按钮微动效、过渡曲线与响应延迟，提升操作舒适度
-337,freestylefly/CodexGuide,https://github.com/freestylefly/CodexGuide,Coding Agent,2488,3345,2026-05-02,开源 AI 编程辅助工具,CodexGuide：面向全球初学者、创作者、开发者与团队的 Codex 实践指南
-338,DannyMac180/sol-advisor,https://github.com/DannyMac180/sol-advisor,Coding Agent,2466,2466,2026-08-01,开源 AI 编程辅助工具,Codex-native architect orchestration with Luna and Terra implementation lanes...
-339,Gaoshu705/QzoneArchive,https://github.com/Gaoshu705/QzoneArchive,基础设施,2460,2460,2026-08-02,开源云原生与系统基础设施,将 QQ 空间历史动态、照片、视频与互动记录安全归档到本地的桌面 / 移动端工具。
-340,samber/cc-skills-golang,https://github.com/samber/cc-skills-golang,Coding Agent,2460,3114,2026-03-21,专为 Go 语言工程优化的 Agent 技能合集,指导智能体编写符合 Go 官方规范与高并发最佳实践的代码
-341,Pouzor/homelable,https://github.com/Pouzor/homelable,基础设施,2459,3132,2026-03-06,自托管家庭实验室网络与服务可视化拓扑,实时直观展示局域网设备拓扑、服务状态与链路流量
-342,eternityspring/shuohao-skills,https://github.com/eternityspring/shuohao-skills,Coding Agent,2456,2456,2026-08-06,开源 AI 编程辅助工具,AI 短剧制作的 skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜 | Agent skills for AI short-drama ...
-343,zenbu-labs/terminal-browser,https://github.com/zenbu-labs/terminal-browser,Coding Agent,2447,2447,2026-07-06,开源 AI 编程辅助工具,A browser inside your terminal
-344,gvzdv/claudish-to-english,https://github.com/gvzdv/claudish-to-english,开发工具,2412,2412,2026-08-10,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
-345,BigDawnGhost/wenyi,https://github.com/BigDawnGhost/wenyi,基础设施,2408,2408,2026-06-14,开源云原生与系统基础设施,将被语言阻隔的作品，带到读者的语言中。Bringing literature into your language.
-346,makecindy/cindy,https://github.com/makecindy/cindy,Coding Agent,2367,2367,2026-07-22,开源 AI 编程辅助工具,Consider it done. The open-source AI agent that works out of the box · 想到，就能做...
-347,skyhook-io/radar,https://github.com/skyhook-io/radar,基础设施,2359,3176,2026-01-20,内置 MCP 服务的开源 Kubernetes 可视化面板,让集群管理员与 AI 智能体直观协同监控云原生资源
-348,dembrandt/dembrandt,https://github.com/dembrandt/dembrandt,前端框架,2357,3277,2025-11-22,网站设计系统与视觉 Token 一键提取工具,秒级提取任意网页的配色盘、排版字体与品牌资产
-349,tobi/walgit,https://github.com/tobi/walgit,开发工具,2350,2350,2026-08-23,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
-350,Tianyu199509/DeskBox,https://github.com/Tianyu199509/DeskBox,前端框架,2340,2340,2026-06-11,开源前端 UI 与交互设计项目,"A free, open-source Windows desktop organizer with native-feeling WinUI 3 wid..."
-351,sqliteai/warp,https://github.com/sqliteai/warp,模型/推理,2321,2321,2026-07-28,开源大模型与本地推理工具,Run the full 2.78-trillion-parameter Kimi K3 model or GLM-5.3-Flash beyond av...
-352,QwenAudio/qwen-audio-agent,https://github.com/QwenAudio/qwen-audio-agent,Coding Agent,2298,2298,2026-07-27,开源 AI 编程辅助工具,"A realtime voice runtime that keeps Agents talking, working, and present.  Re..."
-353,Sahir619/fable-method,https://github.com/Sahir619/fable-method,Coding Agent,2269,2269,2026-07-06,开源 AI 编程辅助工具,"The Fable Workflow: how Claude Fable 5 worked, distilled into skills any mode..."
-354,Wangnov/codex-app-mirror,https://github.com/Wangnov/codex-app-mirror,Coding Agent,2268,2948,2026-05-06,开源 AI 编程辅助工具,"原样镜像官方 Codex 桌面应用:每 15 分钟探测、SHA256 可校验、国内直连下载、 Mac 可增量更新 | Verbatim, verifiab..."
-355,simonlin1212/Vibe-Research,https://github.com/simonlin1212/Vibe-Research,Coding Agent,2263,2263,2026-07-05,开源 AI 编程辅助工具,Vibe-Research: Your Personal Trading Research Agent · A股/美股/港股 的个人投研 Agent：每日...
-356,Subhan-code/Amicro--Micro-transitions-,https://github.com/Subhan-code/Amicro--Micro-transitions-,开发工具,2246,2246,2026-07-11,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
-357,levy-street/world-of-claudecraft,https://github.com/levy-street/world-of-claudecraft,开发工具,2222,2222,2026-06-10,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
-358,signerlabs/ShipSwift,https://github.com/signerlabs/ShipSwift,前端框架,2218,2979,2025-12-15,AI 原生 SwiftUI 现代化组件与模板库,为 iOS/macOS 应用开发提供即拿即用的全栈高质量组件
-359,yynxxxxx/Codex-5.5-codex-instruct-5.5,https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5,Coding Agent,2210,2210,2026-06-28,开源 AI 编程辅助工具,辅助自动化编写、审查与重构代码
-360,penecho/penecho,https://github.com/penecho/penecho,Coding Agent,2205,2205,2026-07-14,开源 AI 编程辅助工具,"Think with AI beyond the chat box. A shared canvas for handwriting, equations..."
-361,guillermolg00/morphicons,https://github.com/guillermolg00/morphicons,前端框架,2198,2198,2026-08-01,开源前端 UI 与交互设计项目,Any icon morphs into any other — universal morphing for stroke-based icons wi...
-362,dwgx/WindsurfAPI,https://github.com/dwgx/WindsurfAPI,开发工具,2184,2957,2026-04-09,将桌面 IDE AI 能力转为通用 API 网关,一键将 IDE 内置模型转为标准 API 供外部调用
-363,loc567/loc567,https://github.com/loc567/loc567,基础设施,2179,2179,2026-06-11,开源云原生与系统基础设施,loc567 是一款完全开源免费的纯网页端iOS模拟定位工具。在线体验地址：https://loc567.com
-364,lenucksi/aur-malware-check,https://github.com/lenucksi/aur-malware-check,开发工具,2172,2172,2026-06-12,开源开发者效率与辅助工具,Detection tools for the June 2026 atomic-lockfile AUR supply-chain attack. Co...
-365,qxcnm/Codex-Manager,https://github.com/qxcnm/Codex-Manager,Coding Agent,2167,2946,2026-01-30,Codex 命令行多账号管理与网关转发工具,便捷管理多个开发配额与会话切换
-366,Hugo-Dz/spritefusion-pixel-snapper,https://github.com/Hugo-Dz/spritefusion-pixel-snapper,开发工具,2164,3107,2025-11-24,像素艺术网格对齐与边缘修复工具,自动将散乱像素贴图对齐标准网格，修复拼接缝隙
-367,0xShug0/audio.cpp,https://github.com/0xShug0/audio.cpp,模型/推理,2147,2147,2026-06-23,开源大模型与本地推理工具,"An all-in-one, pure C++ inference engine for audio models, powered by ggml. S..."
-368,nolangz/pixel2motion,https://github.com/nolangz/pixel2motion,Coding Agent,2130,2130,2026-06-12,开源 AI 编程辅助工具,"AI logo animation skill: turn raster logos into smooth SVG animation, animate..."
-369,oil-oil/oil-motion,https://github.com/oil-oil/oil-motion,开发工具,2123,2123,2026-08-07,开源开发者效率与辅助工具,"Create smooth, responsive interactive web animations."
-370,Agentchengfeng/chengfeng-videocut-skills,https://github.com/Agentchengfeng/chengfeng-videocut-skills,音视频,2116,2953,2026-01-14,基于 Claude Code 技能的自动化视频剪辑 Agent,通过自然语言指令完成视频粗剪、精剪与字幕匹配
-371,HUANGCHIHHUNGLeo/claude-real-video,https://github.com/HUANGCHIHHUNGLeo/claude-real-video,Coding Agent,2095,2095,2026-06-30,开源 AI 编程辅助工具,"Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated fr..."
-372,frknkrc44/HMA-OSS,https://github.com/frknkrc44/HMA-OSS,基础设施,2067,3016,2025-09-05,Android 开源应用隐藏与隐私隔离模块,在系统底层隔离与隐藏指定应用安装状态与敏感权限
-373,signerless/llm-checker,https://github.com/signerless/llm-checker,开发工具,2067,2944,2025-07-06,本地硬件算力与大模型兼容性评估工具,扫描 GPU/内存硬件配置并智能推荐最优可运行模型规格
-374,open-free-llm-api/awesome-freellm-apis,https://github.com/open-free-llm-api/awesome-freellm-apis,Coding Agent,2062,2589,2026-05-10,开源 AI 编程辅助工具,"134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NI..."
-375,claration/Impactor,https://github.com/claration/Impactor,开发工具,2047,3078,2025-10-17,跨平台 iOS/iPadOS 免费免越狱侧载工具,无需复杂配置即可在苹果设备上签名与安装自定义应用
-376,QoderAI/better-harness,https://github.com/QoderAI/better-harness,Coding Agent,2046,2046,2026-07-21,开源 AI 编程辅助工具,An open-source Harness Engineering platform for coding agents—define harnesse...
-377,Sumanth077/Hands-On-AI-Engineering,https://github.com/Sumanth077/Hands-On-AI-Engineering,开发工具,2045,2979,2025-02-24,端到端 AI 工程与智能体实战精选案例,包含从模型微调、RAG 落地到多 Agent 系统的实战源码
-378,larashero3-dotcom/lieflat-charts,https://github.com/larashero3-dotcom/lieflat-charts,Coding Agent,2034,2034,2026-07-16,开源 AI 编程辅助工具,"Data visualization Skill for AI Agents, turning data into polished, interacti..."
-379,boldsoftware/meat,https://github.com/boldsoftware/meat,开发工具,2032,2032,2026-07-01,开源开发者效率与辅助工具,meat.dev
-380,abue-ammar/tinycast,https://github.com/abue-ammar/tinycast,基础设施,2029,2029,2026-06-29,开源云原生与系统基础设施,"Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history"
-381,apple/coreai-models,https://github.com/apple/coreai-models,模型/推理,2029,2029,2026-06-08,开源大模型与本地推理工具,"Model export recipes, Python primitives, and Swift runtime utilities for on-d..."
-382,microsoft/skills,https://github.com/microsoft/skills,Coding Agent,2029,2975,2026-01-16,微软官方面向主流 SDK 的 Agent 技能集,帮助智能体准确调用 Azure、Semantic Kernel 与系统 API
-383,CYQawa/YunX,https://github.com/CYQawa/YunX,开发工具,2025,2025,2026-08-06,开源开发者效率与辅助工具,✨一个安卓网盘解析下载app✨
-384,rednote-machine-learning/RedKnot,https://github.com/rednote-machine-learning/RedKnot,模型/推理,2017,2017,2026-06-04,开源大模型与本地推理工具,Efficient Long-Context LLM Serving with Head-Aware KV Reuse and SegPagedAtten...
-385,Shpigford/knockoff,https://github.com/Shpigford/knockoff,基础设施,2003,2003,2026-07-06,开源云原生与系统基础设施,"Chrome extension that filters pseudo-brand junk out of Amazon. Buy from real,..."
-386,tandpfun/wardrobe,https://github.com/tandpfun/wardrobe,多模态,2003,2003,2026-07-16,开源多模态与图像视觉项目,"Your clothes, extracted and organized with gpt-image."
-387,mitsuhiko/agent-stuff,https://github.com/mitsuhiko/agent-stuff,Coding Agent,2002,3017,2025-11-02,Flask 作者开源的 Agent 常用命令与配置,资深工程师日常与 Claude 协同工作的实用脚本集
-388,12britz/awesome-free-models,https://github.com/12britz/awesome-free-models,模型/推理,2001,2001,2026-06-06,开源大模型与本地推理工具,"A curated list of free AI models, APIs, and tools you can use without paying ..."
+85,ultraworkers/claw-code,https://github.com/ultraworkers/claw-code,Coding Agent,142965,195168,2026-03-31,Rust 编写的 Agent 自主研发项目,展示由 AI 智能体全流程主导的现代软件工程实践
+86,anomalyco/opencode,https://github.com/anomalyco/opencode,Coding Agent,125040,202669,2025-04-30,开源命令行自主编程 Agent,在终端内自主理解项目架构并高效编写修改代码
+87,garrytan/gstack,https://github.com/garrytan/gstack,Coding Agent,96601,130507,2026-03-11,Claude Code 开箱即用工程配置集,集成 23 个生产级开发工具与最佳工程预设
+88,farion1231/cc-switch,https://github.com/farion1231/cc-switch,Coding Agent,96363,130299,2025-08-04,Claude Code 跨平台多会话管理助手,桌面端一键切换与集中监控多个 AI 编码会话
+89,firecrawl/firecrawl,https://github.com/firecrawl/firecrawl,开发工具,94163,174562,2024-04-15,面向 LLM 的专业网页抓取与搜索 API,将任意复杂网页转换为结构化干净 Markdown 供 AI 读取
+90,Graphify-Labs/graphify,https://github.com/Graphify-Labs/graphify,开发工具,89038,112771,2026-04-03,代码库知识图谱自动生成工具,深度解析代码依赖与模块拓扑，辅助 Agent 快速理解项目
+91,microsoft/markitdown,https://github.com/microsoft/markitdown,开发工具,85437,177268,2024-11-13,多格式文档转 Markdown 工具,将 Office、PDF 等各类文件转为高质量 Markdown
+92,anthropics/claude-code,https://github.com/anthropics/claude-code,Coding Agent,83809,143504,2025-02-22,Anthropic 官方终端编程 Agent,通过自然语言在终端执行多文件编辑、测试与 Git 工作流
+93,VoltAgent/awesome-design-md,https://github.com/VoltAgent/awesome-design-md,开发工具,82716,111843,2026-03-31,大厂与前沿开源项目 DESIGN.md 合集,提供成熟的设计规范与视觉原则供 AI 学习参考
+94,github/spec-kit,https://github.com/github/spec-kit,Coding Agent,81977,132407,2025-08-21,规格驱动开发（SDD）工具包,用规范的架构规格书指导 AI 编码，减少返工与幻觉
+95,JuliusBrussee/caveman,https://github.com/JuliusBrussee/caveman,Coding Agent,78455,101923,2026-04-04,极简省 Token 的 Claude Code 技能,精炼直白高密度交流，显著压缩上下文与 Token 消耗
+96,DigitalPlatDev/FreeDomain,https://github.com/DigitalPlatDev/FreeDomain,基础设施,75200,196733,2024-05-30,面向开发者的免费域名分发平台,为开源项目与个人开发者提供免费子域名与解析服务
+97,nexu-io/open-design,https://github.com/nexu-io/open-design,前端框架,74311,92917,2026-04-28,本地优先开源 AI 设计工具,在本地利用 AI 快速完成 UI 设计、原型绘制与代码导出
+98,karpathy/autoresearch,https://github.com/karpathy/autoresearch,模型/推理,67276,94969,2026-03-06,Karpathy 开源单卡自主科研 Agent,在单张 GPU 上自动执行深度学习实验迭代与假设验证
+99,harry0703/MoneyPrinterTurbo,https://github.com/harry0703/MoneyPrinterTurbo,音视频,66490,118904,2024-03-11,全自动高清短视频批量生成工具,输入文案一键合成配音、字幕、画面与背景音乐
+100,openai/codex,https://github.com/openai/codex,Coding Agent,65996,120244,2025-04-13,OpenAI 终端轻量编程 Agent,命令行内快速生成、补全与重构代码
+101,ruvnet/RuView,https://github.com/ruvnet/RuView,多模态,65373,92143,2025-06-07,基于 WiFi 信号的空间感知工具,利用无线信号实现无需摄像头的室内人体存在与姿态监测
+102,Egonex-AI/Understand-Anything,https://github.com/Egonex-AI/Understand-Anything,开发工具,64517,81134,2026-03-15,代码库交互式教学图谱生成器,将复杂代码逻辑转换为直观可视化的教学架构图
+103,koala73/worldmonitor,https://github.com/koala73/worldmonitor,多模态,61854,85106,2026-01-08,全球地缘与突发事件 AI 情报看板,实时多源聚合新闻事件与宏观数据走势监控
+104,Shubhamsaboo/awesome-llm-apps,https://github.com/Shubhamsaboo/awesome-llm-apps,开发工具,59732,135342,2024-04-29,精选 100+ 前沿 AI 应用与 Agent 实例,涵盖 RAG、多 Agent、语音与视觉的生产级实战案例
+105,rtk-ai/rtk,https://github.com/rtk-ai/rtk,开发工具,59284,77987,2026-01-22,LLM 上下文 Token 压缩代理 CLI,在请求前智能剪枝与压缩上下文，降低推理成本与延迟
+106,headroomlabs-ai/headroom,https://github.com/headroomlabs-ai/headroom,开发工具,56683,68139,2026-01-07,上下文窗口智能压缩与蒸馏工具,在保留核心关键语义的前提下大幅缩减 Prompt 长度
+107,colbymchenry/codegraph,https://github.com/colbymchenry/codegraph,开发工具,55739,68761,2026-01-18,预索引代码知识图谱引擎,毫秒级语义检索函数调用链路与跨文件依赖关系
+108,D4Vinci/Scrapling,https://github.com/D4Vinci/Scrapling,开发工具,53320,77429,2024-10-13,自适应防封禁智能网页爬虫框架,具备反爬对抗与智能清洗能力的下一代采集工具
+109,clash-verge-rev/clash-verge-rev,https://github.com/clash-verge-rev/clash-verge-rev,基础设施,53256,141233,2023-11-21,基于 Tauri 的现代化网络代理客户端,跨平台流量智能分流与节点订阅管理
+110,OpenCut-app/OpenCut,https://github.com/OpenCut-app/OpenCut,音视频,52398,88052,2025-06-22,开源跨平台桌面视频剪辑软件,轻量利落的剪映替代品，支持多轨道剪辑与特效处理
+111,usestrix/strix,https://github.com/usestrix/strix,开发工具,52316,59575,2025-08-05,开源 AI 渗透测试工具,像黑客一样模拟攻击路径、生成 PoC 并给出修复建议，可集成 CI/CD
+112,stablyai/orca,https://github.com/stablyai/orca,Coding Agent,51710,57751,2026-03-17,面向并行智能体编队的 ADE（智能体开发环境）,用自有订阅运行任意编码智能体，支持桌面/移动/VPS
+113,pbakaus/impeccable,https://github.com/pbakaus/impeccable,前端框架,50706,64170,2025-11-16,打造高质感界面的 AI 设计系统技能,注入精致留白、克制排版与严谨色彩体系，杜绝 AI 粗糙感
+114,diegosouzapw/OmniRoute,https://github.com/diegosouzapw/OmniRoute,开发工具,50486,58852,2026-02-13,高可用多模型统一路由网关,单 API 端点无缝接入与负载均衡 290+ 主流大模型
+115,x1xhlol/system-prompts-and-models-of-ai-tools,https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools,开发工具,50398,143253,2025-03-05,主流 AI 编程工具系统 Prompt 大全,收录 Cursor、Claude Code 等前沿工具的完整系统提示词
+116,shareAI-lab/learn-claude-code,https://github.com/shareAI-lab/learn-claude-code,Coding Agent,49881,75712,2025-06-29,极简 Agent Harness 实现教程,拆解 Claude Code 核心机制，带你从零手写 Agent 循环
+117,shanraisshan/claude-code-best-practice,https://github.com/shanraisshan/claude-code-best-practice,Coding Agent,46824,65409,2025-10-31,Claude Code 高阶工程实践指南,从 Vibe Coding 进阶到严谨规范的 Agent 协同开发体系
+118,Fission-AI/OpenSpec,https://github.com/Fission-AI/OpenSpec,Coding Agent,45699,66750,2025-08-05,AI 编程规格驱动开发辅助工具,通过先写 Spec 再生成代码的工程范式提升交付准确率
+119,code-yeongyu/oh-my-openagent,https://github.com/code-yeongyu/oh-my-openagent,Coding Agent,43597,68538,2025-12-03,极致省 Token 的开源轻量编程 Agent,采用极简上下文管理在低成本下实现稳定自主编程
+120,tw93/Mole,https://github.com/tw93/Mole,开发工具,40535,65474,2025-09-23,Mac 极速深度系统清理与维护工具,一键清理深度缓存、开发残留与孤儿进程，释放磁盘空间
+121,asgeirtj/system_prompts_leaks,https://github.com/asgeirtj/system_prompts_leaks,开发工具,38099,63864,2025-05-03,前沿大模型系统提示词权威合集,深度解析各家主流商业 AI 助手的 Prompt 设计技巧
+122,karpathy/nanochat,https://github.com/karpathy/nanochat,模型/推理,37289,57677,2025-10-13,单卡可训的极简 ChatGPT 教学项目,Karpathy 打造，用最透彻的代码理解大语言模型训练
+123,sansan0/TrendRadar,https://github.com/sansan0/TrendRadar,多模态,34667,61955,2025-04-28,多平台热点与舆情趋势监控雷达,自动化聚合全网社交媒体与资讯平台的实时热门榜单
+124,microsoft/VibeVoice,https://github.com/microsoft/VibeVoice,音视频,33398,53436,2025-08-25,微软开源前沿表现力语音生成模型,高保真克隆音色并生成极具自然情绪起伏的语音
+125,hesreallyhim/awesome-claude-code,https://github.com/hesreallyhim/awesome-claude-code,Coding Agent,32047,53261,2025-04-19,Claude Code 精选技能与扩展合集,汇集社区最优质的 Agent 提示词、工作流与提效插件
+126,opendatalab/MinerU,https://github.com/opendatalab/MinerU,开发工具,30039,78836,2024-02-29,高质量复杂 PDF 文档结构化提取工具,精准识别公式、表格与版面排版，转换为高质量 Markdown
+127,emilkowalski/skills,https://github.com/emilkowalski/skills,开发工具,29930,33855,2026-03-16,面向设计师与工程师的技能（skills）合集,提升 AI 生成界面的质量，规范设计与前端协作
+128,daytonaio/daytona,https://github.com/daytonaio/daytona,基础设施,29007,71870,2024-02-06,面向 AI Agent 的安全沙箱基础设施,秒级拉起隔离受控的云端开发与执行环境
+129,upstash/context7,https://github.com/upstash/context7,开发工具,28093,61434,2025-03-26,专为 LLM 设计的最新开发文档检索服务,为 AI 编程实时提供最新框架文档，根除知识滞后幻觉
+130,block/buzz,https://github.com/block/buzz,基础设施,27252,31583,2026-03-06,去中心化安全群体通信协议平台,提供端到端加密与高度抗审查的分布式协作通信
+131,zhaoxuya520/reverse-skill,https://github.com/zhaoxuya520/reverse-skill,开发工具,26520,32413,2026-05-13,逆向工程与渗透测试 Agent 技能,辅助安全研究与代码逆向分析
+132,JustVugg/colibri,https://github.com/JustVugg/colibri,模型/推理,26496,26496,2026-07-01,本地极速运行 MoE 大模型推理引擎,在普通消费级硬件上流畅流式运行前沿 MoE 模型
+133,unslothai/unsloth,https://github.com/unslothai/unsloth,模型/推理,26298,75306,2023-11-29,超高速单卡 LLM 微调与量化框架,大幅降低显存消耗并将模型微调速度提升数倍
+134,xai-org/grok-build,https://github.com/xai-org/grok-build,Coding Agent,26270,26270,2026-07-14,xAI 交互式终端编程 Agent 工具,支持全屏终端与鼠标交互的代码生成与重构利器
+135,unclecode/crawl4ai,https://github.com/unclecode/crawl4ai,开发工具,26061,80433,2024-05-09,专为大模型打造的极速开源网页爬虫,提取纯净网页正文与元数据，无缝对接 RAG 检索管线
+136,punkpeye/awesome-mcp-servers,https://github.com/punkpeye/awesome-mcp-servers,开发工具,26057,93493,2024-11-30,精选 Model Context Protocol 服务器清单,为 AI Agent 扩展文件、数据库、API 等连接能力
+137,modelcontextprotocol/servers,https://github.com/modelcontextprotocol/servers,开发工具,24910,89984,2024-11-19,Anthropic 官方 MCP 服务器标准实现库,包含 Git、Postgres、文件系统等标准 MCP 扩展实现
+138,Zie619/n8n-workflows,https://github.com/Zie619/n8n-workflows,开发工具,24880,56350,2025-05-14,开源 n8n 自动化工作流精选模板库,覆盖 AI 自动化、数据同步与业务集成的即用型模板
+139,baidu/Unlimited-OCR,https://github.com/baidu/Unlimited-OCR,开发工具,24824,24824,2026-06-18,百度超长文档无限长 OCR 解析工具,高精度识别海量复杂排版文字与多语言文档
+140,Nutlope/hallmark,https://github.com/Nutlope/hallmark,开发工具,24335,27579,2026-04-27,反 AI-slop 的设计技能,为 Claude Code/Cursor/Codex 提供设计品控，识别并避免套路化生成
+141,infiniflow/ragflow,https://github.com/infiniflow/ragflow,开发工具,24025,89708,2023-12-12,基于深度文档理解的开源 RAG 引擎,从复杂排版与异构文档中实现精准语义检索与问答
+142,BigPizzaV3/CodexPlusPlus,https://github.com/BigPizzaV3/CodexPlusPlus,Coding Agent,23033,29943,2026-05-06,Codex 增强辅助工具,拓展与优化 Codex 桌面编码工作流
+143,anywhere-labs/dsh-desktop,https://github.com/anywhere-labs/dsh-desktop,开发工具,22252,22252,2026-08-13,DeepSeek Harness 桌面客户端,图形化管理与运行 DSH 插件及工作流
+144,jingyaogong/minimind,https://github.com/jingyaogong/minimind,模型/推理,22242,55648,2024-07-27,从零手写轻量级 GPT 大模型教程,仅需百元显卡即可跑通从预训练到微调的全流程
+145,docling-project/docling,https://github.com/docling-project/docling,开发工具,22183,65777,2024-07-09,IBM 开源全能文档解析与转换引擎,快速将复杂的学术论文、报表转换为 AI 友好结构
+146,astral-sh/uv,https://github.com/astral-sh/uv,开发工具,21108,89267,2023-10-02,Rust 编写的超极速 Python 包管理工具,比传统 pip/poetry 快 10~100 倍的现代化依赖管理利器
+147,hacksider/Deep-Live-Cam,https://github.com/hacksider/Deep-Live-Cam,音视频,19938,96210,2023-09-24,实时摄像头与视频面部替换工具,单张照片实现低延迟实时人脸替换与视频合成
+148,guillaumemeyer/watermarks-remover,https://github.com/guillaumemeyer/watermarks-remover,多模态,19550,19550,2026-08-11,多平台 AI 生成内容智能去水印工具,高精度识别并无损消除各类商业 AI 的防伪水印与标记
+149,firecrawl/anydoc,https://github.com/firecrawl/anydoc,开发工具,19506,19506,2026-08-03,通用办公文档转干净 Markdown 工具,一键将 DOCX、PPTX、EPUB 等转为 LLM 友好的 Markdown
+150,permissionlesstech/bitchat,https://github.com/permissionlesstech/bitchat,基础设施,18658,36066,2025-07-04,基于蓝牙 Mesh 的离线去中心化即时通信,无网络无信号环境下的点对点抗审查加密聊天
+151,alibaba/open-code-review,https://github.com/alibaba/open-code-review,Coding Agent,18268,21693,2026-05-18,阿里开源 AI 代码自动审查系统,在 PR 与 Commit 环节自动进行静态分析与架构合规评审
+152,antirez/ds4,https://github.com/antirez/ds4,模型/推理,16874,21936,2026-05-06,Redis 作者开发的 DeepSeek 4 本地推理引擎,在 Metal/CUDA/CPU 上极速本地推理
+153,AprilNEA/OpenLogi,https://github.com/AprilNEA/OpenLogi,开发工具,16649,17973,2026-05-24,罗技外设跨平台轻量开源驱动替代,Rust 编写的低资源消耗按键宏与平滑滚轮映射工具
+154,langchain-ai/openwiki,https://github.com/langchain-ai/openwiki,Coding Agent,15887,15887,2026-06-22,基于 Agent 的代码库自动化文档维护 CLI,持续分析代码变更并自动更新项目架构 Wiki
+155,PrimeIntellect-ai/prime-agent,https://github.com/PrimeIntellect-ai/prime-agent,Coding Agent,15122,19323,2026-05-08,基于强化学习自进化的编程 Agent,自主完成长周期复杂软件工程任务
+156,img2threejs/img2threejs,https://github.com/img2threejs/img2threejs,多模态,14629,14629,2026-07-15,2D 图像一键转 Three.js 3D 场景工具,将平面概念设计稿快速重构为交互式 WebGL 3D 页面
+157,Fei-Away/Codex-Dream-Skin,https://github.com/Fei-Away/Codex-Dream-Skin,Coding Agent,14227,14227,2026-07-15,Codex 终端美化与沉浸式主题皮肤,提供定制化配色与视觉布局，大幅提升终端开发愉悦感
+158,LadybirdBrowser/ladybird,https://github.com/LadybirdBrowser/ladybird,前端框架,14169,65919,2024-05-30,全新独立自研内核开源网页浏览器,不依赖 Blink 或 WebKit 的纯开源跨平台浏览器
+159,bilawalsidhu/gods-eye-view,https://github.com/bilawalsidhu/gods-eye-view,多模态,14046,14046,2026-06-22,浏览器端 3D 卫星数字孪生地球,交互式探索全球高精度地理空间数据
+160,vorssaintapp/vorssaint-utils,https://github.com/vorssaintapp/vorssaint-utils,开发工具,13967,13967,2026-06-12,开源 macOS 状态栏增强工具箱,系统监控与常用效率快捷工具
+161,awesome-dsh-plugin/awesome-dsh-plugin,https://github.com/awesome-dsh-plugin/awesome-dsh-plugin,开发工具,13781,13781,2026-08-13,DeepSeek Harness 官方与精选插件合集,覆盖搜索、编码、数据分析等多领域的 DSH 扩展生态
+162,XiaomiMiMo/MiMo-Code,https://github.com/XiaomiMiMo/MiMo-Code,Coding Agent,12908,12908,2026-06-10,小米自进化多模态编程 Agent 框架,模型能力与 Agent 架构协同进化的现代编程引擎
+163,lidge-jun/opencodex,https://github.com/lidge-jun/opencodex,Coding Agent,12656,12656,2026-06-18,通用 LLM 代理接入 Codex/Claude 协议网关,让任意开源模型无缝兼容 Codex 与 Claude Code 命令行
+164,ByteByteGoHq/system-design-101,https://github.com/ByteByteGoHq/system-design-101,开发工具,12206,87741,2023-09-18,图解分布式大型系统架构精选指南,用生动直观的架构图讲透高并发与分布式核心原理
+165,zhishile/codex-auth-helper,https://github.com/zhishile/codex-auth-helper,Coding Agent,10765,10765,2026-06-02,Codex 跨设备会话与登录状态导出工具,一键提取已授权会话生成配置文件，简化多机同步流程
+166,cobusgreyling/loop-engineering,https://github.com/cobusgreyling/loop-engineering,Coding Agent,10757,10757,2026-06-09,面向 Agentic 工作流的循环工程指南,系统阐述以闭环反馈驱动 Agent 持续改进的工程方法
+167,XxHuberrr/Mineradio,https://github.com/XxHuberrr/Mineradio,音视频,10383,10383,2026-06-02,沉浸式歌词视觉与粒子舞台音乐播放器,结合电影级运镜与粒子特效的跨平台现代化播放器
+168,openai/codex-security,https://github.com/openai/codex-security,Coding Agent,10288,10288,2026-07-13,OpenAI 自动化安全漏洞扫描与修复 CLI,自主发现代码中的安全弱点并验证自动生成的修复补丁
+169,FlashML-org/FreeToken,https://github.com/FlashML-org/FreeToken,模型/推理,10276,10276,2026-07-20,轻量级本地大模型服务引擎,单机运行数据中心级模型推理与吞吐
+170,RVC-Boss/GPT-SoVITS,https://github.com/RVC-Boss/GPT-SoVITS,音视频,10193,61367,2024-01-14,少样本高保真语音克隆与 TTS 系统,仅需 5 秒语音样本即可实现跨语种零样本音色克隆
+171,makerspet/oomwoo,https://github.com/makerspet/oomwoo,机器人,9933,9933,2026-06-10,完全开源自托管扫地机器人系统,提供全套硬件图纸、固件与 SLAM 室内自主建图导航方案
+172,dockur/windows,https://github.com/dockur/windows,基础设施,9842,53093,2024-01-14,在 Docker 容器中直接运行 Windows,在 Linux 服务器中轻量化容器化运行全功能 Windows 系统
+173,Yu9191/wloc,https://github.com/Yu9191/wloc,开发工具,9835,9835,2026-06-24,Apple 设备网络定位修改与模拟工具,免越狱一键修改与恢复 iOS/macOS 虚拟定位坐标
+174,helloianneo/ian-xiaohei-illustrations,https://github.com/helloianneo/ian-xiaohei-illustrations,多模态,9207,10688,2026-05-27,小黑怪诞手绘插画生成 Agent 技能,为技术文章与设计配图生成极具辨识度的手绘插画
+175,pathwaycom/arc-task-gen,https://github.com/pathwaycom/arc-task-gen,模型/推理,9075,9075,2026-08-04,ARC-AGI 任务自动生成与评测工具,评估前沿模型通用推理与泛化能力
+176,shadcn/improve,https://github.com/shadcn/improve,Coding Agent,9034,9034,2026-06-10,强弱模型分工协作的代码审计重构工具,由高智力模型做架构审计规划，弱模型负责具体代码落地
+177,oso95/scroll-world,https://github.com/oso95/scroll-world,前端框架,8829,8829,2026-07-06,滚动驱动 3D 品牌展示落地页生成器,将平面品牌故事转化为可跟随滚动的沉浸式 3D 空间
+178,MoonshotAI/Kimi-K3,https://github.com/MoonshotAI/Kimi-K3,模型/推理,8669,8669,2026-07-27,月之暗面 Kimi K3 前沿开源大模型,具备超长上下文理解与深度复杂逻辑推理能力
+179,StarTrail-org/PixelRAG,https://github.com/StarTrail-org/PixelRAG,多模态,8320,9806,2026-05-29,原生像素级视觉检索增强生成引擎,无需繁琐 OCR 直接对图像与排版进行端到端视觉语义检索
+180,open-gsd/gsd-core,https://github.com/open-gsd/gsd-core,Coding Agent,7635,8931,2026-05-22,Git-Ship-Done 敏捷交付流水线核心库,将 AI 编程从代码生成到测试发布全链路串联
+181,simonlin1212/a-stock-data,https://github.com/simonlin1212/a-stock-data,数据库,7541,9384,2026-05-11,A股全栈开源量化数据工具包,为 AI 投研与量化交易提供零鉴权数据源
+182,MiniMax-AI/MiniMax-H3,https://github.com/MiniMax-AI/MiniMax-H3,模型/推理,7535,7535,2026-07-30,MiniMax 混合推理架构开源大模型,在大规模多轮对话与逻辑推理中展现极高连贯性
+183,astrid-runtime/book,https://github.com/astrid-runtime/book,基础设施,7466,7466,2026-06-06,Astrid 安全操作系统内核与架构规范,详细阐述现代微内核、IPC 机制与安全边界的权威规范
+184,astrid-runtime/handbook,https://github.com/astrid-runtime/handbook,开发工具,7407,7407,2026-06-06,Astrid 贡献者与开发者协作手册,为大型开源系统工程提供清晰规范的提交流程指导
+185,EpicGames/lore,https://github.com/EpicGames/lore,开发工具,7211,8518,2026-05-21,Epic 开源面向大仓与游戏资产的版本控制,专为巨型工程、3D 资产与海量二进制文件优化的现代 VCS
+186,deepseek-ai/DeepSeek-V3,https://github.com/deepseek-ai/DeepSeek-V3,模型/推理,7140,104440,2024-12-26,DeepSeek 开源 671B MoE 旗舰大模型,极具性价比的前沿开源通用大语言模型
+187,laoma2053/awesome-zhuiju-free,https://github.com/laoma2053/awesome-zhuiju-free,开发工具,7075,7075,2026-06-05,精选免费高质量影视与动漫资源索引,人工维护的高速网盘、字幕组与在线观影权威清单
+188,MDX-Tom/gpt-5.6-instruct,https://github.com/MDX-Tom/gpt-5.6-instruct,Coding Agent,7071,7071,2026-07-11,针对前沿模型的安全边界与提示词测试集,全面评估新一代大语言模型在极限工况下的遵循能力
+189,deepseek-ai/DeepSpec,https://github.com/deepseek-ai/DeepSpec,模型/推理,7057,7057,2026-06-26,深度投机解码加速训练与评测代码库,开源高效投机解码算法，成倍提升 LLM 推理吞吐
+190,chuspeeism/dashi-ppt-skill,https://github.com/chuspeeism/dashi-ppt-skill,前端框架,7017,7017,2026-06-10,浏览器可在线编辑的 PPT 幻灯片生成技能,让 AI 输出排版专业、支持二次拖拽编辑的演示文稿
+191,yjh051108/dsh-routing-suite,https://github.com/yjh051108/dsh-routing-suite,开发工具,6982,6982,2026-08-14,DeepSeek Harness 路由与注入套件,统一管理与分发 DSH 插件流量
+192,nexu-io/html-anything,https://github.com/nexu-io/html-anything,前端框架,6891,8575,2026-05-11,Agent 驱动的原生 HTML 可视化编辑器,让本地 AI 智能体实时编写与预览网页
+193,FareedKhan-dev/kimi-k3-in-c,https://github.com/FareedKhan-dev/kimi-k3-in-c,模型/推理,6869,6869,2026-08-01,纯 C 语言无依赖运行 Kimi K3 推理引擎,在普通 PC 上单机以低内存占用推理超大规模参数模型
+194,abi/screenshot-to-code,https://github.com/abi/screenshot-to-code,前端框架,6864,76512,2023-11-14,截图与设计稿一键转前端代码工具,将 UI 截图快速重构为清晰干净的 Tailwind/React 组件
+195,Vincentwei1021/video-shotcraft,https://github.com/Vincentwei1021/video-shotcraft,音视频,6831,6831,2026-07-19,电影级运镜与分镜视频生成 Agent 技能,为 AI 编程助手赋予专业影视分镜与视频运镜规划能力
+196,LiamGvchi/gc-minimal-zine-poster,https://github.com/LiamGvchi/gc-minimal-zine-poster,多模态,6781,6781,2026-07-12,安静极简社论风格海报生成技能,输出具备克制留白与高级排版美感的现代 Zine 海报
+197,bashalarmistalt/decimen-optical-transfer,https://github.com/bashalarmistalt/decimen-optical-transfer,开发工具,6612,6612,2026-07-30,高带宽屏幕-摄像头光学无网数据传输工具,通过动态高密度视觉条码在物理隔离设备间快速传文件
+198,zhu1090093659/dsh-web,https://github.com/zhu1090093659/dsh-web,开发工具,6544,6544,2026-08-12,DeepSeek Harness 网页插件聚合生态,在线探索、配置与运行 DSH 插件
+199,drumih/turbo-fieldfare,https://github.com/drumih/turbo-fieldfare,模型/推理,6515,6515,2026-07-17,Apple Silicon 极致优化的轻量推理引擎,在 2GB 内存的普通 Mac 上流畅运行 Gemma 4 等模型
+200,petergyang/no-ai-slop,https://github.com/petergyang/no-ai-slop,开发工具,6507,6507,2026-07-07,消除 AI 废话与工业模板味的写作技能,识别并剔除 20+ 种典型 AI 机械套话，重塑真实人类文风
+201,arvids-unavailable/openGym,https://github.com/arvids-unavailable/openGym,基础设施,6339,6339,2026-08-03,开源云原生与系统基础设施,https://github.com/DuarteSantos8/openGym
+202,anthropics/defending-code-reference-harness,https://github.com/anthropics/defending-code-reference-harness,Coding Agent,6268,7390,2026-05-22,自动化软件安全防御与补丁修复 Harness,自动化进行威胁建模、代码静态扫描与漏洞修复闭环
+203,teamchong/pxpipe,https://github.com/teamchong/pxpipe,Coding Agent,6198,7306,2026-05-20,基于图像渲染的超长上下文压缩利器,将长文本排版渲染为图像输入，成倍节省 Token 消耗
+204,MoonshotAI/kimi-code,https://github.com/MoonshotAI/kimi-code,Coding Agent,6108,7170,2026-05-22,月之暗面 Kimi Code 终端编程工具,面向中文开发者优化的智能命令行编码辅助助手
+205,opengeos/GeoLibre,https://github.com/opengeos/GeoLibre,数据库,5970,6938,2026-05-27,云原生开源地理空间数据分析平台,提供交互式地图渲染、遥感影像分析与空间数据可视化
+206,zhongerxin/Cowart,https://github.com/zhongerxin/Cowart,开发工具,5745,5745,2026-06-18,跨平台多格式美术与素材智能整理工具,为插画师与设计师提供一键打标、归档与素材索引
+207,op7418/guizang-social-card-skill,https://github.com/op7418/guizang-social-card-skill,多模态,5734,6725,2026-05-27,社交媒体高美感图文排版生成技能,一键生成小红书/即刻风格的精美图文轮播与卡片封面
+208,baairon/torlink,https://github.com/baairon/torlink,开发工具,5485,5485,2026-06-25,极简现代化轻量 BT 磁力搜索与下载客户端,开箱即用，界面现代流畅的本地资源获取工具
+209,oomol-lab/open-connector,https://github.com/oomol-lab/open-connector,基础设施,5444,5444,2026-06-29,连接 1000+ SaaS 服务的开源鉴权网关,为 AI 智能体提供统一、合规的第三方平台 API 授权与调用
+210,zgwl/chinese-buy-us-stock-guide,https://github.com/zgwl/chinese-buy-us-stock-guide,开发工具,5428,6408,2026-05-30,华人美股与海外投资全流程实战指南,涵盖账户开立、外汇合规、标的研究与期权风控体系
+211,diffusionstudio/lottie,https://github.com/diffusionstudio/lottie,前端框架,5360,5360,2026-06-04,Agent 驱动的生产级 Lottie 动画生成库,让 Claude Code 等智能体直接输出流畅的矢量动效代码
+212,trailhq/Graft,https://github.com/trailhq/Graft,Coding Agent,5186,5186,2026-07-03,主流编程 Agent 本地上下文加速引擎,为 Claude Code/Codex 等注入代码图谱
+213,ZzzLc0405/photo-abstract-editorial,https://github.com/ZzzLc0405/photo-abstract-editorial,多模态,5139,5139,2026-08-04,抽象社论摄影质感配图生成技能,为深度文章生成具备高审美与艺术质感的抽象视觉配图
+214,internet-court/internet-court-skill,https://github.com/internet-court/internet-court-skill,Coding Agent,5112,5112,2026-06-16,开源 AI 编程辅助工具,"The trust layer for agent-to-agent commerce — natural-language mandates, ERC-..."
+215,LaoFeng-mouse/flyingmouse-format,https://github.com/LaoFeng-mouse/flyingmouse-format,开发工具,5060,5060,2026-08-06,Windows 免安装本地多媒体与文件格式转换器,内置 FFmpeg，无需联网即可极速批量转换音视频格式
+216,WenyuChiou/awesome-agentic-ai-zh,https://github.com/WenyuChiou/awesome-agentic-ai-zh,Coding Agent,4947,6541,2026-05-04,开源 AI 编程辅助工具,A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM ba...
+217,deepseek-ai/DeepSeek-R1,https://github.com/deepseek-ai/DeepSeek-R1,模型/推理,4913,92038,2025-01-20,DeepSeek 开源强化学习推理大模型,开创开源推理模型新标杆，数学与代码能力卓越
+218,MengTo/threeui,https://github.com/MengTo/threeui,前端框架,4707,4707,2026-08-21,开源前端 UI 与交互设计项目,Open-source ThreeUI Community catalog with live interactive components and co...
+219,vercel-labs/scriptc,https://github.com/vercel-labs/scriptc,开发工具,4696,4696,2026-07-22,TypeScript 直接编译为原生机器码编译器,大幅提升脚本执行性能并支持脱离 Node 环境独立运行
+220,jakubkrehel/skills,https://github.com/jakubkrehel/skills,前端框架,4643,4643,2026-07-10,打造卓越用户界面的 Agent 设计技能库,指导智能体构建符合人机工效学的现代化交互界面
+221,s1dashu/ip-as-logo-skill,https://github.com/s1dashu/ip-as-logo-skill,Coding Agent,4636,4636,2026-08-18,开源 AI 编程辅助工具,"A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic..."
+222,Zeejay0/gathered-scenes-zine-skill,https://github.com/Zeejay0/gathered-scenes-zine-skill,多模态,4624,4624,2026-08-01,场景采风排版与复古 Zine 杂志生成技能,将散落图片与文字排版为极具独立杂志美感的视觉篇章
+223,nyblnet/bento,https://github.com/nyblnet/bento,开发工具,4613,4613,2026-07-17,装在一个文件里的极简轻量离线办公套件,无需安装，单 HTML 文件实现文字、表格与演示编辑
+224,huangruiteng/loopx,https://github.com/huangruiteng/loopx,Coding Agent,4579,5328,2026-05-31,面向长周期任务的持久化 Agent 控制面,提供任务状态持久化、异常恢复与多阶段执行治理
+225,xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer,https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer,开发工具,4451,4451,2026-07-30,前沿部署工程师（FDE）体系化实战指南,拆解 AI 时代技术交付与业务增长落地的核心技能矩阵
+226,DavidHDev/canvas-ui,https://github.com/DavidHDev/canvas-ui,前端框架,4392,4392,2026-07-16,创意 Canvas 动效与 WebGL 交互组件库,为 React 与现代网页注入高表现力的视觉流体交互
+227,Waishnav/devspace,https://github.com/Waishnav/devspace,Coding Agent,4324,4324,2026-06-14,在网页端模拟运行 Claude Code 与 Codex 环境,让普通网页会话体验终端 Agent 的上下文感知与编码能力
+228,bikini/exploitarium,https://github.com/bikini/exploitarium,开发工具,4251,4251,2026-06-23,开源漏洞验证代码与 PoC 精选知识库,聚合公开漏洞复现代码，辅助安全团队进行防御验证
+229,perplexityai/bumblebee,https://github.com/perplexityai/bumblebee,开发工具,4215,4982,2026-05-20,轻量级只读本地依赖与扩展安全扫描器,快速排查本地工程与扩展包中的潜在安全隐患与后门
+230,slvDev/esp32-ai,https://github.com/slvDev/esp32-ai,机器人,4213,4213,2026-07-23,ESP32 嵌入式离线语音与微型 AI 方案,在低成本单片机上实现离线语音唤醒与边缘智能控制
+231,Jia-Ethan/codex-keysmith,https://github.com/Jia-Ethan/codex-keysmith,Coding Agent,4190,4190,2026-06-28,Codex 指令与 Prompt 版本化部署工具,支持指令热预览、权限控制与多环境平滑发布
+232,HEJustinSun/my-girlfriend-jingtian-latex,https://github.com/HEJustinSun/my-girlfriend-jingtian-latex,开发工具,4166,4166,2026-08-27,开源开发者效率与辅助工具,提升软件开发、测试与自动化效率
+233,nubjs/nub,https://github.com/nubjs/nub,开发工具,4165,4165,2026-06-03,全能极速现代化 Node.js 基础开发工具箱,整合常用工具函数与异步流程，大幅简化后端开发
+234,withmarbleapp/os-taxonomy,https://github.com/withmarbleapp/os-taxonomy,开发工具,4151,4151,2026-07-08,操作系统与应用生态结构化分类知识库,为系统开发者提供清晰的跨平台架构与功能分类参考
+235,BuilderIO/skills,https://github.com/BuilderIO/skills,Coding Agent,4132,4132,2026-06-10,Builder.io 官方出品编程 Agent 技能集,为 AI 编码助手注入组件化最佳实践与全栈架构规范
+236,maybe-finance/maybe,https://github.com/maybe-finance/maybe,开发工具,3983,54313,2024-01-01,现代极简开源个人财务与资产看板,完全自托管、隐私安全的个人净资产与现金流管理平台
+237,digimata/quill,https://github.com/digimata/quill,音视频,3882,3882,2026-07-24,macOS 极简原生录音与实时 AI 转录工具,纯净无干扰的高保真语音录制与离线转文字应用
+238,arvin341az-glitch/RVG,https://github.com/arvin341az-glitch/RVG,前端框架,3872,3872,2026-06-12,开源前端 UI 与交互设计项目,"Multi-protocol proxy management panel built with Python & FastAPI, deployable..."
+239,nexu-io/html-video,https://github.com/nexu-io/html-video,音视频,3809,4484,2026-05-27,在本地用 HTML/CSS 声明式渲染视频,让前端工程师与 AI Agent 像写网页一样编程生成视频
+240,inkeep/open-knowledge,https://github.com/inkeep/open-knowledge,开发工具,3778,3778,2026-06-03,AI 原生现代化 Markdown 知识库与 IDE,深度集成 LLM 辅助整理、关联与检索个人与团队文档
+241,mekos2772/ios-location-spoofer,https://github.com/mekos2772/ios-location-spoofer,开发工具,3742,3742,2026-06-30,免越狱 iOS 独立虚拟定位修改工具,简单直观设置并模拟各类运动轨迹与地理坐标
+242,microsoft/skill-recorder,https://github.com/microsoft/skill-recorder,Coding Agent,3705,3705,2026-07-29,开源 AI 编程辅助工具,Desktop app that records your on-screen work session and uses the GitHub Copi...
+243,JimLiu/baoyu-design,https://github.com/JimLiu/baoyu-design,前端框架,3653,3653,2026-06-07,在本地离线运行 Claude Design 技能,将前沿 UI/UX 设计能力无缝接入本地开发环境
+244,pollen-robotics/microduck,https://github.com/pollen-robotics/microduck,机器人,3649,3649,2026-07-29,开源机器人与嵌入式硬件项目,A Tiny biped duck robot 🦆
+245,CopilotKit/OpenBot,https://github.com/CopilotKit/OpenBot,Coding Agent,3566,3566,2026-08-17,开源 AI 编程辅助工具,"Open-source AI coworkers that each get a computer of their own: a browser, fi..."
+246,bryanthaboi/gen1recomp,https://github.com/bryanthaboi/gen1recomp,开发工具,3465,3465,2026-07-18,开源开发者效率与辅助工具,Gen1Recomp - A native Lua / LÖVE2D recreation of Gen 1 Poke
+247,b-nnett/grok-bot-0.18-reconstructed,https://github.com/b-nnett/grok-bot-0.18-reconstructed,基础设施,3458,3458,2026-08-23,开源云原生与系统基础设施,Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 fo...
+248,UditAkhourii/adhd,https://github.com/UditAkhourii/adhd,Coding Agent,3440,4003,2026-05-25,思维树剪枝防冗余 Agent 编程技能,通过动态树搜索与早期剪枝避免智能体陷入死循环
+249,isjiamu/gzh-design-skill,https://github.com/isjiamu/gzh-design-skill,Coding Agent,3421,3421,2026-07-01,开源 AI 编程辅助工具,把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent ski...
+250,xuchonglang/investing-for-beginners,https://github.com/xuchonglang/investing-for-beginners,开发工具,3378,3378,2026-07-03,小隐寺投资百科官方公开索引,系统梳理美股、期权与宏观投资的基础知识框架
+251,zarazhangrui/beautiful-html-templates,https://github.com/zarazhangrui/beautiful-html-templates,Coding Agent,3371,4420,2026-05-05,开源 AI 编程辅助工具,A library of HTML slide templates designed so any coding agent can pick the r...
+252,tamnd/kage,https://github.com/tamnd/kage,开发工具,3348,3348,2026-06-14,网页离线镜像与快照深度归档工具,完整保留网页交互与样式，生成便于永久保存的离线副本
+253,mshumer/Claude-of-Duty,https://github.com/mshumer/Claude-of-Duty,前端框架,3334,3334,2026-07-25,开源前端 UI 与交互设计项目,"A Call of Duty-quality FPS in Three.js, built from a single prompt."
+254,yetone/cumora,https://github.com/yetone/cumora,Coding Agent,3324,3324,2026-08-17,开源 AI 编程辅助工具,Where agent teams gather. Cross-platform team chat where AI agents are first-...
+255,Hypostasis-Cat/HypoMux,https://github.com/Hypostasis-Cat/HypoMux,前端框架,3296,3296,2026-06-11,开源前端 UI 与交互设计项目,CN Windows 多网卡带宽叠加工具。无需复杂配置，一键聚合多网卡（有线、Wi-Fi网卡、手机热点等），实现物理级多线下载与叠加网速。 EN Wind...
+256,bozhouDev/codex-orange-book,https://github.com/bozhouDev/codex-orange-book,Coding Agent,3291,3291,2026-06-23,Codex 从入门到实战全链路开源橙皮书,详尽讲解 Codex 安装配置、技巧与企业级落地案例
+257,cpaczek/skylight,https://github.com/cpaczek/skylight,前端框架,3228,3228,2026-06-02,开源前端 UI 与交互设计项目,"Project the aircraft passing overhead onto your ceiling in real time, from an..."
+258,spinabot/brigade,https://github.com/spinabot/brigade,Coding Agent,3212,3212,2026-06-19,开源 AI 编程辅助工具,"Brigade — Your personal intelligence, built enterprise-grade"
+259,FoundZiGu/GuJumpgate,https://github.com/FoundZiGu/GuJumpgate,开发工具,3121,3923,2026-05-19,多云与混合节点流量智能中继工具,低延迟调度与跨网络环境的穿透中继方案
+260,Gloridust/WechatOnCloud,https://github.com/Gloridust/WechatOnCloud,开发工具,3119,3684,2026-05-29,云端部署与微信消息自动同步桥接服务,在云端安全托管与转发多端即时通讯消息
+261,Forward-Future/loopy,https://github.com/Forward-Future/loopy,Coding Agent,3079,3079,2026-06-12,开源 AI 编程辅助工具,"A library of practical AI-agent loops and an installable skill for finding, a..."
+262,fuxicodex/Fuxi,https://github.com/fuxicodex/Fuxi,Coding Agent,3046,3046,2026-08-04,开源 AI 编程辅助工具,"FuXi is a fast, self-contained AI coding agent that lives in your terminal — ..."
+263,TestSprite/testsprite-cli,https://github.com/TestSprite/testsprite-cli,开发工具,3038,3038,2026-06-11,开源开发者效率与辅助工具,Official TestSprite CLI — AI-powered automated testing from your terminal
+264,Tiger3807861189/J-Space-Cognition-Suite-V3.7,https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.7,Coding Agent,3009,3009,2026-07-22,开源 AI 编程辅助工具,J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills based on Anthr...
