@@ -4,22 +4,8 @@
   "created_within_months": 36,
   "history_tolerance_days": 3,
   "timezone": "Asia/Shanghai",
-  "ossinsight_languages": [
-    "All",
-    "Python",
-    "TypeScript",
-    "JavaScript",
-    "Go",
-    "Rust",
-    "Java",
-    "C++",
-    "C",
-    "Swift",
-    "Shell",
-    "HTML",
-    "CSS",
-    "Dart",
-    "Kotlin",
-    "PHP"
-  ]
+  "output_language": "zh-CN",
+  "translation_model": "openai/gpt-4.1-mini",
+  "translation_batch_size": 8,
+  "ossinsight_languages": ["All", "Python", "TypeScript", "JavaScript", "Go", "Rust", "Java", "C++", "C", "Swift", "Shell", "HTML", "CSS", "Dart", "Kotlin", "PHP"]
 }
