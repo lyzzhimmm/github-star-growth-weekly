@@ -1,0 +1,11 @@
+{
+  "run_date": "2026-09-07",
+  "window_start": "2026-06-09",
+  "min_growth": 3000,
+  "created_cutoff": "2023-09-07",
+  "total": 128,
+  "ai_agent_count": 36,
+  "excluded_unverified": 32,
+  "generator": "scripts/generate_weekly.py",
+  "policy": "no interpolation / no age-based estimation"
+}
