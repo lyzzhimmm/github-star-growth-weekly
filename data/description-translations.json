@@ -1,0 +1,764 @@
+{
+  "deepseek-ai/deepseek-harness": {
+    "source": "DeepSeek Harness: Everything is a Plugin.",
+    "use_zh": "DeepSeek Harness:一切都是一个插件。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "guillaumemeyer/watermarks-remover": {
+    "source": "A privacy-first app that strips AI watermarks from content you own.",
+    "use_zh": "一个隐私第一的应用软件，从你拥有的内容中剥离AI的水印。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mattpocock/skills": {
+    "source": "Skills for Real Engineers. Straight from my .agents directory.",
+    "use_zh": "真正工程师的技能。直接从我的。特工目录。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "langchain-ai/openwiki": {
+    "source": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+    "use_zh": "OpenWiki是一个为您的代码库写作和维护代理文档的CLI。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yc-software/qm": {
+    "source": "Multiplayer agent harness for work.",
+    "use_zh": "多玩家特工为工作。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "trycompai/crm": {
+    "source": "Comp AI CRM is an open source, CRM designed for AI agents. Agentic-first CRM.",
+    "use_zh": "Comp AI CRM是一个开源，CRM为AI代理设计。代理第一客户端。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "unicity-aos/aos-ce": {
+    "source": "AOS Community Edition: the open agent operating system.",
+    "use_zh": "AOS社区版:开放代理操作系统。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "deeplethe/utopia": {
+    "source": "World's first open-source enterprise world model.",
+    "use_zh": "世界首个开源企业世界模式。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "obra/superpowers": {
+    "source": "An agentic skills framework & software development methodology that works.",
+    "use_zh": "一种有效的代理技能框架和软件开发方法。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yjh051108/dsh-routing-suite": {
+    "source": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then ...",
+    "use_zh": "dsh-routing-site——注射器+路由器-标准套件:先安装跑时注射器，再安装。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "sapientinc/PRAXIST": {
+    "source": "Autonomous research system for measurable, computer-executable research.",
+    "use_zh": "可计量的计算机可执行研究的自主研究系统。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jakubkrehel/skills": {
+    "source": "A collection of agent skills that help you build great interfaces.",
+    "use_zh": "一批能帮助你建立大界面的代理技能。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "elder-plinius/T3MP3ST": {
+    "source": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+    "use_zh": "自主红队；多方特务攻击-安全元凶。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "firecrawl/firecrawl": {
+    "source": "The context API to search, scrape, and interact with the web at scale. 🔥",
+    "use_zh": "上下文 API 用于搜索、刮取和与网络进行规模互动。QQ。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "oomol-lab/open-connector": {
+    "source": "Open-source auth gateway connecting 1500+ SaaS providers to AI agents through SDK, CLI, MCP, ...",
+    "use_zh": "通过SDK，CLI，MCP连接1500+SaaS供应商与AI代理的开源认证网关。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "truefoundry/trueforge": {
+    "source": "The open-source agent harness - the runtime layer that turns an LLM into a working agent.",
+    "use_zh": "开源代理牵引-将LLM转化为工作代理的运行时层。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "source": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an a...",
+    "use_zh": "i AI QQ，根据主题或关键词一键生成高清短视频。Generate HD 短视频 从一个话题或关键词带有。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "dmmulroy/anti-slop": {
+    "source": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns",
+    "use_zh": "对拒绝低证据类型Script和JavaScript模式的 Oxlint 规则的看法。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "EvoMap/AutoResearch": {
+    "source": "AI/ML research agents from idea to paper-ready evidence. An EvoMap open-source project.",
+    "use_zh": "AI/ML研究代理人从思想到已准备好的证据。EvoMap开源项目。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "aipoch/open-science": {
+    "source": "AIPOCH Open-Science is an open-source, local-first, model-agnostic AI research workbench for ...",
+    "use_zh": "AIPOCH Open-Science是一个开源，本地第一，模型不可知的AI研究工作台为。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "davidondrej/skills": {
+    "source": "access to david ondrej's personal agent skills",
+    "use_zh": "获得David Ondrej的个人代理技能。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "kirodotdev/KiroCrew": {
+    "source": "A persistent workspace for development work that self-improves and continues beyond one session.",
+    "use_zh": "持续的发展工作空间能够自我改进并持续到一次会议之后。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "TauricResearch/TradingAgents": {
+    "source": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "use_zh": "贸易代理:多种代理 LLM 金融交易框架。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "xiaobright/dsh-anchored-standard": {
+    "source": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Proje...",
+    "use_zh": "二相 DeepSeek Harness 预设:最小相通的靴子陷阱，然后是完整的标准工具(Proje。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "anthropics/skills": {
+    "source": "Public repository for Agent Skills",
+    "use_zh": "代理技能公共仓库。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "wang2122/sprix-sage-router": {
+    "source": "Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "synthetic-sciences/openscience": {
+    "source": "The open-source AI workbench for scientific research",
+    "use_zh": "科学研究的开源AI工作台。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zvec-ai/zvec-grep": {
+    "source": "Local-first search across your workspace, built for humans and AI agents.",
+    "use_zh": "本地第一搜索穿过你的工作空间，建造为人类和AI特工。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "kvcache-ai/AgentENV": {
+    "source": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
+    "use_zh": "AgentENV(AENV)是规模化运行代理环境的分布式平台。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "D4Vinci/Scrapling": {
+    "source": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full...",
+    "use_zh": "一个适应性的 Web scrating 框架，它处理从一个单一请求到一个完整的。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "msitarzewski/agency-agents": {
+    "source": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, f...",
+    "use_zh": "从前端巫师到Reddit社区忍者。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "emilkowalski/skills": {
+    "source": "Skills for Designers and Engineers.",
+    "use_zh": "设计师和工程师的技能。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "AminBlg/SimpleEnglish": {
+    "source": "Agent skill: make LLMs write docs in ASD-STE100 Simplified Technical",
+    "use_zh": "代理技能: 使 LLMS 在 ASD- STE100 中写入文件。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "cloudflare/security-audit-skill": {
+    "source": "A coding-agent skill for multi-phase security audits with independently verified, machine-rea...",
+    "use_zh": "多阶段安全审计的编码代理技能 由独立核实的机器。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "virgiliojr94/book-to-skill": {
+    "source": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use whi...",
+    "use_zh": "将任何技术书PDF变成克洛德代码技能——准备学习，参考，使用whi。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yanliudesign/mono-color-skill": {
+    "source": "One-ink editorial print image skill — warm paper, halftone photography, active negative space...",
+    "use_zh": "一克一克的编辑印刷图像技巧——取暖相纸，半通相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "source": "A spy satellite simulator in your browser, except the data is real. Live open source spatial ...",
+    "use_zh": "你浏览器里的间谍卫星模拟器 除了数据是真的 直播开源空间。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "JustVugg/colibri": {
+    "source": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed fro...",
+    "use_zh": "在你已经拥有的硬件上运行前沿MOE模型——纯C，零分解，专家流出fro。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "xai-org/grok-build": {
+    "source": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+    "use_zh": "SpaceXAI的编码代理机被接通和TUI。全屏，鼠标交互，可扩展。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "baidu/Unlimited-OCR": {
+    "source": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+    "use_zh": "无限OCR作品:欢迎\"一发长视\"的时代。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "firecrawl/anydoc": {
+    "source": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Bui...",
+    "use_zh": "开源前端框架、UI 或交互工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "DietrichGebert/ponytail": {
+    "source": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code ...",
+    "use_zh": "让你的人工智能探员觉得自己是 房间里最懒惰的老德夫 最好的密码是密码。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ayghri/i-have-adhd": {
+    "source": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "use_zh": "阻止你的编码代理 掩埋答案的技能 ADHD 方便输出。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "img2threejs/img2threejs": {
+    "source": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-...",
+    "use_zh": "在参考图像中重新构建对象，作为只使用代码，程序，质量定型，动画——。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "awesome-dsh-plugin/awesome-dsh-plugin": {
+    "source": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+    "use_zh": "DeepSeek Harness (dsh) / DeepSeek Harness 的插件目录。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "lidge-jun/opencodex": {
+    "source": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, ...",
+    "use_zh": "OpenAI Codex & Claude Code 的通用供应商代理——使用任意LLM(克洛德，双子座，格罗克，。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Fei-Away/Codex-Dream-Skin": {
+    "source": "Codex Dream Skin",
+    "use_zh": "Codex 梦皮。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "affaan-m/ECC": {
+    "source": "The agent harness performance optimization system. Skills, instincts, memory, security, and r...",
+    "use_zh": "特工利用性能优化系统。技能，本能，记忆，安全，还有。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "FlashML-org/FreeToken": {
+    "source": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, ...",
+    "use_zh": "FreeToken 为您的桌面提供数据中心尺度模型。在当地运行大型模型，。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "pathwaycom/arc-task-gen": {
+    "source": "Generates original ARC-AGI-1-style tasks distribution-matched to the public eval set.",
+    "use_zh": "生成原始的 ARC-AGI-1 类任务分布匹配到公共 eval 集。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "openai/codex-security": {
+    "source": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security v...",
+    "use_zh": "OpenAI的代码安全CLI和TypeScript SDK用于查找，验证，并固定安全 v。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "stablyai/orca": {
+    "source": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your o...",
+    "use_zh": "Orca是ADE公司，负责与一组平行特工合作。运行任何编码代理与你的O。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "petergyang/no-ai-slop": {
+    "source": "Removes 20+ patterns of AI slop from any piece of writing.",
+    "use_zh": "从任何写作中去掉 20+ 的 AI sloop 模式。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "oso95/scroll-world": {
+    "source": "A skill that turn any brand into a scrollable 3D world landing page",
+    "use_zh": "将任何品牌变成可滚动的 三维世界登陆页面的技能。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "MoonshotAI/Kimi-K3": {
+    "source": "Open Frontier Intelligence",
+    "use_zh": "开放边境情报。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Vincentwei1021/video-shotcraft": {
+    "source": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot rec...",
+    "use_zh": "Claude Code & Codex的AI视频技巧——带有Remotion的电影产品视频:152 shoot rec。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "pollen-robotics/microduck": {
+    "source": "A Tiny biped duck robot 🦆",
+    "use_zh": "一只小双人鸭机器人。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "MDX-Tom/gpt-5.6-instruct": {
+    "source": "A Codex jailbreak prompt and test pack for gpt. 针对 gpt 系列的 Codex 破甲提示词与测试包。",
+    "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "MDX-Tom/gpt-instruct": {
+    "source": "A Codex jailbreak prompt and test pack for gpt. 针对 gpt 系列的 Codex 破甲提示词与测试包。",
+    "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "FareedKhan-dev/kimi-k3-in-c": {
+    "source": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portab...",
+    "use_zh": "开源大模型、训练或推理项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "trailhq/Graft": {
+    "source": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with co...",
+    "use_zh": "Turbox Claude Code，Cursor，Codex，双子座和每个编码代理:更快，更便宜，与同。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zhu1090093659/dsh-web": {
+    "source": "DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem · Everything is a plugin, distributed...",
+    "use_zh": "DeepSeek Harness( DSH) 网络插件聚合生态系统。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zhu1090093659/dsh-web-ui": {
+    "source": "DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem · Everything is a plugin, distributed...",
+    "use_zh": "DeepSeek Harness( DSH) 网络插件聚合生态系统。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "deepseek-ai/DeepSpec": {
+    "source": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
+    "use_zh": "DeepSpec:用于培训和评估投机解码算法的全存储码库。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "LiamGvchi/gc-minimal-zine-poster": {
+    "source": "Codex skill for generating quiet minimal zine-style editorial poster prompts and images.",
+    "use_zh": "制作静静的最小zine风格的编辑海报的 Codex 技巧提示和图像。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "miuuyy/codex-chatgpt-web": {
+    "source": "Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming a...",
+    "use_zh": "使用ChatGPT Web(包括Pro)作为Codex中的本土模型——带有上下文，工具，流出a。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "microsoft/markitdown": {
+    "source": "Python tool for converting files and office documents to Markdown.",
+    "use_zh": "用于将文件和办公文档转换为Markdown的 Python 工具。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "NousResearch/hermes-agent": {
+    "source": "The agent that grows with you",
+    "use_zh": "跟你一起成长的特工。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "arvids-unavailable/openGym": {
+    "source": "https://github.com/DuarteSantos8/openGym",
+    "use_zh": "https://github。com/ Duarte-Santos8/openGym (中文(简体) )。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "diegosouzapw/OmniRoute": {
+    "source": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers (150+ free), 1200+ models...",
+    "use_zh": "永不停止编码。Free MIT AI网关:一端点，352个供应商(150+免费)，1200+模型。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "genspark-ai/genoffice": {
+    "source": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with ...",
+    "use_zh": "自由，开源的AI Office套件:多克，工作表，幻灯片，PDF，Markdown和HTML编辑器有。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "drumih/turbo-fieldfare": {
+    "source": "Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+    "use_zh": "开源大模型、训练或推理项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "lnkiai/m3e-canvas": {
+    "source": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+    "use_zh": "Sketch Material 3 在浏览器中显示快取屏幕，并把它们变成相感编码提示。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "LaoFeng-mouse/flyingmouse-format": {
+    "source": "飞鼠格式 FlyingMouse Format - Windows 免费文件格式转换工具（离线可用，内置 FFmpeg/LibreOffice/Poppler/Tesseract）。图片...",
+    "use_zh": "开源多模态、图像或视觉项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "MengTo/threeui": {
+    "source": "Open-source ThreeUI Community catalog with live interactive components and complete Community...",
+    "use_zh": "开源 三一一社区目录 有活互动组件 完整社区。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "baairon/torlink": {
+    "source": "👾 A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
+    "use_zh": "开源机器人、具身智能或硬件项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "larashero3-dotcom/lieflat-charts": {
+    "source": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. ...",
+    "use_zh": "数据可视化 AI Agents，将数据变成被抛光，交互式的HTML图表。。。。。。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "s1dashu/ip-as-logo-skill": {
+    "source": "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.",
+    "use_zh": "一个紧凑的Agent Skill，用于高度简化，圆形，潜入的新斯克奥莫克IP吉祥物标志。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "bikini/exploitarium": {
+    "source": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I po...",
+    "use_zh": "一个公共开发的档案 PoCs和脆弱性研究的写作。当时我阿宝。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "google/artemis": {
+    "source": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates en...",
+    "use_zh": "ARTEMIS将自然语言指令转化为可靠的Android自动化。它自动化 en。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "anomalyco/opencode": {
+    "source": "The open source coding agent.",
+    "use_zh": "开源编码代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nyblnet/bento": {
+    "source": "Bento, the office suite that fits in a file",
+    "use_zh": "Bento，适合文件的办公室套房。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "earendil-works/pi": {
+    "source": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "use_zh": "AI代理工具包: 统一的LLM API，代理环路，TUI，编码代理CLI。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Graphify-Labs/graphify": {
+    "source": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge ...",
+    "use_zh": "将任何编码库，及其文件，SQL计划，配置，和PDF，变成可查询的知识。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "CopilotKit/OpenBot": {
+    "source": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, w...",
+    "use_zh": "开源AI同事，每人获得自己的计算机:浏览器，文件和工具，w。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "vercel-labs/scriptc": {
+    "source": "TypeScript-to-Native Compiler",
+    "use_zh": "TypeScript 到 Native 编译器。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "experientiallabs/experiential": {
+    "source": "Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketpl...",
+    "use_zh": "Experience是BYOK的开源，零标出网关，自托管和1000+市场pl。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "vorssaint/vorssaint-utils": {
+    "source": "Free and open-source macOS menu bar toolkit.",
+    "use_zh": "免费开源macOS菜单条工具箱。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "amagine-ai/Amagine3D": {
+    "source": "Amagine3D: From hardware requirements to editable 3D designs",
+    "use_zh": "Amagine3D:从硬件要求到可编辑 三维设计。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "DavidHDev/canvas-ui": {
+    "source": "A library of creative canvas components. Real HTML with WebGL effects running over it. React,...",
+    "use_zh": "创意画布组件库。真实的 HTML 有 WebGL 效果运行在它上。反应。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "headroomlabs-ai/headroom": {
+    "source": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer token...",
+    "use_zh": "压缩工具输出，日志，文件，以及RAG块在到达LLM之前。减少20%的令牌。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Jia-Ethan/codex-keysmith": {
+    "source": "Versioned Codex instruction deployment with preview, ownership manifests, hook isolation, sce...",
+    "use_zh": "版本的 Codex 指令部署，包含预览，所有权清单，钩位隔离，sce。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Leonxlnx/taste-skill": {
+    "source": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+    "use_zh": "味道好 让你的AI品味好 停止AI生成无聊的，通用的slop。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "rakanki911/DLSS5-Swapper": {
+    "source": "Install, tune and restore DLSS 5 in your games with one click. Native RenoDX, DLSS5-Feeder fo...",
+    "use_zh": "在您的游戏中安装、调制并恢复 DLSS 5，点击一次。原生雷诺DX，DLSS5-Feeder fo。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "XiaoDuoYa/codex-with-chatgpt": {
+    "source": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+    "use_zh": "ChatGPT认为。密码有用 使用ChatGPT作为规划大脑，同时保留了Codex的牵引。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "source": "An AI skill that provides design intelligence for building professional UI/UX across multiple...",
+    "use_zh": "一种AI技能，提供设计智能，用于跨多层构建专业UI/UX。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "openTrinity/mycontext": {
+    "source": "MyContext is a local-first desktop app for everyday communication and knowledge work",
+    "use_zh": "MyContext 是本地首个用于日常通信和知识工作的桌面应用程序。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jingyaogong/minimind": {
+    "source": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "use_zh": "从零开始训练64M参数LLM!。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "github/spec-kit": {
+    "source": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "use_zh": "帮助您启动 Spec-Driven 开发的工具箱。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Panniantong/Agent-Reach": {
+    "source": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, G...",
+    "use_zh": "让你的人工智能特工看到整个互联网 阅读并搜索Twitter，Reddit，YouTube，G。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mekos2772/ios-location-spoofer": {
+    "source": "Standalone iOS app to spoof GPS location without jailbreak. Includes Shadowrocket/Surge/Loon/...",
+    "use_zh": "独立iOS应用程序在没有越狱的情况下 搜索GPS的位置 包括Shadowrocket/Surge/Loon/。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "crmne/fastpotify": {
+    "source": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, an...",
+    "use_zh": "分明，本土而快。一个轻量级的Rust应用 为你整个图书馆，本地播放，一个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "crmne/spotifast": {
+    "source": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, an...",
+    "use_zh": "分明，本土而快。一个轻量级的Rust应用 为你整个图书馆，本地播放，一个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "microsoft/skill-recorder": {
+    "source": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to recon...",
+    "use_zh": "用于记录您在屏幕上的工作会话并使用 GitHub 副驾驶 CLI 进行侦察的桌面应用程序。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "JuliusBrussee/caveman": {
+    "source": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by t...",
+    "use_zh": "为何在很少信使耍花招时使用许多信使——克洛德密码技巧将65%信使从t切去。。。。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "digimata/quill": {
+    "source": "Ultra-minimalist macOS recording + transcription.",
+    "use_zh": "超minimalist macOS录制+转录。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "dsh-market/dsh-market": {
+    "source": "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场",
+    "use_zh": "DeepSeek Harness内部的插件市场——浏览，搜索，一击安装 ^ DSH →。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "openai/codex": {
+    "source": "Lightweight coding agent that runs in your terminal",
+    "use_zh": "在终端运行的轻量级编码代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "spinabot/brigade": {
+    "source": "Brigade — Your personal intelligence, built enterprise-grade",
+    "use_zh": "旅 - 你的个人情报，建设的企业级。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "pbakaus/impeccable": {
+    "source": "The design language that makes your AI harness better at design.",
+    "use_zh": "设计语言让你的AI更能驾驭设计。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "bryanthaboi/gen1recomp": {
+    "source": "Gen1Recomp - A native Lua / LÖVE2D recreation of Gen 1 and 2 Poke",
+    "use_zh": "开源开发者工具与效率项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "VoltAgent/awesome-design-md": {
+    "source": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your ...",
+    "use_zh": "由受欢迎品牌设计系统制作的DESIGN。md文件分析集。扔进你的。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yetone/cumora": {
+    "source": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates ...",
+    "use_zh": "特工团队聚集的地方 跨平台团队聊天 AI代理是一等队友。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "duolahypercho/codex-router": {
+    "source": "External-model router for Codex with guided Kimi OAuth/API, DeepSeek, safe migration, and rol...",
+    "use_zh": "Codex的外型路由器 有导引出Kimi OAuth/API，DeepSeek，安全迁移，和rol。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mshumer/Claude-of-Duty": {
+    "source": "A Call of Duty-quality FPS in Three.js, built from a single prompt.",
+    "use_zh": "3.js的 \" 义务质量FPS呼吁 \"，由单一的提示建立。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "fuxicodex/Fuxi": {
+    "source": "FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run c...",
+    "use_zh": "Fuxi是一个快活自成一体的AI编码代理，住在你的终端——编辑代码，运行c。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ashemag/human-atlas": {
+    "source": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, ...",
+    "use_zh": "开源三维解剖探险:2，234个可选取的机体部分3D meshes，系统层，搜索，。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Leonxlnx/unlazy": {
+    "source": "Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits a task N layers ...",
+    "use_zh": "AI特工的反懒行技能。核心:深度树法，将任务分出一个N层。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nexu-io/open-design": {
+    "source": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-fi...",
+    "use_zh": "[永久失效連結] [永久失效連結] [永久失效連結] [永久失效連結] [永久失效連結] (简体中文)。开源克洛德设计替代。本地风。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "thebuggeddev/anatomy": {
+    "source": "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol",
+    "use_zh": "使用相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通相通。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "addyosmani/agent-skills": {
+    "source": "Production-grade engineering skills for AI coding agents.",
+    "use_zh": "AI编码剂的生产级工程技能。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "abue-ammar/tinycast": {
+    "source": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+    "use_zh": "Tinycast——一个很小，完全本土的macOS发射装置，热键和剪贴板历史。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "clash-verge-rev/clash-verge-rev": {
+    "source": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored ...",
+    "use_zh": "一个基于Tauri的现代GUI客户端，设计在Windows，macOS和Linux中运行，用于定制。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "hydra-db/hydradb": {
+    "source": "HydraDB - fast graph database on object storage",
+    "use_zh": "HydraDB - 对象存储的快图数据库。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Krishnagangwal/CS-Fundamentals": {
+    "source": "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operatin...",
+    "use_zh": "开源数据库、检索或数据基础设施，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Tiger3807861189/J-Space-Cognition-Suite": {
+    "source": "J-Space Cognition Suite — a model-agnostic inference-time control suite for deep reasoning, l...",
+    "use_zh": "J-Space Cignition Suite——一个模型不可知的推论-时间控制套房，用于深度推理，我。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Tiger3807861189/J-Space-Cognition-Suite-V3.7": {
+    "source": "J-Space Cognition Suite — a model-agnostic inference-time control suite for deep reasoning, l...",
+    "use_zh": "J-Space Cignition Suite——一个模型不可知的推论-时间控制套房，用于深度推理，我。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  }
+}

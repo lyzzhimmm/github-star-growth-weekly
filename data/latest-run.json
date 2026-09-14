@@ -1,11 +1,21 @@
 {
-  "run_date": "2026-09-07",
-  "window_start": "2026-06-09",
+  "run_date": "2026-09-14",
+  "window_start": "2026-06-16",
   "min_growth": 3000,
-  "created_cutoff": "2023-09-07",
-  "total": 128,
-  "ai_agent_count": 36,
-  "excluded_unverified": 32,
+  "created_cutoff": "2023-09-14",
+  "total": 153,
+  "ai_agent_count": 42,
+  "excluded_unverified": 44,
   "generator": "scripts/generate_weekly.py",
-  "policy": "no interpolation / no age-based estimation"
+  "policy": "no interpolation / no age-based estimation",
+  "localization": {
+    "language": "zh-CN",
+    "provider": "argos-offline",
+    "translated": 127,
+    "cached": 0,
+    "manual": 0,
+    "already_zh": 26,
+    "missing_source": 0,
+    "fallback": 0
+  }
 }
