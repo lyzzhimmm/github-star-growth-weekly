@@ -18,26 +18,23 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Argos Translate
-        run: pip install argostranslate
-      - name: Live offline translation smoke test
+        run: pip install argostranslate==1.11.0
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Live production-localizer smoke test
         shell: bash
         run: |
           python - <<'PY'
-          import argostranslate.package
-          import argostranslate.translate
-
-          argostranslate.package.update_package_index()
-          packages = argostranslate.package.get_available_packages()
-          package = next(p for p in packages if p.from_code == 'en' and p.to_code == 'zh')
-          argostranslate.package.install_from_path(package.download())
-
-          samples = [
-              'A CLI that writes and maintains documentation for your codebase.',
-              'A privacy-first app that removes watermarks from content you own.',
-              'Multiplayer agent harness for work.',
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, str(Path.cwd() / 'scripts'))
+          from weekly_i18n import request_argos, valid_chinese
+          items = [
+              {'id': '0', 'repo': 'example/docs', 'track': '开发工具', 'what': '开源开发者工具与效率项目', 'description': 'A CLI that writes and maintains documentation for your codebase.'},
+              {'id': '1', 'repo': 'example/watermark', 'track': '多模态', 'what': '开源多模态、图像或视觉项目', 'description': 'A privacy-first app that removes watermarks from content you own.'},
           ]
-          for text in samples:
-              translated = argostranslate.translate.translate(text, 'en', 'zh')
-              print(text, '=>', translated)
-              assert translated and translated != text
+          result = request_argos(items)
+          assert set(result) == {'0', '1'}
+          assert all(valid_chinese(v) for v in result.values())
+          print('Offline Chinese localization smoke test passed:', result)
           PY
