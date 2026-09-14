@@ -20,13 +20,15 @@ The `主要用途` column is generated as natural Simplified Chinese, rather tha
 
 The generator first validates the ranking, then localizes descriptions, then renders the CSV and HTML from the same localized rows. The localization step does not change stars, growth, creation dates, rankings or tracks.
 
-GitHub Actions uses GitHub Models with its built-in `GITHUB_TOKEN` and `models: read` permission. No additional personal access token or OpenAI API key is required. GitHub Models access and rate limits still depend on the repository owner's account. The selected model and batch size are configured in `config.json`.
+GitHub Models was retired on 2026-07-30, so this repository no longer calls the retired GitHub Models inference endpoint. GitHub Actions now installs the current GitHub Copilot CLI and authenticates it with the built-in short-lived `GITHUB_TOKEN` plus the `copilot-requests: write` workflow permission. No long-lived API key is stored in the repository. In a personally owned repository, Copilot CLI usage is billed to the repository owner's Copilot seat.
+
+`config.json` controls the localization provider, optional model selection and batch size. `translation_model: "auto"` lets Copilot choose a model available to the owner's plan, which is also compatible with Copilot Free/Student auto model selection.
 
 - `data/description-translations.json` — generated cache, keyed by repository and matched to the exact source description. Unchanged descriptions reuse their translations; changed source text is translated again.
 - `data/description-overrides.json` — optional human-reviewed overrides, mapping `owner/repo` to a Chinese sentence. Overrides take precedence over generated translations.
 - `data/latest-run.json` — includes localization statistics after a successful run.
 
-If translation access fails, a response is invalid, or a description cannot pass the Chinese-language check after retries, generation fails before publishing. It must not silently copy the English source or replace a specific description with a fabricated generic claim. Existing published output remains unchanged if the Actions generation step fails. GitHub Models free usage may be rate-limited; repeat runs reuse the translation cache to reduce requests.
+If Copilot CLI access fails, a response is invalid, or a description cannot pass the Chinese-language check after retries, generation fails before publishing. It must not silently copy the English source or replace a specific description with a fabricated generic claim. Existing published output remains unchanged if the Actions generation step fails. Repeat runs reuse the translation cache to reduce Copilot requests.
 
 Local test command:
 
@@ -36,7 +38,7 @@ Normal local generation:
 
     python3 scripts/generate_weekly.py
 
-The latter requires GitHub credentials and network access to the data sources and translation service when uncached English descriptions are present. Keep all tokens in environment variables or the authenticated GitHub CLI; never commit credentials.
+For local generation with uncached English descriptions, install GitHub Copilot CLI and sign in, or run inside GitHub Actions where `GITHUB_TOKEN` authentication is automatic. Keep credentials out of the repository.
 
 ## Output
 
