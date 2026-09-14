@@ -2,19 +2,27 @@
 from __future__ import annotations
 
 import json
-import os
 import re
+import shutil
+import subprocess
 import time
-import urllib.error
-import urllib.request
 from pathlib import Path
 
 HAN = re.compile(r'[\u3400-\u9fff]')
 WORDS = re.compile(r"[A-Za-z]+(?:[-'][A-Za-z]+)*")
-TECH = {'ai', 'agent', 'agents', 'api', 'cli', 'sdk', 'mcp', 'llm', 'rag', 'ui', 'ux', 'gpu', 'cpu', 'web', 'app', 'apps', 'github', 'git', 'python', 'javascript', 'typescript', 'java', 'rust', 'swift', 'go', 'docker', 'kubernetes', 'react', 'vue', 'node', 'sql', 'json', 'html', 'css', 'openai', 'claude', 'codex', 'deepseek', 'gemini', 'copilot', 'linux', 'macos', 'ios', 'windows', 'openclaw', 'openwiki', 'harness', 'mimo', 'code', 'skills', 'skill', 'workflow', 'workflows', 'devops', 'rag', 'ocr', 'tts', 'stt', 'http', 'https', 'ssh', 'gitops', 'llama', 'qwen', 'kimi', 'hermes', 'typescript', 'markdown'}
-CACHE_VERSION = 1
-ENDPOINT = 'https://models.github.ai/inference/chat/completions'
-DEFAULT_MODEL = 'openai/gpt-4.1-mini'
+TECH = {
+    'ai', 'agent', 'agents', 'api', 'cli', 'sdk', 'mcp', 'llm', 'rag', 'ui', 'ux',
+    'gpu', 'cpu', 'web', 'app', 'apps', 'github', 'git', 'python', 'javascript',
+    'typescript', 'java', 'rust', 'swift', 'go', 'docker', 'kubernetes', 'react',
+    'vue', 'node', 'sql', 'json', 'html', 'css', 'openai', 'claude', 'codex',
+    'deepseek', 'gemini', 'copilot', 'linux', 'macos', 'ios', 'windows', 'openclaw',
+    'openwiki', 'harness', 'mimo', 'code', 'skills', 'skill', 'workflow', 'workflows',
+    'devops', 'ocr', 'tts', 'stt', 'http', 'https', 'ssh', 'gitops', 'llama', 'qwen',
+    'kimi', 'hermes', 'markdown'
+}
+CACHE_VERSION = 2
+DEFAULT_PROVIDER = 'github-copilot-cli'
+
 
 class LocalizationError(RuntimeError):
     pass
@@ -45,58 +53,94 @@ def assert_chinese_uses(rows):
         raise LocalizationError('主要用途未通过中文校验：' + ', '.join(bad[:12]))
 
 
-def request_model(items, token, model=DEFAULT_MODEL, retries=4):
-    """Translate a bounded batch using GitHub Models; never log credentials."""
-    system = ('你是开源软件技术编辑。将每条 GitHub 项目说明改写为准确、自然的简体中文主要用途，'
-              '每条一句，约 20–65 个汉字。只依据提供的名称、原文和分类，不编造能力，不照搬宣传口号。'
-              '保留必要的产品名、API、CLI 等技术名词，但不要留下完整英文句子。'
-              '不要把不同项目的说明混淆。仅返回 JSON 对象，格式为 '
-              '{"items":[{"id":"0","use":"中文句子"}]}，每个输入 id 恰好出现一次。')
-    payload = {'model': model, 'temperature': 0.1, 'max_tokens': 4096,
-               'response_format': {'type': 'json_object'},
-               'messages': [{'role': 'system', 'content': system},
-                            {'role': 'user', 'content': json.dumps({'items': items}, ensure_ascii=False)}]}
-    data = json.dumps(payload, ensure_ascii=False).encode('utf-8')
+def _extract_json_object(text: str) -> dict:
+    """Parse a JSON object even if Copilot wraps it in a short Markdown fence/preamble."""
+    raw = str(text or '').strip()
+    if not raw:
+        raise LocalizationError('Copilot CLI 未返回内容')
+    decoder = json.JSONDecoder()
+    for match in re.finditer(r'\{', raw):
+        try:
+            value, _end = decoder.raw_decode(raw[match.start():])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            return value
+    raise LocalizationError('Copilot CLI 未返回可解析的 JSON 对象')
+
+
+def _validate_mapping(parsed: dict, items: list[dict]) -> dict[str, str]:
+    values = parsed.get('items')
+    if not isinstance(values, list):
+        raise LocalizationError('翻译结果未返回 items 数组')
+    expected = {str(x['id']) for x in items}
+    mapped: dict[str, str] = {}
+    for item in values:
+        if not isinstance(item, dict) or 'id' not in item or 'use' not in item:
+            raise LocalizationError('翻译结果项目格式错误')
+        key = str(item['id'])
+        if key in mapped or key not in expected:
+            raise LocalizationError('翻译结果包含重复或未知 id')
+        mapped[key] = clean(item['use'])
+    if set(mapped) != expected:
+        raise LocalizationError('翻译结果遗漏了项目')
+    for value in mapped.values():
+        if not valid_chinese(value):
+            raise LocalizationError('翻译结果仍包含英文句子或缺少中文')
+    return mapped
+
+
+def request_copilot(items, model='', retries=3):
+    """Translate one bounded batch through GitHub Copilot CLI.
+
+    In GitHub Actions, Copilot CLI authenticates with the built-in GITHUB_TOKEN.
+    The workflow grants `copilot-requests: write`; no long-lived API key is stored.
+    """
+    if shutil.which('copilot') is None:
+        raise LocalizationError('未找到 GitHub Copilot CLI，无法生成中文主要用途')
+
+    instruction = (
+        '你是开源软件技术编辑。请把输入中每个 GitHub 项目的 description 改写为准确、自然的简体中文“主要用途”。'
+        '每条只写一句，约 20–65 个汉字；只依据 repo、track、what 和 description，不编造未提供的功能。'
+        '保留必要的产品名以及 API、CLI、Agent、SDK 等技术词，但不要保留完整英文句子，也不要照搬营销口号。'
+        '不同项目不能混淆。只输出一个 JSON 对象，不要 Markdown，不要解释。严格格式：'
+        '{"items":[{"id":"0","use":"中文句子"}]}。每个输入 id 必须恰好出现一次。\n\n'
+        '输入：' + json.dumps({'items': items}, ensure_ascii=False)
+    )
+
     last = None
     for attempt in range(retries):
-        req = urllib.request.Request(ENDPOINT, data=data, headers={
-            'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json',
-            'Accept': 'application/json', 'User-Agent': 'github-star-growth-weekly/2.1'}, method='POST')
+        cmd = ['copilot', '-p', instruction, '-s', '--no-ask-user']
+        if clean(model) and clean(model).lower() not in {'auto', 'default'}:
+            cmd.extend(['--model', clean(model)])
         try:
-            with urllib.request.urlopen(req, timeout=90) as response:
-                result = json.load(response)
-            content = result['choices'][0]['message']['content']
-            parsed = json.loads(content)
-            values = parsed.get('items')
-            if not isinstance(values, list):
-                raise LocalizationError('模型未返回 items 数组')
-            expected = {str(x['id']) for x in items}
-            mapped = {}
-            for item in values:
-                key = str(item['id'])
-                if key in mapped or key not in expected:
-                    raise LocalizationError('模型返回了重复或未知 id')
-                mapped[key] = clean(item['use'])
-            if set(mapped) != expected:
-                raise LocalizationError('模型遗漏了项目')
-            for value in mapped.values():
-                if not valid_chinese(value):
-                    raise LocalizationError('模型返回的描述仍包含英文句子或缺少中文')
-            return mapped
-        except urllib.error.HTTPError as exc:
-            last = f'HTTP {exc.code}'
-            if exc.code in (401, 403):
-                raise LocalizationError('GitHub Models 权限不足，请检查 models: read') from exc
-            if exc.code not in (408, 429, 500, 502, 503, 504):
-                raise LocalizationError('翻译服务请求失败：' + last) from exc
-            retry_after = exc.headers.get('Retry-After', '')
-            delay = float(retry_after) if retry_after.isdigit() else min(60, 2 ** attempt * 3)
-        except (urllib.error.URLError, TimeoutError, ValueError, KeyError, LocalizationError) as exc:
-            last = type(exc).__name__
-            delay = min(30, 2 ** attempt * 2)
-        if attempt + 1 < retries:
-            time.sleep(delay)
-    raise LocalizationError('翻译服务重试后仍失败：' + str(last))
+            proc = subprocess.run(
+                cmd,
+                text=True,
+                capture_output=True,
+                timeout=180,
+                check=False,
+            )
+            if proc.returncode != 0:
+                detail = clean(proc.stderr or proc.stdout)
+                if len(detail) > 500:
+                    detail = detail[-500:]
+                raise LocalizationError(
+                    'Copilot CLI 调用失败'
+                    + (f'：{detail}' if detail else f'（exit {proc.returncode}）')
+                )
+            parsed = _extract_json_object(proc.stdout)
+            return _validate_mapping(parsed, items)
+        except subprocess.TimeoutExpired as exc:
+            last = 'timeout'
+            if attempt + 1 >= retries:
+                raise LocalizationError('Copilot CLI 翻译超时') from exc
+        except LocalizationError as exc:
+            last = str(exc)
+            if attempt + 1 >= retries:
+                raise
+        time.sleep(min(20, 2 ** attempt * 3))
+    raise LocalizationError('Copilot CLI 翻译重试后仍失败：' + str(last))
 
 
 def localize_rows(rows, config, *, root=None, translator=None):
@@ -108,6 +152,7 @@ def localize_rows(rows, config, *, root=None, translator=None):
     overrides = json.loads(override_path.read_text(encoding='utf-8')) if override_path.exists() else {}
     if not isinstance(cache, dict) or not isinstance(overrides, dict):
         raise LocalizationError('翻译缓存或人工覆盖文件格式错误')
+
     output = [dict(r) for r in rows]
     pending = []
     stats = {'translated': 0, 'cached': 0, 'manual': 0, 'already_zh': 0, 'missing_source': 0}
@@ -125,31 +170,50 @@ def localize_rows(rows, config, *, root=None, translator=None):
         elif not source or source == '详见 GitHub 官方仓库说明':
             row['use'] = '项目暂未提供具体用途说明，请查阅官方仓库文档。'
             stats['missing_source'] += 1
-        elif isinstance(cache.get(repo), dict) and cache[repo].get('source') == source and valid_chinese(cache[repo].get('use_zh')):
+        elif (
+            isinstance(cache.get(repo), dict)
+            and cache[repo].get('source') == source
+            and valid_chinese(cache[repo].get('use_zh'))
+        ):
             row['use'] = cache[repo]['use_zh']
             stats['cached'] += 1
         else:
             pending.append(row)
+
+    provider = str(config.get('translation_provider', DEFAULT_PROVIDER)).strip().lower()
+    if pending and translator is None and provider not in {'github-copilot-cli', 'copilot-cli'}:
+        raise LocalizationError('不支持的翻译提供方：' + provider)
+
+    batch_size = max(1, min(16, int(config.get('translation_batch_size', 8))))
+    model = str(config.get('translation_model', '') or '').strip()
     if pending:
-        token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
-        if translator is None and not token:
-            raise LocalizationError('缺少 GitHub Models 凭据；不能将英文原文直接发布')
-        batch_size = max(1, min(16, int(config.get('translation_batch_size', 8))))
-        model = str(config.get('translation_model', DEFAULT_MODEL))
         for start in range(0, len(pending), batch_size):
             batch = pending[start:start + batch_size]
-            items = [{'id': str(i), 'repo': r['repo'], 'track': r['track'], 'what': r['what'], 'description': r['use_source']} for i, r in enumerate(batch)]
-            if translator is None:
-                translated = request_model(items, token, model)
-            else:
-                translated = translator(items)
+            items = [
+                {
+                    'id': str(i),
+                    'repo': r['repo'],
+                    'track': r['track'],
+                    'what': r['what'],
+                    'description': r['use_source'],
+                }
+                for i, r in enumerate(batch)
+            ]
+            translated = translator(items) if translator is not None else request_copilot(items, model)
             for i, row in enumerate(batch):
                 value = clean(translated[str(i)])
                 if not valid_chinese(value):
                     raise LocalizationError('翻译结果不符合中文要求：' + row['repo'])
                 row['use'] = value
-                cache[row['repo']] = {'source': row['use_source'], 'use_zh': value, 'model': model}
+                cache[row['repo']] = {
+                    'source': row['use_source'],
+                    'use_zh': value,
+                    'provider': provider,
+                    'model': model or 'auto',
+                    'cache_version': CACHE_VERSION,
+                }
                 stats['translated'] += 1
+
     assert_chinese_uses(output)
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
