@@ -1,0 +1,46 @@
+name: Smoke Copilot Chinese Localization
+
+on:
+  push:
+    branches:
+      - fix/copilot-i18n-v2
+
+permissions:
+  contents: read
+  copilot-requests: write
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install Copilot CLI
+        run: npm install -g @github/copilot
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Live Copilot translation smoke test
+        shell: bash
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, str(Path.cwd() / 'scripts'))
+          from weekly_i18n import request_copilot, valid_chinese
+          items = [
+              {'id': '0', 'repo': 'example/docs', 'track': '开发工具', 'what': '开源开发者工具与效率项目', 'description': 'A CLI that writes and maintains documentation for your codebase.'},
+              {'id': '1', 'repo': 'example/watermark', 'track': '多模态', 'what': '开源多模态、图像或视觉项目', 'description': 'A privacy-first app that removes watermarks from content you own.'},
+          ]
+          result = request_copilot(items, model='auto', retries=2)
+          assert set(result) == {'0', '1'}
+          assert all(valid_chinese(v) for v in result.values())
+          print('Copilot localization smoke test passed:', result)
+          PY
