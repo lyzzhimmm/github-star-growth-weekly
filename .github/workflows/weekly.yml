@@ -7,10 +7,18 @@ on:
     # Scheduled workflows can be delayed; the summary must verify actual run status.
     - cron: "15 22 * * 0"
   workflow_dispatch:
+  # Rebuild immediately when generator/localization configuration changes on main.
+  # Generated report commits do not touch these paths, so this cannot self-loop.
+  push:
+    branches: [main]
+    paths:
+      - "config.json"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/weekly.yml"
 
 permissions:
   contents: write
-  copilot-requests: write
 
 concurrency:
   group: github-star-growth-weekly
@@ -35,13 +43,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Set up Node.js for Copilot CLI
-        uses: actions/setup-node@v7
-        with:
-          node-version: "22"
-
-      - name: Install Copilot CLI
-        run: npm install -g @github/copilot
+      - name: Install offline Chinese translator
+        run: pip install argostranslate==1.11.0
 
       - name: Test localization
         run: python -m unittest discover -s tests -v
