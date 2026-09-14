@@ -5,7 +5,8 @@
   "history_tolerance_days": 3,
   "timezone": "Asia/Shanghai",
   "output_language": "zh-CN",
-  "translation_model": "openai/gpt-4.1-mini",
+  "translation_provider": "github-copilot-cli",
+  "translation_model": "auto",
   "translation_batch_size": 8,
   "ossinsight_languages": ["All", "Python", "TypeScript", "JavaScript", "Go", "Rust", "Java", "C++", "C", "Swift", "Shell", "HTML", "CSS", "Dart", "Kotlin", "PHP"]
 }
