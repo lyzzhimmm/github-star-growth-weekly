@@ -16,27 +16,28 @@ The ChatGPT scheduled task reads the files produced by this workflow and reports
 
 ## Chinese descriptions
 
-The `主要用途` column is generated as natural Simplified Chinese, rather than copying GitHub's original English description. Official product names and necessary technical terms such as API, CLI and Agent may remain in English, but full English sentences must not be published.
+The `主要用途` column must be Simplified Chinese. Official product names and necessary technical terms such as API, CLI and Agent may remain in English, but full English sentences are rejected.
 
-The generator first validates the ranking, then localizes descriptions, then renders the CSV and HTML from the same localized rows. The localization step does not change stars, growth, creation dates, rankings or tracks.
+The generator first validates ranking data, then localizes descriptions, then renders CSV and HTML from the same localized rows. Localization never changes stars, growth, creation dates, rankings or tracks.
 
-GitHub Actions uses GitHub Models with its built-in `GITHUB_TOKEN` and `models: read` permission. No additional personal access token or OpenAI API key is required. GitHub Models access and rate limits still depend on the repository owner's account. The selected model and batch size are configured in `config.json`.
+GitHub Models was retired in 2026, so this repository does not depend on its retired inference API. The weekly workflow uses the open-source Argos Translate engine locally inside the GitHub Actions runner. The English→Chinese model is downloaded during the run and inference happens on the runner itself; no translation API key, GitHub Copilot license or long-lived credential is required.
 
-- `data/description-translations.json` — generated cache, keyed by repository and matched to the exact source description. Unchanged descriptions reuse their translations; changed source text is translated again.
-- `data/description-overrides.json` — optional human-reviewed overrides, mapping `owner/repo` to a Chinese sentence. Overrides take precedence over generated translations.
+`config.json` controls the provider and translation batch size. The current provider is `argos-offline`.
+
+- `data/description-translations.json` — generated cache keyed by repository and exact source description. Unchanged source text reuses the validated Chinese translation.
+- `data/description-overrides.json` — optional human-reviewed overrides mapping `owner/repo` to a Chinese sentence. Overrides take precedence.
 - `data/latest-run.json` — includes localization statistics after a successful run.
 
-If translation access fails, a response is invalid, or a description cannot pass the Chinese-language check after retries, generation fails before publishing. It must not silently copy the English source or replace a specific description with a fabricated generic claim. Existing published output remains unchanged if the Actions generation step fails. GitHub Models free usage may be rate-limited; repeat runs reuse the translation cache to reduce requests.
+If an offline translation is unusable, the generator never falls back to publishing the English original. It uses a truthful Chinese category-level fallback telling readers to consult the official repository description. This guarantees that the `主要用途` column remains Chinese without inventing project-specific capabilities.
 
-Local test command:
+Local tests:
 
     python3 -m unittest discover -s tests -v
 
 Normal local generation:
 
+    pip install argostranslate==1.11.0
     python3 scripts/generate_weekly.py
-
-The latter requires GitHub credentials and network access to the data sources and translation service when uncached English descriptions are present. Keep all tokens in environment variables or the authenticated GitHub CLI; never commit credentials.
 
 ## Output
 

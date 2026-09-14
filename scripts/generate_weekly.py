@@ -117,7 +117,11 @@ def main() -> int:
         "excluded_unverified": excluded_unverified,
         "generator": "scripts/generate_weekly.py",
         "policy": "no interpolation / no age-based estimation",
-        "localization": {"language": "zh-CN", "model": CFG.get("translation_model", "openai/gpt-4.1-mini"), **localization},
+        "localization": {
+            "language": "zh-CN",
+            "provider": CFG.get("translation_provider", "argos-offline"),
+            **localization,
+        },
     }
     (DATA_DIR / "latest-run.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False))

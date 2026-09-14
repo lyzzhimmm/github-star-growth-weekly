@@ -7,10 +7,18 @@ on:
     # Scheduled workflows can be delayed; the summary must verify actual run status.
     - cron: "15 22 * * 0"
   workflow_dispatch:
+  # Rebuild immediately when generator/localization configuration changes on main.
+  # Generated report commits do not touch these paths, so this cannot self-loop.
+  push:
+    branches: [main]
+    paths:
+      - "config.json"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/weekly.yml"
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: github-star-growth-weekly
@@ -22,7 +30,7 @@ jobs:
     timeout-minutes: 50
     env:
       TZ: Asia/Shanghai
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
 
     steps:
       - name: Checkout repository
@@ -34,6 +42,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Install offline Chinese translator
+        run: pip install argostranslate==1.11.0
 
       - name: Test localization
         run: python -m unittest discover -s tests -v
