@@ -16,29 +16,28 @@ The ChatGPT scheduled task reads the files produced by this workflow and reports
 
 ## Chinese descriptions
 
-The `主要用途` column is generated as natural Simplified Chinese, rather than copying GitHub's original English description. Official product names and necessary technical terms such as API, CLI and Agent may remain in English, but full English sentences must not be published.
+The `主要用途` column must be Simplified Chinese. Official product names and necessary technical terms such as API, CLI and Agent may remain in English, but full English sentences are rejected.
 
-The generator first validates the ranking, then localizes descriptions, then renders the CSV and HTML from the same localized rows. The localization step does not change stars, growth, creation dates, rankings or tracks.
+The generator first validates ranking data, then localizes descriptions, then renders CSV and HTML from the same localized rows. Localization never changes stars, growth, creation dates, rankings or tracks.
 
-GitHub Models was retired on 2026-07-30, so this repository no longer calls the retired GitHub Models inference endpoint. GitHub Actions now installs the current GitHub Copilot CLI and authenticates it with the built-in short-lived `GITHUB_TOKEN` plus the `copilot-requests: write` workflow permission. No long-lived API key is stored in the repository. In a personally owned repository, Copilot CLI usage is billed to the repository owner's Copilot seat.
+GitHub Models was retired in 2026, so this repository does not depend on its retired inference API. The weekly workflow uses the open-source Argos Translate engine locally inside the GitHub Actions runner. The English→Chinese model is downloaded during the run and inference happens on the runner itself; no translation API key, GitHub Copilot license or long-lived credential is required.
 
-`config.json` controls the localization provider, optional model selection and batch size. `translation_model: "auto"` lets Copilot choose a model available to the owner's plan, which is also compatible with Copilot Free/Student auto model selection.
+`config.json` controls the provider and translation batch size. The current provider is `argos-offline`.
 
-- `data/description-translations.json` — generated cache, keyed by repository and matched to the exact source description. Unchanged descriptions reuse their translations; changed source text is translated again.
-- `data/description-overrides.json` — optional human-reviewed overrides, mapping `owner/repo` to a Chinese sentence. Overrides take precedence over generated translations.
+- `data/description-translations.json` — generated cache keyed by repository and exact source description. Unchanged source text reuses the validated Chinese translation.
+- `data/description-overrides.json` — optional human-reviewed overrides mapping `owner/repo` to a Chinese sentence. Overrides take precedence.
 - `data/latest-run.json` — includes localization statistics after a successful run.
 
-If Copilot CLI access fails, a response is invalid, or a description cannot pass the Chinese-language check after retries, generation fails before publishing. It must not silently copy the English source or replace a specific description with a fabricated generic claim. Existing published output remains unchanged if the Actions generation step fails. Repeat runs reuse the translation cache to reduce Copilot requests.
+If an offline translation is unusable, the generator never falls back to publishing the English original. It uses a truthful Chinese category-level fallback telling readers to consult the official repository description. This guarantees that the `主要用途` column remains Chinese without inventing project-specific capabilities.
 
-Local test command:
+Local tests:
 
     python3 -m unittest discover -s tests -v
 
 Normal local generation:
 
+    pip install argostranslate==1.11.0
     python3 scripts/generate_weekly.py
-
-For local generation with uncached English descriptions, install GitHub Copilot CLI and sign in, or run inside GitHub Actions where `GITHUB_TOKEN` authentication is automatic. Keep credentials out of the repository.
 
 ## Output
 
