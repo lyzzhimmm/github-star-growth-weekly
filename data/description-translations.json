@@ -78,8 +78,8 @@
     "cache_version": 3
   },
   "firecrawl/firecrawl": {
-    "source": "The context API to search, scrape, and interact with the web at scale. 🔥",
-    "use_zh": "上下文 API 用于搜索、刮取和与网络进行规模互动。QQ。",
+    "source": "The web data API to search, scrape, and interact at scale. 🔥",
+    "use_zh": "用于搜索、刮取和互动的网络数据 API。QQ。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -114,8 +114,8 @@
     "cache_version": 3
   },
   "aipoch/open-science": {
-    "source": "AIPOCH Open-Science is an open-source, local-first, model-agnostic AI research workbench for ...",
-    "use_zh": "AIPOCH Open-Science是一个开源，本地第一，模型不可知的AI研究工作台为。",
+    "source": "AIPOCH Open-Science: an open-source AI research workbench for scientific agent workflows and ...",
+    "use_zh": "AIPOCH开放科学:一个用于科学代理工作流程的开源AI研究工作台和。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -624,8 +624,8 @@
     "cache_version": 3
   },
   "JuliusBrussee/caveman": {
-    "source": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by t...",
-    "use_zh": "为何在很少信使耍花招时使用许多信使——克洛德密码技巧将65%信使从t切去。。。。。。",
+    "source": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts...",
+    "use_zh": "为什么在很少信使耍花招的时候 还要用很多信使呢 Viral 技能 + 用于剪切编码代理。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -758,6 +758,204 @@
   "Tiger3807861189/J-Space-Cognition-Suite-V3.7": {
     "source": "J-Space Cognition Suite — a model-agnostic inference-time control suite for deep reasoning, l...",
     "use_zh": "J-Space Cignition Suite——一个模型不可知的推论-时间控制套房，用于深度推理，我。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "alibaba/open-code-review": {
+    "source": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review to...",
+    "use_zh": "安全 快速 高效 在阿里巴巴规模上进行战斗测试 混合结构代码审查到。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "hypit-ai/hypit": {
+    "source": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, t...",
+    "use_zh": "任何与AI代理的病毒视频都克隆。不只是一个脚本，整个工作流程:换脸，T。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "TencentCloud/Octop": {
+    "source": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+    "use_zh": "一个更聪明，自我托管的AI助手——多用户，多代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ApodexAI/FrontierAgent": {
+    "source": "🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, Re...",
+    "use_zh": "QQ Frontier Agent，我们的代理框架，开源并存——本土命令行TUI，Re。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "browser-use/browser-use": {
+    "source": "Agents that use the browser.",
+    "use_zh": "使用浏览器的特工。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+    "source": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+    "use_zh": "100+ AI代理，代理技能和RAG Apps - 免费和开放源代码。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Human-Agent-Society/reef": {
+    "source": "Continual learning infra for self-improving agents",
+    "use_zh": "自我改进人员继续学习。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "totec448-spec/chat-on-steroids": {
+    "source": "Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Re...",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "openclaw/openclaw": {
+    "source": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+    "use_zh": "真正做事情的人工智能。任何操作员。任何平台。龙虾道。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jub0t/Concat": {
+    "source": "Free & Open-Source CapCut replacement (supports MCPs).",
+    "use_zh": "Free & Open-Source CapCut 替换(支持MCP)。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "OpenHands/OpenHands": {
+    "source": "🙌 OpenHands: AI-Driven Development",
+    "use_zh": "• OpenHands:AI驱动开发。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Jakubantalik/thinking-orbs": {
+    "source": "Dotted thought-orb loading indicators for AI & agent UIs, 9 tuned types, two sizes, auto dark...",
+    "use_zh": "AI & 代理 UIs 的 Dotted Thought- orb 加载指示器，9 个调制类型，2 个大小，自动黑暗。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "browser-use/jev-ultrafast": {
+    "source": "i. am. speed.",
+    "use_zh": "i。。。。速度 (英语)。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "tamaratran/fast-jev-compaction": {
+    "source": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call a...",
+    "use_zh": "Claude Code插件用Jev决定来取代收缩摘要:每个工具都叫一个。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "asgeirtj/system_prompts_leaks": {
+    "source": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Cod...",
+    "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "DigitalPlatDev/FreeDomain": {
+    "source": "Free domain registration and practical DNS learning resources for everyone.",
+    "use_zh": "免费域名注册和实用的DNS学习资源面向每个人。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "anthropics/claude-code": {
+    "source": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase,...",
+    "use_zh": "Claude Code是一个代理编码工具 它住在你的终端 理解你的代码库。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "farion1231/cc-switch": {
+    "source": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gro...",
+    "use_zh": "Claude Code，Codex，OpenCode，OpenClaw，Gro 的跨平台桌面全能助手。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "garrytan/gstack": {
+    "source": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, En...",
+    "use_zh": "使用Garry Tan精确的克洛德代码设置:23个有观点的工具，出任CEO，设计师，En。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "robbietilton/Compositor": {
+    "source": "The Photoshop alternative for Mac",
+    "use_zh": "Mac 的 Photoshop 选项。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "sdli1995/dlssg_for_sm86": {
+    "source": "Here is a dlssg for RTX30 Series GPU",
+    "use_zh": "以下是 RTX30 系列 GPU 的 dlssg。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "AprilNEA/OpenLogi": {
+    "source": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, ...",
+    "use_zh": "开源前端框架、UI 或交互工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "rtk-ai/rtk": {
+    "source": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust bi...",
+    "use_zh": "在常见的dev命令上将LLM令牌消耗减少60-90%的CLI代理。单红发。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "unclecode/crawl4ai": {
+    "source": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https:/...",
+    "use_zh": "开源大模型、训练或推理项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "wide-trace/open-higgsfield": {
+    "source": "A studio for image and video generation — one prompt bar, each model’s own settings, and ever...",
+    "use_zh": "一个图像和视频生成工作室——一个即时栏，每个模型自己的设置，以及永远。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zhaoxuya520/reverse-skill": {
+    "source": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI...",
+    "use_zh": "逆向工程 / 授权穿透测试 / 安全研究 技能路由器 Pack AI。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "miqdadbadjuber/anti-slop": {
+    "source": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
+    "use_zh": "一个AI编码代理过滤出通用AI生成的UI设计，文本和代码的规则。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "milind-soni/OpenMausBot": {
+    "source": "Open Source Alternative to Grok Bot with a virtual machine that bots can use",
+    "use_zh": "Grok Bot 的开源替代品，带有一个 bots 可使用的虚拟机。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "arnegiacomo/fugleramme": {
+    "source": "E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, render...",
+    "use_zh": "Raspberry Pi的E-ink鸟框——通过音频实时鸟类探测，完全本地AI，渲染。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ruvnet/ruflo": {
+    "source": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous w...",
+    "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zenbu-labs/terminal-browser": {
+    "source": "A browser inside your terminal",
+    "use_zh": "终端内的浏览器。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "AlephAITech/WorkBuddyGuide": {
+    "source": "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBu...",
+    "use_zh": "一个实用的，开源的指南，通过现实世界的工作流程来掌握WorkBuddy。。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "vercel-labs/fx": {
+    "source": "Unix like coding agent",
+    "use_zh": "解开像编码代理。",
     "provider": "argos-offline",
     "cache_version": 3
   }
