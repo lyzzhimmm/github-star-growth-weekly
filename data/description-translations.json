@@ -114,8 +114,8 @@
     "cache_version": 3
   },
   "aipoch/open-science": {
-    "source": "AIPOCH Open-Science: an open-source AI research workbench for scientific agent workflows and ...",
-    "use_zh": "AIPOCH开放科学:一个用于科学代理工作流程的开源AI研究工作台和。",
+    "source": "The open-source AI research workbench for scientific research and agent workflows. Local-firs...",
+    "use_zh": "用于科学研究和代理工作流程的开源AI研究工作台。本地飞人。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -414,8 +414,8 @@
     "cache_version": 3
   },
   "diegosouzapw/OmniRoute": {
-    "source": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers (150+ free), 1200+ models...",
-    "use_zh": "永不停止编码。Free MIT AI网关:一端点，352个供应商(150+免费)，1200+模型。。",
+    "source": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models...",
+    "use_zh": "永不停止编码。Free MIT AI网关:一端点，359个供应商(150+免费)，1200+型号。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -588,8 +588,8 @@
     "cache_version": 3
   },
   "github/spec-kit": {
-    "source": "💫 Toolkit to help you get started with Spec-Driven Development",
-    "use_zh": "帮助您启动 Spec-Driven 开发的工具箱。",
+    "source": "💫 Toolkit to help you get started with SDD or any other process!",
+    "use_zh": "帮助您启动 SDD 或其他进程的工具箱 !。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -798,8 +798,8 @@
     "cache_version": 3
   },
   "Human-Agent-Society/reef": {
-    "source": "Continual learning infra for self-improving agents",
-    "use_zh": "自我改进人员继续学习。",
+    "source": "Infrastructure for continually self‑improving agents",
+    "use_zh": "不断自我改进代理人的基础设施。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -816,8 +816,8 @@
     "cache_version": 3
   },
   "jub0t/Concat": {
-    "source": "Free & Open-Source CapCut replacement (supports MCPs).",
-    "use_zh": "Free & Open-Source CapCut 替换(支持MCP)。",
+    "source": "The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
+    "use_zh": "真正自由而开源的跨平台 CapCut 替换 (支持 MCP)。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -834,8 +834,8 @@
     "cache_version": 3
   },
   "browser-use/jev-ultrafast": {
-    "source": "i. am. speed.",
-    "use_zh": "i。。。。速度 (英语)。",
+    "source": "Fastest and cheapest web agent",
+    "use_zh": "最快、最便宜的网络代理。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -846,7 +846,7 @@
     "cache_version": 3
   },
   "asgeirtj/system_prompts_leaks": {
-    "source": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Cod...",
+    "source": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude ...",
     "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
     "provider": "argos-offline",
     "cache_version": 3
@@ -900,8 +900,8 @@
     "cache_version": 3
   },
   "unclecode/crawl4ai": {
-    "source": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https:/...",
-    "use_zh": "开源大模型、训练或推理项目，具体主要用途请以项目官方仓库说明为准。",
+    "source": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready...",
+    "use_zh": "LLM和AI代理的开源网络爬行器和刮取器:任何网站进入干净，LLM准备。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -930,8 +930,8 @@
     "cache_version": 3
   },
   "arnegiacomo/fugleramme": {
-    "source": "E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, render...",
-    "use_zh": "Raspberry Pi的E-ink鸟框——通过音频实时鸟类探测，完全本地AI，渲染。",
+    "source": "Bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as ...",
+    "use_zh": "Raspberry Pi的鸟框 -- -- 通过音频进行实时鸟类检测，完全本地AI，被渲染为。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -956,6 +956,180 @@
   "vercel-labs/fx": {
     "source": "Unix like coding agent",
     "use_zh": "解开像编码代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "paperclipai/paperclip": {
+    "source": "The open-source app everyone uses to manage agents at work",
+    "use_zh": "开源软件 每个人用来管理工作代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Fission-AI/OpenSpec": {
+    "source": "Spec-driven development (SDD) for AI coding assistants.",
+    "use_zh": "Spec驱动开发(SDD)用于AI编码助理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ruvnet/RuView": {
+    "source": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitor...",
+    "use_zh": "RuView将商品WiFi信号转换成实时空间智能，生命号显示器。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "superdesigndev/treg": {
+    "source": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "666ghj/MiroFish": {
+    "source": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "use_zh": "一个简单和通用的斯沃姆情报引擎，预言任何事情。简洁通用的群体智能引擎，预测万物。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "akitaonrails/ai-memory": {
+    "source": "Solution for long term memory for agent coding CLIs and to facilitate handoff between differe...",
+    "use_zh": "用于代理编码 CLIs 的长期内存的解决方案，并方便差异之间的交接。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "open-webui/open-webui": {
+    "source": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "use_zh": "方便用户的AI接口(支持Ollama，OpenAI API，。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "NVlabs/SoL-Pi": {
+    "source": "SoL-Pi: Scaling Auto-Research Loops for Efficient Agent Harnesses",
+    "use_zh": "SoL-Pi: 扩展高效代理工具自动研究循环。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "diffusionstudio/editor": {
+    "source": "An open-source video editor built for agents. Edits become code, code becomes video.",
+    "use_zh": "为特工们建造的开源视频编辑器。编辑变成代码，代码变成视频。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "anthropics/commerce-agents": {
+    "source": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail...",
+    "use_zh": "与克洛德共同建造购物和商行代理的参考蓝图。零售业的例子。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ShawnPana/phone-harness": {
+    "source": "let your agent control your phone",
+    "use_zh": "让你的经纪人控制你的电话。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "QwenLM/Qwen-MM-Plugins": {
+    "source": "Make any agent harness multimodal-native.",
+    "use_zh": "使任何代理人都能利用多式联运。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "elie222/rakazo": {
+    "source": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+    "use_zh": "开源Grok Bot替代。选择自己的模型和沙盒。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "NandhaKishorM/laya": {
+    "source": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over an...",
+    "use_zh": "非自动回放系统1决策引擎。有打字选择，得分和是/否决定。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jaredpalmer/kev": {
+    "source": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own",
+    "use_zh": "类似Jev的家族 决策模式 建在 Quen3.5/3.8 之上 你可以自己训练和运行。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "zai-org/ZCode": {
+    "source": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
+    "use_zh": "Z。ai的编码代理吊带。有威力 有智慧 有伸展力。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mizorewww/laya-mlx": {
+    "source": "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No tex...",
+    "use_zh": "开源大模型、训练或推理项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Albert-Weasker/niubigeo": {
+    "source": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai...",
+    "use_zh": "开源AI品牌知名度与竞争对手报告。官方网站: https://niubigeo。ai。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Mak5er/AirCard": {
+    "source": "Apple Wallet Card Skinner for iOS 18+ (No Jailbreak Required)",
+    "use_zh": "iOS 18+ 的 Apple 钱包卡外皮( 不需要破狱)。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "TheoLeeCJ/SemIf-OpenJev": {
+    "source": "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or Typ...",
+    "use_zh": "3090号车厢 独立；不隶属于Jev或Typ。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "humanitas-labs/quill": {
+    "source": "Ultra-minimalist macOS recording + transcription.",
+    "use_zh": "超minimalist macOS录制+转录。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Egonex-AI/Understand-Anything": {
+    "source": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph yo...",
+    "use_zh": "教学 > 印象深刻的图表。将任何代码变成交互式知识图 yo。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "colbymchenry/codegraph": {
+    "source": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini,...",
+    "use_zh": "预索引代码知识图 代码更改上的自动同步 对于克洛德代码 代码代码 双子座。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "harry0703/MangoDisk": {
+    "source": "Safety-first disk cleaner and space analyzer for macOS and Windows, with duplicate cleanup, a...",
+    "use_zh": "安全第一磁盘清洁器和macOS和Windows的空间分析器，有重复的清理，a。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "tw93/Mole": {
+    "source": "🐹 Clean, uninstall, analyze, optimize, and monitor your Mac. Free open-source CLI, plus a nat...",
+    "use_zh": "清理 卸下 分析 优化 监控你的Mac 自由开源CLI，加一纳特。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "vladelaina/BongoCat": {
+    "source": "🩷 💘C × SDL3 × OpenGL — Three Mysterious Forces, United as One! Bong~ Bongocat!!!Don't be shy,...",
+    "use_zh": "QQ C × SDL3 × OpenGL- 三支神秘力量，团结一心! 邦戈猫! 别害羞。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "NxcoreAI/EverRoom": {
+    "source": "EverRoom - A workspace that remembers your projects, decisions, and sources.",
+    "use_zh": "EverRoom - 一个记得你的项目，决定和来源的工作空间。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "abi/screenshot-to-code": {
+    "source": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+    "use_zh": "丢入截图并转换为干净代码( HTML/ Tailwind/ React/Vue)。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "cordiverse/paper": {
+    "source": "A Programming Paradigm for Spatiotemporal Composability",
+    "use_zh": "Spatiotemporal 编程参数。",
     "provider": "argos-offline",
     "cache_version": 3
   }
