@@ -618,8 +618,8 @@
     "cache_version": 3
   },
   "microsoft/skill-recorder": {
-    "source": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to recon...",
-    "use_zh": "用于记录您在屏幕上的工作会话并使用 GitHub 副驾驶 CLI 进行侦察的桌面应用程序。。。",
+    "source": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to recon...",
+    "use_zh": "用于记录您在屏幕上的工作会话并使用 GitHub 副驾驶 SDK 的桌面应用程序来进行侦察。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -816,8 +816,8 @@
     "cache_version": 3
   },
   "jub0t/Concat": {
-    "source": "Beta: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
-    "use_zh": "贝塔: 真正自由而开源的跨平台 CapCut 替换 (支持 MCP)。",
+    "source": "⭐ Concat: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
+    "use_zh": "QQ Concat:真正自由的，和开源的跨平台CapCut替换(支持MCP)。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1104,8 +1104,8 @@
     "cache_version": 3
   },
   "tw93/Mole": {
-    "source": "🐹 Clean, uninstall, analyze, optimize, and monitor your Mac. Free open-source CLI, plus a nat...",
-    "use_zh": "清理 卸下 分析 优化 监控你的Mac 自由开源CLI，加一纳特。。。",
+    "source": "🐹 Keep your Mac clean, light, and running like new. Fast open-source CLI, plus a native Mac app.",
+    "use_zh": "保持你的Mac干净，光线，运行像新的。快开源CLI，外加本土Mac应用。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1140,8 +1140,8 @@
     "cache_version": 3
   },
   "jub0t/concat": {
-    "source": "Beta: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
-    "use_zh": "贝塔: 真正自由而开源的跨平台 CapCut 替换 (支持 MCP)。",
+    "source": "⭐ Concat: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
+    "use_zh": "QQ Concat:真正自由的，和开源的跨平台CapCut替换(支持MCP)。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1242,8 +1242,8 @@
     "cache_version": 3
   },
   "Louis-CFM/coucou": {
-    "source": "A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows, Linux) ...",
-    "use_zh": "一个小朋友，住在你的帐号(macOS)或屏幕上方(Windows，Linux)。。。。。。",
+    "source": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agen...",
+    "use_zh": "一个小朋友在你的Mac's noch 和你的iPhone上，盯着你的人工智能编码agen。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1284,14 +1284,176 @@
     "cache_version": 3
   },
   "dsh-tauri/deepseek-harness-desktop": {
-    "source": "DeepSeek Harness Tauri 桌面版 | Only 5mb installer, zero environment setup, preset plugins, Wind...",
-    "use_zh": "DeepSeek Harness Tauri QQ 仅5mb安装器，零环境设置，预设插件，风能。。",
+    "source": "DeepSeek Harness Tauri 桌面版 | Only 8mb installer, zero environment setup, preset plugins, Wind...",
+    "use_zh": "DeepSeek Harness Tauri QQ 仅8mb安装器，零环境设置，预设插件，风。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
   "zeronsh/zeron": {
     "source": "A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
     "use_zh": "Claude Code，Codex，Cursor，Devin等编码代理商的本土控制平面。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "shader-effects-inc/shaders": {
+    "source": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "monid-ai/monid": {
+    "source": "Monid - OpenRouter for agent tools. Join our community at https://discord.gg/rQzztcgJV8",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "microsoft/ai-agents-for-beginners": {
+    "source": "18 Lessons to Get Started Building AI Agents",
+    "use_zh": "18 开始建造AI代理的教训。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "wheresryan22/anatomy": {
+    "source": "An agent skill for creating detailed, interactive isometric illustrations of real-world machi...",
+    "use_zh": "一种代理技能，用于创建详细，交互式的同位素插图真实世界的machi。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mcncarl/jianying-headless": {
+    "source": "Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent...",
+    "use_zh": "私源预览:本地建宁草稿，孤立编辑/出口，独立代理。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/photocraft": {
+    "source": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+    "use_zh": "PhotoCraft:一个开源的图片编辑器，用纯 Rust 写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/lightcraft": {
+    "source": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
+    "use_zh": "LightCraft: 一个开源无损照片编辑器，用纯 Rust 写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/filmcraft": {
+    "source": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+    "use_zh": "FilmCraft:一个开源的非线性视频编辑器，用纯 Rust 写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/pdfcraft": {
+    "source": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+    "use_zh": "PdfCraft: 一个开源 PDF 读取器和编辑器，用纯 Rust 写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jev-chat/jev-chat-jarvis": {
+    "source": "The chat decision assistant: before you reply, Jev reads the chat, judges intent and risk, an...",
+    "use_zh": "聊天决定助理:在回答之前，Jev会读到聊天，评委的意图和风险，一个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/vectorcraft": {
+    "source": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
+    "use_zh": "VectorCraft:一个开源的矢量艺术工具，在纯Rust中用划痕写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/wordcraft": {
+    "source": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+    "use_zh": "纯 Rust 微软 Word 的开源、清洁室重装。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/effectcraft": {
+    "source": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
+    "use_zh": "EffectCraft: 纯Rust中以划痕写成的开源运动图形和堆肥工具。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yi1108/printfilm": {
+    "source": "PRINTFILM: AI short-video marketing and AI short-drama creation platform",
+    "use_zh": "PRINTFILM:AI短视频营销和AI短剧创作平台。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Droid-Deck/DroidDeck": {
+    "source": "DroidDeck brings the SteamOS experience to Android",
+    "use_zh": "DroidDeck给Android带来了SteamOS体验。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Edge0-AI/Edge0": {
+    "source": "Run 35B MoE models in ~2.5 GB of RAM. Weights stream from SSD; a trained router predicts load...",
+    "use_zh": "在RAM的~2.5 GB中运行35B MoE模型。SSD的重量流；一个训练有素的路由器预测负载。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "omlahore/RemoveMacAI": {
+    "source": "Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups. A native app and CLI,...",
+    "use_zh": "Debloat macOS:关闭苹果智能，分析，广告和弹出。一个本地的应用程序和CLI，。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "yihui-dev/awesome-opus5-5-videos": {
+    "source": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. W...",
+    "use_zh": "与克劳德·奥普斯(Claude Opus 5.5)一起制作的病毒视频及其背后的提示越来越多。那个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "mvanhorn/last30days-skill": {
+    "source": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the w...",
+    "use_zh": "开源 AI 编程 Agent / 编程辅助工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nykooi1/vibe-wise": {
+    "source": "A Claude Code / Codex plugin that helps you learn how to build while AI writes the code.",
+    "use_zh": "Claude Code / Codex 插件帮助您在 AI 写代码时学习构建方法。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "tigerless-labs/agent-memory": {
+    "source": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked ...",
+    "use_zh": "AI代理长期记忆运行时间——作为真相来源的Plain Markdown，本地排名。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "omnirush-ai/omnirush-gui": {
+    "source": "A desktop coding agent with free access to frontier models.",
+    "use_zh": "一个可以自由访问前沿模型的桌面编码代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nateherkai/scroll-craft": {
+    "source": "An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Cla...",
+    "use_zh": "构建溢价，浸润，滚动驱动网站的代理技能。与Codex，Cla一起工作。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ComposioHQ/awesome-claude-skills": {
+    "source": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workf...",
+    "use_zh": "将克劳德 AI 工作定制化的 优秀克劳德技能、资源和工具列表。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "devdotfast/whiteboard": {
+    "source": "open-source canvas for thoughtful software design",
+    "use_zh": "深思熟虑软件设计的开源画布。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Nanako0129/sepia": {
+    "source": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with nati...",
+    "use_zh": "De-AI为任何代理技能兼容代理(77+通过技能CLI)的写作技能，有nati。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/designcraft": {
+    "source": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+    "use_zh": "DesignCraft:一个开源页面和布局设计编辑器，用纯 Rust 写成。",
     "provider": "argos-offline",
     "cache_version": 3
   }
