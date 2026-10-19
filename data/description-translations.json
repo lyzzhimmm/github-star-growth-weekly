@@ -174,8 +174,8 @@
     "cache_version": 3
   },
   "D4Vinci/Scrapling": {
-    "source": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full...",
-    "use_zh": "一个适应性的 Web scrating 框架，它处理从一个单一请求到一个完整的。。。",
+    "source": "🕷️ A Web Scraping framework that handles everything from a single request to a full-scale cra...",
+    "use_zh": "QQ 一个处理从一个单一请求到一个全面cra。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -306,8 +306,8 @@
     "cache_version": 3
   },
   "stablyai/orca": {
-    "source": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your o...",
-    "use_zh": "Orca是ADE公司，负责与一组平行特工合作。运行任何编码代理与你的O。。。",
+    "source": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any co...",
+    "use_zh": "奥尔卡(Orca)是和一队特务(如Grok Bot，Claude Code)合作的地方。运行任何 Co。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -414,8 +414,8 @@
     "cache_version": 3
   },
   "diegosouzapw/OmniRoute": {
-    "source": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models...",
-    "use_zh": "永不停止编码。Free MIT AI网关:一端点，359个供应商(150+免费)，1200+型号。。",
+    "source": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ model...",
+    "use_zh": "永不停止编码。Free MIT AI网关:一个端点，375个供应商(150+免费)，1400+模型。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -552,8 +552,8 @@
     "cache_version": 3
   },
   "Leonxlnx/taste-skill": {
-    "source": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
-    "use_zh": "味道好 让你的AI品味好 停止AI生成无聊的，通用的slop。",
+    "source": "Agent skills that give coding agents taste: art direction, reference images and a browser che...",
+    "use_zh": "给予编码代理品味的代理技能:艺术取向，参考图像和一个浏览器切。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -708,8 +708,8 @@
     "cache_version": 3
   },
   "nexu-io/open-design": {
-    "source": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-fi...",
-    "use_zh": "[永久失效連結] [永久失效連結] [永久失效連結] [永久失效連結] [永久失效連結] (简体中文)。开源克洛德设计替代。本地风。。。",
+    "source": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, ...",
+    "use_zh": "第一合作AI设计代理工作空间。地方第一和开源。创建运动，。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -786,8 +786,8 @@
     "cache_version": 3
   },
   "browser-use/browser-use": {
-    "source": "Agents that use the browser.",
-    "use_zh": "使用浏览器的特工。",
+    "source": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers an...",
+    "use_zh": "用于AI浏览器代理的开源 Python 库，外加浏览器 使用 Cloud:隐形浏览器 a。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -816,8 +816,8 @@
     "cache_version": 3
   },
   "jub0t/Concat": {
-    "source": "⭐ Concat: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
-    "use_zh": "QQ Concat:真正自由的，和开源的跨平台CapCut替换(支持MCP)。",
+    "source": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable throu...",
+    "use_zh": "真正自由，开源，本地第一，跨平台 CapCut替换。脚本的脚步。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1104,8 +1104,8 @@
     "cache_version": 3
   },
   "tw93/Mole": {
-    "source": "🐹 Keep your Mac clean, light, and running like new. Fast open-source CLI, plus a native Mac app.",
-    "use_zh": "保持你的Mac干净，光线，运行像新的。快开源CLI，外加本土Mac应用。",
+    "source": "🐹 Keep your Mac and PC clean, light, and running like new. Fast open-source CLI, plus native ...",
+    "use_zh": "保持你的Mac和PC的干净，光线，运行像新的。快速开源CLI，外加原生。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1140,8 +1140,8 @@
     "cache_version": 3
   },
   "jub0t/concat": {
-    "source": "⭐ Concat: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
-    "use_zh": "QQ Concat:真正自由的，和开源的跨平台CapCut替换(支持MCP)。",
+    "source": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable throu...",
+    "use_zh": "真正自由，开源，本地第一，跨平台 CapCut替换。脚本的脚步。。。",
     "provider": "argos-offline",
     "cache_version": 3
   },
@@ -1454,6 +1454,258 @@
   "storytold/designcraft": {
     "source": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
     "use_zh": "DesignCraft:一个开源页面和布局设计编辑器，用纯 Rust 写成。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "tangency-labs/solidcraft": {
+    "source": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, an...",
+    "use_zh": "SolidCraft:一个开源参数化3D CAD应用程序，由纯Rust所建。桌面，网络，一个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "karpathy/autoresearch": {
+    "source": "AI agents running research on single-GPU nanochat training automatically",
+    "use_zh": "自动运行单GPU纳米聊天训练研究的AI代理。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "opendatalab/MinerU": {
+    "source": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your ...",
+    "use_zh": "将 PDF 和 Office docs 等复杂文档转换为 LLM 已备值下调/ JSON 用于您。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "bytedance/deer-flow": {
+    "source": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the ...",
+    "use_zh": "一种开源长视超天线(英语:Long-horizon SuperAgent)的牵引装置，可以研究，代码并创建。那个。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "punkpeye/awesome-mcp-servers": {
+    "source": "A collection of MCP servers.",
+    "use_zh": "MCP服务器集。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "unslothai/unsloth": {
+    "source": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4...",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "onehumanbeing/esp32-iphone-agent": {
+    "source": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-co...",
+    "use_zh": "开源 AI Agent 与自动化工作流项目，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/cadcraft": {
+    "source": "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app i...",
+    "use_zh": "CADCraft:计算机辅助设计和起草——开源，清洁室 AutoCAD 风格的应用 I。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/gridcraft": {
+    "source": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By Ar...",
+    "use_zh": "GridCraft:纯Rust中的一种开源，清洁的房间电子表格(Microsoft Excel-style)。被阿尔。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "block/buzz": {
+    "source": "A hive mind communication platform",
+    "use_zh": "蜂巢心灵交流平台。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "ARahim3/DigUp": {
+    "source": "Search your computer by what's in your files: photos, PDFs, documents, recordings, videos and...",
+    "use_zh": "搜索你的电脑 搜索你的文件内容:照片、PDF、文件、录音、录像和。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "anmolkapil/plexo": {
+    "source": "Speed up downloads by combining multiple network connections in parallel",
+    "use_zh": "通过并行合并多个网络连接来加快下载。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "KnifeLemon/Filee": {
+    "source": "Free, open-source file converter. Convert 180+ formats offline by drag & drop — images, PDF, ...",
+    "use_zh": "自由开源文件转换器。通过拖放——图像，PDF，。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "waligoraamodio288-rgb/hongguo-desktop-releases": {
+    "source": "红果短剧｜Windows 10/11 桌面版 + Android TV 测试版。真人剧、漫剧、AI 剧；电视 APK 4.08 MB，Android 5.0+ / ARM64，支持遥控、...",
+    "use_zh": "开源音视频、语音或多媒体工具，具体主要用途请以项目官方仓库说明为准。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "LosaLosSantos/aurelio-finance": {
+    "source": "Open-source personal finance app with an AI financial advisor: track your net worth, investme...",
+    "use_zh": "有AI财务顾问的开源个人财务应用:追踪您的净值，投资我。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "OffGridPete/Fieldwatch": {
+    "source": "Receive-only Wi-Fi and Bluetooth LE observer for Android. MIT.",
+    "use_zh": "Android只接收Wi-Fi和蓝牙LE观察器。麻省理工学院。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jhaizhou-ops/d2r-mobile": {
+    "source": "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the ...",
+    "use_zh": "Diablo II的开源iOS / macOS相容层:与Reign重现。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/deckcraft": {
+    "source": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft Power...",
+    "use_zh": "演示文稿和幻灯片显示:微软Power的开源，清扫室再实施。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "QingYunA/answer-me-with-html": {
+    "source": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can...",
+    "use_zh": "用 HTML 来回答我——一种用一页 HTML 来回答困难问题的代理技能，你可以。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "kaankiziltug/logo-design-skill": {
+    "source": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principl...",
+    "use_zh": "Claude，双子座CLI，Codex等AI代理商的综合标志设计技能:平分。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "edenfunf/reelmimic": {
+    "source": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex...",
+    "use_zh": "显示你喜欢的视频。获得同样风格的新视频。AI机组(Claude Code或Codex。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "kushagrasinghx/BitChord": {
+    "source": "BitChord - A modern YouTube music client with clean aesthetics inspired from Apple Music",
+    "use_zh": "BitChord - 一个现代YouTube音乐客户端，具有从Apple Music中获得灵感的清洁美学。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "docling-project/docling": {
+    "source": "Get your documents ready for gen AI",
+    "use_zh": "把文件准备好给基因AI。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Saffsanity/sill": {
+    "source": "Any window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys...",
+    "use_zh": "任何窗口 从你的Mac，住在你的iPhone或iPad。触摸 Apple Pencil 跟踪盘和钥匙。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Jakeschincariol/replica-skill": {
+    "source": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bu...",
+    "use_zh": "11个免费的克洛德技能 克隆任何应用程序: 逆向引擎，重建它，测试它为bu。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "nullmoth/nvidia-macos-driver": {
+    "source": "Metal driver for NVIDIA GeForce cards on macOS Sequoia",
+    "use_zh": "macOS Sequoia上的NVIDIA GeForce卡的金属驱动程序。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Adkid-Zephyr/anti-defensive-writing-Skill": {
+    "source": "极致轻量｜阻止论文的防御性写作 | Anti-defensive writing for academic papers — 学术写作原则 Skill + prompt pack (CN...",
+    "use_zh": "为学术论文写作的反防御——\"技能+快包\"(CN。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Oldcircle/geo-sleuth": {
+    "source": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skyline...",
+    "use_zh": "一个找到照片拍摄地点的代理技能——OpenStreetMap几何，高地天线。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "TNTcraftHIM/Piik": {
+    "source": "Free, open-source screen sharing for private live streams with friends. Watch together in a b...",
+    "use_zh": "与好友共享私人直播流的自由开源屏幕。一起看一个b。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "shareAI-lab/learn-claude-code": {
+    "source": "Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1",
+    "use_zh": "巴什是所有你需要的，一个纳米圆形的代码，像“代理吊带”，建于0到1。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/craft-launcher": {
+    "source": "The Craft App Launcher",
+    "use_zh": "工艺App启动器。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "storytold/soundcraft": {
+    "source": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
+    "use_zh": "Avid Pro Tools 纯 Rust 的开源和清洁室重置。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "makecindy/cindy": {
+    "source": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Ag...",
+    "use_zh": "考虑一下 打开源代码的AI代理，。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "peetzweg/opendisplay": {
+    "source": "Use an iPhone, iPad, or spare Mac as a true second display for your Mac without restrictions.",
+    "use_zh": "使用 iPhone，iPad，或者将 Mac 作为您的 Mac 的真正的第二次显示而不受限制。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "hardbeat920/monocode": {
+    "source": "A GUI for your coding agents",
+    "use_zh": "您编码代理的图形界面。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "HarnessRouter/harnessrouter": {
+    "source": "HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface...",
+    "use_zh": "Harness Router社区版:自办版，Apache-2.0版统一界面。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "tobi/disktree": {
+    "source": "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.",
+    "use_zh": "一张树图，用来寻找和去除 填充你的磁盘，为Omarchy。rust + GPUI (英语)。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "Contrastive-LM/CLM": {
+    "source": "Contrastive Language Models (CLMs) are a new class of System One model trained with a contras...",
+    "use_zh": "相矛盾语言模型(CLMs)是一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系一系。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "T-Auto/dsh-ops": {
+    "source": "A toolkit for low-level operations in DSH, designed to reduce token usage and task execution ...",
+    "use_zh": "一个用于DSH低级操作的工具包，旨在减少符号使用和任务执行。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "lemomo-ai/lemo-opuscar": {
+    "source": "Claude Code skill for short films with no video model: 51 film styles, each a style prompt pl...",
+    "use_zh": "Claude Code技巧 对于没有视频模型的短片: 51 个电影风格，每个风格的提示 pl。。。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "jarrodwatts/jev-trader": {
+    "source": "One AI trade decision every Monad block. Jev on Kuru MON-USDC.",
+    "use_zh": "每个莫纳德街区都有一个人工智能交易决定 (原始内容存档于2018-10-04)。Jev on Kuru MON-USDC。",
+    "provider": "argos-offline",
+    "cache_version": 3
+  },
+  "BlueHeisenberg/SCSKiller": {
+    "source": "Kill shader compilation stutter before you play. Compiles your games' shaders into the GPU dr...",
+    "use_zh": "在游戏前杀死阴道编译器结巴。将游戏的阴影刻入 GPU Dr。。。",
     "provider": "argos-offline",
     "cache_version": 3
   }
